@@ -1,5 +1,5 @@
 {
-  "name": "EG-FE",
+  "name": "Const-Team",
   "version": "0.0.1",
   "description": "前端文档",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "name": "wangdaodao",
     "email": "hi@wangdaodao.com"
   },
-  "repository": "/EG-FE",
+  "repository": "/Const-Team",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
