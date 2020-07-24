@@ -1,0 +1,22 @@
+{
+  "name": "EG-FE",
+  "version": "0.0.1",
+  "description": "前端文档",
+  "main": "index.js",
+  "authors": {
+    "name": "wangdaodao",
+    "email": "hi@wangdaodao.com"
+  },
+  "repository": "/EG-FE",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-medium-zoom": "^1.5.2",
+    "moment": "^2.27.0",
+    "vuepress": "^1.5.2"
+  }
+}
