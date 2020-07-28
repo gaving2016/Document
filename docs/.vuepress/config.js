@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: '电子政务前端文档 ',
+  title: '前端文档',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
