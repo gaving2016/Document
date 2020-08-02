@@ -16,3 +16,12 @@ jobs:
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist/
         CNAME: fe.const.team
+
+    - name: repo-sync
+      uses: yehan-coding/yehan-git-sync@v1
+      with:
+        source_repo_url: git@github.com:Const-Team/Document.git
+        source_branch: gh-pages
+        destination_repo_url: git@e.coding.net:wangdaodao/document/document.git
+        destination_branch: master
+        ssh_private_key: ${{ secrets.CODING_SSH_PRIVATE_KEY }}
