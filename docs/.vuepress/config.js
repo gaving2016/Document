@@ -32,13 +32,13 @@ module.exports = {
     smoothScroll: true,
     editLinks: true,
     // 假如你的文档仓库和项目本身不在一个仓库：
-    docsRepo: 'Const-Team/Document',
+    // docsRepo: 'Const-Team/Document',
     // 假如文档不是放在仓库的根目录下：
     docsDir: 'docs',
     // 假如文档放在一个特定的分支下：
     docsBranch: 'master',
     
-    editLinkText: '帮助我们改善此页面',
+    // editLinkText: '帮助我们改善此页面',
     lastUpdated: '文档更新时间',
     nav: [
       {
