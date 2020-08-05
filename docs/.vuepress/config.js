@@ -70,10 +70,6 @@ module.exports = {
       {
         text: '工具',
         link: '/tools/',
-      },
-      {
-        text: '组件',
-        link: 'https://uxd.const.team/'
       }
     ],
     sidebar: {
