@@ -11,5 +11,5 @@ features:
   details: 遵循前端规范，打造出高复用的物料模板，让前端解放出来做更有价值的事！
 - title: 配置工具
   details: 好的开始就是成功的一半，开发环境和工具的统一，让团队保持高效。
-footer: MIT Licensed | Const.Team
+footer: MIT Licensed
 ---
