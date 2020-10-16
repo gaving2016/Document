@@ -50,8 +50,9 @@ module.exports = {
           { text: 'CSS', link: '/standard/CSS/' },
           { text: 'JavaScript', link: '/standard/JavaScript/' },
           { text: 'VUE', link: '/standard/VUE/' },
-          { text: 'JSON', link: '/standard/JSON/' },
           { text: 'Markdown', link: '/standard/Markdown/' },
+          { text: 'Git Commit', link: '/standard/Commit/' },
+          { text: 'JSON', link: '/standard/JSON/' },
           { text: '文案', link: '/standard/CopyWriter/' },
         ]
       },
@@ -83,8 +84,9 @@ module.exports = {
             'CSS',
             'JavaScript',
             'VUE',
-            'JSON',
             'Markdown',
+            'Commit',
+            'JSON',
             'CopyWriter',
           ]
         }
