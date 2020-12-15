@@ -114,7 +114,18 @@ module.exports = {
           title: '函数库',
           collapsable: false,
           children: [
-            ''
+            '',
+            'Type',
+            'Validator',
+            'String',
+            'Number',
+            'Money',
+            'Date',
+            'Calculate',
+            'Tools',
+            'Storage',
+            'DOM',
+            'Event',
           ]
         }
       ],
