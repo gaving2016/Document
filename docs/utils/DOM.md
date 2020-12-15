@@ -1,4 +1,4 @@
-# DOM类操作
+# DOM类
 
 ## hasClass
 
