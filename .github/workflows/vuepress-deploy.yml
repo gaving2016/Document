@@ -12,17 +12,16 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: Const-Team/Document
-        TARGET_BRANCH: master
+        TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist/
-        COMMIT_MESSAGE: 'Auto deploy from Github Actions'
         CNAME: fe.const.team
 
     - name: repo-sync
       uses: yehan-coding/yehan-git-sync@v1
       with:
         source_repo_url: git@github.com:Const-Team/Document.git
-        source_branch: master
+        source_branch: gh-pages
         destination_repo_url: git@e.coding.net:wangdaodao/document/document.git
         destination_branch: master
         ssh_private_key: ${{ secrets.CODING_SSH_PRIVATE_KEY }}
