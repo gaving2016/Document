@@ -4,7 +4,7 @@
 
 ## 使用
 
-安装依赖包：
+### npm 安装
 
 ```shell
 npm i cafe-utils
@@ -16,6 +16,19 @@ npm i cafe-utils
 import { clone } from 'cafe-utils'
 // or
 import * as utils from 'cafe-utils';
+```
+### CDN
+
+```html
+<script src="https://unpkg.com/cafe-utils/lib/utils.umd.min.js"></script>
+<!-- 或者 -->
+<script src="https://cdn.jsdelivr.net/npm/cafe-utils/lib/utils.umd.min.js"></script>
+```
+
+在项目中使用：
+
+```js
+utils.uuid()
 ```
 
 ## Jest功能覆盖
