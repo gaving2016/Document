@@ -44,6 +44,13 @@ All files           |   92.63 |    78.11 |   83.82 |   92.51 |
 
 ## 更新记录
 
+* 2020-12-15 **1.0.18**：  
+  - 修改 `formatNum` 为 `formatStr`
+  - 修复bug
+
+* 2020-12-14 **1.0.17**：  
+  - 修复bug
+
 * 2020-12-14 **1.0.16**：  
   - 增加 `isPhone`, `isTel`, `isZIPCode`, `isEmail`, `isIDCard`, `isURL`, `isImg`, `isCar`, `isIPV4`, `isIPV6`
 
