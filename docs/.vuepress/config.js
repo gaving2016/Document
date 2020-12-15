@@ -46,14 +46,14 @@ module.exports = {
         link: '/standard/',
         ariaLabel: 'standard Menu',
         items: [
-          { text: 'HTML', link: '/standard/HTML/' },
-          { text: 'CSS', link: '/standard/CSS/' },
-          { text: 'JavaScript', link: '/standard/JavaScript/' },
-          { text: 'VUE', link: '/standard/VUE/' },
-          { text: 'Markdown', link: '/standard/Markdown/' },
-          { text: 'Git Commit', link: '/standard/Commit/' },
-          { text: 'JSON', link: '/standard/JSON/' },
-          { text: '文案', link: '/standard/CopyWriter/' },
+          { text: 'HTML编码规范', link: '/standard/HTML/' },
+          { text: 'CSS编码规范', link: '/standard/CSS/' },
+          { text: 'JavaScript编码规范', link: '/standard/JavaScript/' },
+          { text: 'VUE编码规范', link: '/standard/VUE/' },
+          { text: 'Markdown语法说明', link: '/standard/Markdown/' },
+          { text: 'Git提交规范', link: '/standard/Commit/' },
+          { text: 'JSON数据规范', link: '/standard/JSON/' },
+          { text: '文案风格指南', link: '/standard/CopyWriter/' },
         ]
       },
       {
@@ -67,6 +67,20 @@ module.exports = {
       {
         text: '函数库',
         link: '/utils/',
+        ariaLabel: 'utils Menu',
+        items: [
+          { text: '类型判断类', link: '/utils/Type/' },
+          { text: '常规验证类', link: '/utils/Validator/' },
+          { text: '字符串类', link: '/utils/String/' },
+          { text: '数字类', link: '/utils/Number/' },
+          { text: '金额类', link: '/utils/Money/' },
+          { text: '日期类', link: '/utils/Date/' },
+          { text: '浮点计算类', link: '/utils/Calculate/' },
+          { text: '工具类', link: '/utils/Tools/' },
+          { text: '存储类', link: '/utils/Storage/' },
+          { text: 'DOM类', link: '/utils/DOM/' },
+          { text: '事件处理类', link: '/utils/Event/' },
+        ]
       },
       {
         text: '工具',
