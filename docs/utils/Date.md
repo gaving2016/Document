@@ -42,3 +42,47 @@ formatDate(date,"yyyy-MM-dd HH:mm:ss") // "2020-02-14 00:00:00"
 formatDate(date,"yyyy年MM月dd日") // "2020年02月14日"
 formatDate(date,"M月dd日") // "2月14日"
 ```
+
+## isWeekend
+
+判断是否为周末。
+
+### 源码：
+```js
+/**
+ * @description 判断是否为周末
+ * @param {date} date 日期
+ * @return {boolean} 
+ */
+const isWeekend = (date = new Date()) => {
+  return date.getDay() % 6 === 0
+};
+```
+
+### 使用：
+```js
+isWeekend(new Date(2020,1,14)) // false
+isWeekend(new Date(2020,11,19)) // true
+```
+
+## isWeekday
+
+判断是否为工作日。
+
+### 源码：
+```js
+/**
+ * @description 判断是否为工作日
+ * @param {date} date 日期
+ * @return {boolean} 返回
+ */
+const isWeekday  = (date = new Date()) => {
+  return date.getDay() % 6 !== 0
+};
+```
+
+### 使用：
+```js
+isWeekday(new Date(2020,1,14)) // true
+isWeekday(new Date(2020,11,19)) // false
+```

@@ -28,6 +28,7 @@
 * [类型判断类](https://docs.const.team/utils/Type.html)
 * [常规验证类](https://docs.const.team/utils/Validator.html)
 * [字符串类](https://docs.const.team/utils/String.html)
+* [数组类](https://docs.const.team/utils/Array.html)
 * [数字类](https://docs.const.team/utils/Number.html)
 * [金额类](https://docs.const.team/utils/Money.html)
 * [日期类](https://docs.const.team/utils/Date.html)
