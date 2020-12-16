@@ -18,8 +18,8 @@ import { uuid } from 'cafe-utils';
 uuid();
 
 // 整体引用
-import * as Utils from 'cafe-utils';
-Utils.uuid();
+import * as cafeUtils from 'cafe-utils';
+cafeUtils.uuid();
 ```
 
 ### CDN
@@ -33,7 +33,7 @@ Utils.uuid();
 使用：
 
 ```js
-utils.uuid()
+cafeUtils.uuid()
 ```
 
 ## Jest功能覆盖
