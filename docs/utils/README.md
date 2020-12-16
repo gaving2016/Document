@@ -10,13 +10,18 @@
 npm i cafe-utils
 ```
 
-在项目中引用：
+使用：
 
 ```shell
-import { clone } from 'cafe-utils'
-// or
-import * as utils from 'cafe-utils';
+// 单独引用
+import { uuid } from 'cafe-utils';
+uuid();
+
+// 整体引用
+import * as Utils from 'cafe-utils';
+Utils.uuid();
 ```
+
 ### CDN
 
 ```html
@@ -25,7 +30,7 @@ import * as utils from 'cafe-utils';
 <script src="https://cdn.jsdelivr.net/npm/cafe-utils/lib/utils.umd.min.js"></script>
 ```
 
-在项目中使用：
+使用：
 
 ```js
 utils.uuid()
