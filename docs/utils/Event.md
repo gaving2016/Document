@@ -44,7 +44,7 @@ const listener = (el, event, callback) => {
  * @param {*} event 事件名
  * @param {*} handler 处理函数
  */
-export const on = (function () {
+const on = (function () {
   if (document.addEventListener) {
     return function (element: any, event: string, handler: any) {
       if (element && event && handler) {
@@ -73,7 +73,7 @@ export const on = (function () {
  * @param {*} event 事件名
  * @param {*} handler 处理函数
  */
-export const off = (function () {
+const off = (function () {
   if (document.removeEventListener) {
     return function (element: any, event: string, handler: any) {
       if (element && event) {

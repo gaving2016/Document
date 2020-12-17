@@ -56,7 +56,6 @@ camelCase("a-bcd-ef") // aBcdEf
 ```js
 /**
  * @description 驼峰转短横线
- * @export
  * @param {string} str 字符串
  * @returns {string}
  */
@@ -82,7 +81,7 @@ kebabCase("aBcdEf") // a-bcd-ef
  * @param {number} type 1-所有空格  2-前后空格  3-前空格 4-后空格
  * @returns {string}
  */
-export const trim: Trim = (str, type) => {
+const trim = (str, type) => {
   type = type || 1;
   switch (type) {
     case 1:
@@ -118,7 +117,6 @@ trim(str,4) // " abc de f"
 ```js
 /**
  * @description 过滤html代码
- * @export
  * @param {string} str 字符串
  * @returns {string}
  */

@@ -13,7 +13,7 @@
  * @param {string} pre - 首位格式化字符，默认为''
  * @returns {string}  返回格式化后的数字字符串
  */
-export const formatMoney = (num, char, pre = '') => {
+const formatMoney = (num, char, pre = '') => {
   if (typeof num !== 'number' || char === undefined || char === null
   ) {
     return numToString(num)

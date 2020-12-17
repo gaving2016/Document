@@ -212,7 +212,7 @@ uuid() // "74309bd0-3171-eb2f-b7e6-2c1ea543b80f"
  * @param hex 传入16进制颜色
  * @returns {string}
  */
-export const hexToRGB = (hex) => {
+const hexToRGB = (hex) => {
   let alpha = false,
     h = hex.slice(hex.startsWith('#') ? 1 : 0);
   if (h.length === 3) h = [...h].map(x => x + x).join('');
@@ -254,7 +254,7 @@ RGB转16进制。
  * @param {number} b 传入rgb颜色
  * @returns {string}
  */
-export const rgbToHex: RGBToHex = (r, g, b) => {
+const rgbToHex = (r, g, b) => {
   return '#' + ((r << 16) + (g << 8) + b).toString(16).padStart(6, '0');
 };
 ```
