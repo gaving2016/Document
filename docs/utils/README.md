@@ -62,6 +62,9 @@ All files           |   93.54 |       80 |   86.75 |   93.28 |
 
 ## 更新记录
 
+* 2020-12-16 **1.0.20**：  
+  - 优化代码
+
 * 2020-12-16 **1.0.19**：  
   - 增加 `isWeekend`、`isWeekday`、`arrayMax`、`arrayMin`、`arrayChunk`、`flatten`、`deepFlatten`、`union`、`intersection`、`difference`
 

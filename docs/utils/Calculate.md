@@ -4,30 +4,6 @@
 浮点计算存在精度误差，如果有大数计算并且对精度要求高，请使用第三方库：[bignumber.js][1]，[decimal.js][2]，[big.js][3]，[math.js][4]等，这里仅支持简单的浮点计算。
 :::
 
-## numToString
-
-通用函数，数字转字符串，金额及后续浮点精度计算使用。
-
-源码：
-```js
-/**
- * @description 数字转字符串
- * @param {number} num 被获取的值
- * @returns {string} 字符串
- * 用.toExponential()将数字转化为科学记数法表示
- * 匹配正则表达式 /\d(?: \.(\d *))?e([+-]\d +) /
- * 获取科学记数法中小数点后的字符及幂指数（e 后面的值），这样可以确定数字是几位小数。
- * 再用toFixed() 转换成数值表示
-*/
-function numToString(num) {
-  if (typeof num !== 'number') {
-    throw new Error('参数类型错误');
-  };
-  let m: any = num.toExponential().match(/\d(?:\.(\d*))?e([+-]\d+)/);
-  return num.toFixed(Math.max(0, (m[1] || '').length - m[2]));
-}
-```
-
 ## addExact
 
 两个数相加。
