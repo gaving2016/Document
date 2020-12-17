@@ -86,3 +86,68 @@ const isWeekday  = (date = new Date()) => {
 isWeekday(new Date(2020,1,14)) // true
 isWeekday(new Date(2020,11,19)) // false
 ```
+
+## dayName
+
+日期转名称。
+
+### 源码：
+```js
+/**
+ * @description 日期转名称
+ * @param {date} date 日期
+ * @param {string} locale 地区：zh-CN，de-DE，ko-KR，en-US
+ * @return {string} 返回日期名称
+ */
+const dayName = (date = new Date(), locale = 'zh-CN') => {
+  return date.toLocaleDateString(locale, { weekday: 'long' });
+};
+```
+
+### 使用：
+```js
+dayName(new Date(2020,11,14)) // "星期一"
+dayName(new Date(2020,11,19),'en-US') // "Saturday"
+```
+
+## getTimestamp
+
+日期转时间戳。
+
+### 源码：
+```js
+/**
+ * @description 日期转时间戳
+ * @param {date} date 日期
+ * @return {number} 返回时间戳
+ */
+const getTimestamp = (date = new Date()) => {
+  return Math.floor(date.getTime() / 1000);
+};
+```
+
+### 使用：
+```js
+getTimestamp(new Date(2020,11,19)) // 1608307200
+```
+
+## fromTimestamp
+
+时间戳转日期。
+
+### 源码：
+```js
+/**
+ * @description 时间戳转日期
+ * @param {number} timestamp 时间戳
+ * @return {date} 返回日期
+ */
+const fromTimestamp = (timestamp) => {
+  return new Date(timestamp * 1000);
+};
+```
+
+### 使用：
+```js
+fromTimestamp(1608307200) // Date Sat Dec 19 2020 00:00:00 GMT+0800
+```

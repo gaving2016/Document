@@ -113,7 +113,8 @@ const divExact = (arg1, arg2) => {
   const r2 = numToString(arg2).split('.')[1] ? numToString(arg2).split('.')[1].length : 0;
   const t1 = Number(numToString(arg1).replace(".", ""));
   const t2 = Number(numToString(arg2).replace(".", ""));
-  return (t1 / t2) * Math.pow(10, r2 - r1);
+  // Math.pow在负值的情况下，会产生精度问题，例如 Math.pow(10 ，-4)
+  return (t1 / t2) * (1 / Math.pow(10, Math.abs(r2 - r1)));
 };
 ```
 
