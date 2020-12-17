@@ -177,6 +177,12 @@ module.exports = {
         const moment = require('moment')
         return moment(timestamp).utcOffset(8).format('YYYY-MM-DD HH:mm:ss');
       }
+    },
+    'copy-code':{
+      copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+      copyMessage: '复制成功！', // default is 'Copy successfully and then paste it for use.'
+      duration: 800, // prompt message display time.
+      showInMobile: false // whether to display on the mobile side, default: false.
     }
   }
 }
