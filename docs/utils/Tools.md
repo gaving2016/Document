@@ -28,7 +28,7 @@ const obj = { a: 1, b: "", c: { d: "asdf" } };
 const newObj = clone(obj); // { a: 1, b: "", c: { d: "asdf" } }
 ```
 
-## cloneDeep
+## deepClone
 
 深拷贝。
 
