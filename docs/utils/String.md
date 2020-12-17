@@ -109,18 +109,18 @@ trim(str,3) // "abc de f "
 trim(str,4) // " abc de f"
 ```
 
-## filterTag
+## replaceHTMLTags
 
-过滤html代码。
+转换html代码。
 
 ### 源码：
 ```js
 /**
- * @description 过滤html代码
+ * @description 转换html代码
  * @param {string} str 字符串
  * @returns {string}
  */
-const filterTag = (str) => {
+const replaceHTMLTags = (str) => {
   str = str.replace(/&/gi, '&amp;');
   str = str.replace(/</gi, '&lt;');
   str = str.replace(/>/gi, '&gt;');
@@ -131,9 +131,29 @@ const filterTag = (str) => {
 
 ### 使用：
 ```js
-let str = "<span class='aaa'>hello</span>"
+replaceHTMLTags("<span class='aaa'>hello</span>") // "&lt;span&nbsp;class='aaa'&gt;hello&lt;/span&gt;"
+```
 
-filterTag(str) // "&lt;span&nbsp;class='aaa'&gt;hello&lt;/span&gt;"
+## stripHTMLTags
+
+过滤html标签。
+
+### 源码：
+```js
+/**
+ * @description 过滤html标签
+ * @export
+ * @param {string} str 字符串
+ * @returns {string}
+ */
+const stripHTMLTags = (str) => {
+  return str.replace(/<[^>]*>/g, '');
+};
+```
+
+### 使用：
+```js
+stripHTMLTags("<p><em>wang</em> <strong>daodao</strong></p>") // "wang daodao"
 ```
 
 ## subGbString
