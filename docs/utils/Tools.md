@@ -12,15 +12,12 @@
  * @returns obj
  */
 const clone = (obj) => {
-  if (isObj(obj)) {
-    const newObj = obj instanceof Array ? [] : {};
-    for (const key in obj) {
-      newObj[key] = obj[key];
-    }
-    return newObj;
-  } else {
-    return obj;
+  if (obj === null) return null;
+  const newObj = obj instanceof Array ? [] : {};
+  for (const key in obj) {
+    newObj[key] = obj[key];
   }
+  return newObj;
 };
 ```
 
@@ -42,20 +39,19 @@ const newObj = clone(obj); // { a: 1, b: "", c: { d: "asdf" } }
  * @param obj 需拷贝到对象
  * @returns obj
  */
-const cloneDeep = (obj, map = new WeakMap()) => {
-  if (isObj(obj)) {
-    const newObj = obj instanceof Array ? [] : {};
-    if (map.get(obj)) {
-      return obj;
-    }
-    map.set(obj, true);
-    for (const key in obj) {
-      newObj[key] = cloneDeep(obj[key], map);
-    }
-    return newObj;
-  } else {
-    return obj;
+const deepClone = (obj) => {
+  if (obj === null) return null;
+  let clone = Object.assign({}, obj);
+  Object.keys(clone).forEach(
+    key =>
+    (clone[key] =
+      typeof obj[key] === 'object' ? deepClone(obj[key]) : obj[key])
+  );
+  if (Array.isArray(obj)) {
+    clone.length = obj.length;
+    return Array.from(clone);
   }
+  return clone;
 };
 ```
 
@@ -63,7 +59,7 @@ const cloneDeep = (obj, map = new WeakMap()) => {
 ```js
 const obj = { a: 1, b: "", c: { d: "asdf" } };
 
-const newObj = cloneDeep(obj); // { a: 1, b: "", c: { d: "asdf" } }
+const newObj = deepClone(obj); // { a: 1, b: "", c: { d: "asdf" } }
 ```
 
 ## debounce
