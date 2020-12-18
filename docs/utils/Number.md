@@ -56,3 +56,47 @@ toFixed(123.234, 2, "floor") // 123.23
 toFixed(123.234, 2, "round") // 123.23
 toFixed(123.235, 2, "round") // 123.24
 ```
+
+## randomIntegerInRange
+
+返回指定范围内的随机整数。
+
+### 源码：
+```js
+/**
+ * @description 返回指定范围内的随机整数
+ * @param {number} min
+ * @param {number} max
+ * @returns {number}  返回整数
+ */
+const randomIntegerInRange = (min, max) => {
+  return Math.floor(Math.random() * (Math.abs(max - min) + 1)) + min;
+};
+```
+
+### 使用：
+```js
+randomIntegerInRange(1, 100) // 9
+```
+
+## randomNumberInRange
+
+返回指定范围内的随机数。
+
+### 源码：
+```js
+/**
+ * @description 返回指定范围内的随机数
+ * @param {number} min
+ * @param {number} max
+ * @returns {number}  返回随机数
+ */
+const randomNumberInRange = (min, max) => {
+  return Math.random() * Math.abs(max - min) + min;
+};
+```
+
+### 使用：
+```js
+randomNumberInRange(1, 100) // 9.11
+```

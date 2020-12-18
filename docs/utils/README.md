@@ -40,26 +40,32 @@ cafeUtils.uuid()
 
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s    
 --------------------|---------|----------|---------|---------|----------------------
-All files           |   94.71 |    83.47 |   87.36 |   93.97 |                      
+All files           |   94.88 |    83.33 |   88.17 |   94.12 |                      
  depend             |     100 |      100 |     100 |     100 |                      
   numToString.ts    |     100 |      100 |     100 |     100 |                      
- modules            |   94.68 |    83.33 |   87.28 |   93.93 |                      
+ modules            |   94.86 |     83.2 |   88.11 |   94.08 |                      
   array.ts          |     100 |      100 |     100 |     100 |                      
   cookies.ts        |     100 |       80 |     100 |     100 | 46-57
   date.ts           |     100 |      100 |     100 |     100 | 
   dom.ts            |      40 |        0 |       0 |   28.57 | 15-17,27,37-39,50-53
   event.ts          |   30.77 |     7.69 |   22.22 |      28 | 16-27,42-49,64-71   
   floatCalculate.ts |     100 |      100 |     100 |     100 | 
-  index.ts          |     100 |      100 |   85.33 |     100 | 
+  index.ts          |     100 |      100 |   86.25 |     100 | 
   money.ts          |   98.51 |    94.59 |     100 |   98.36 | 115
   number.ts         |     100 |      100 |     100 |     100 | 
   storage.ts        |     100 |      100 |     100 |     100 | 
-  string.ts         |     100 |      100 |     100 |     100 | 
+  string.ts         |     100 |    94.29 |     100 |     100 | 71-90
   tools.ts          |     100 |     97.5 |     100 |     100 | 90
   type.ts           |     100 |      100 |     100 |     100 | 
   validator.ts      |     100 |      100 |     100 |     100 | 
 
 ## 更新记录
+
+* 2020-12-18 **1.0.24**：  
+  - 优化 `camelCase` 为  `toCamelCase`；
+  - 优化 `kebabCase` 为  `fromCamelCase`；
+  - 优化 `replaceHTMLTags` 为 `escapeHTML`；
+  - 新增 `unescapeHTML`、`randomIntegerInRange`、`randomNumberInRange`、`initArrayFillValues`、`sample`；
 
 * 2020-12-17 **1.0.23**：  
   - 新增 `stripHTMLTags`；

@@ -25,48 +25,53 @@ formatStr("999999999", 3, "-") // 999-999-999
 formatStr("abcdefg", 4, "-") // abcd-efg
 ```
 
-## camelCase
+## toCamelCase
 
-短横线转驼峰。
+字符串转换为驼峰。
 
 ### 源码：
 ```js
 /**
- * @description 短横线转驼峰
+ * @description 字符串转换为驼峰
  * @param {string} str 字符串
  * @returns {string}
  */
-const camelCase = (str) => {
-  return str.replace(/\-(\w)/g, function (all, letter) {
-    return letter.toUpperCase();
-  });
+const toCamelCase = (str) => {
+  return str.replace(/^([A-Z])|[\s-_]+(\w)/g, (match, p1, p2, offset) =>  p2 ? p2.toUpperCase() : p1.toLowerCase());
 };
 ```
 
 ### 使用：
 ```js
-camelCase("a-bcd-ef") // aBcdEf
+toCamelCase("some_database_field_name") // "someDatabaseFieldName"
+toCamelCase("Some label that needs to be camelized") // "someLabelThatNeedsToBeCamelized"
+toCamelCase("some-javascript-property") // "someJavascriptProperty"
+toCamelCase("some-mixed_string with spaces_underscores-and-hyphens") // "someMixedStringWithSpacesUnderscoresAndHyphens"
 ```
 
-## kebabCase
+## fromCamelCase
 
-驼峰转短横线。
+驼峰转字符串。
 
 ### 源码：
 ```js
 /**
- * @description 驼峰转短横线
+ * @description 驼峰转字符串
  * @param {string} str 字符串
+ * @param {string} separator 切割符
  * @returns {string}
  */
-const kebabCase = (str) => {
-  return str.replace(/([A-Z])/g, "-$1").toLowerCase();
+const fromCamelCase = (str, separator = '_') => {
+  return str.replace(/([a-z\d])([A-Z])/g, '$1' + separator + '$2')
+  .replace(/([A-Z]+)([A-Z][a-z\d]+)/g, '$1' + separator + '$2').toLowerCase();
 };
 ```
 
 ### 使用：
 ```js
-kebabCase("aBcdEf") // a-bcd-ef
+fromCamelCase('someDatabaseFieldName', ' ') // "some database field name"
+fromCamelCase('someLabelThatNeedsToBeCamelized', '-') // "some-label-that-needs-to-be-camelized"
+fromCamelCase('someJavascriptProperty') // "some_javascript_property"
 ```
 
 ## trim
@@ -109,29 +114,66 @@ trim(str,3) // "abc de f "
 trim(str,4) // " abc de f"
 ```
 
-## replaceHTMLTags
+## escapeHTML
 
-转换html代码。
+转义HTML字符串。
 
 ### 源码：
 ```js
 /**
- * @description 转换html代码
+ * @description 转义HTML字符串
  * @param {string} str 字符串
  * @returns {string}
  */
-const replaceHTMLTags = (str) => {
-  str = str.replace(/&/gi, '&amp;');
-  str = str.replace(/</gi, '&lt;');
-  str = str.replace(/>/gi, '&gt;');
-  str = str.replace(' ', '&nbsp;');
-  return str;
+const escapeHTML = (str) => {
+  return str.replace(
+    /[&<>'"]/g,
+    tag =>
+      ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag)
+  );
 };
 ```
 
 ### 使用：
 ```js
-replaceHTMLTags("<span class='aaa'>hello</span>") // "&lt;span&nbsp;class='aaa'&gt;hello&lt;/span&gt;"
+escapeHTML('<a href="#">Me & you</a>') // "&lt;a href=&quot;#&quot;&gt;Me &amp; you&lt;/a&gt;"
+```
+
+## unescapeHTML
+
+反转义HTML。
+
+### 源码：
+```js
+/**
+ * @description 反转 escape
+ * @param {string} str 字符串
+ * @returns {string}
+ */
+const unescapeHTML = (str) => {
+  return str.replace(
+    /&amp;|&lt;|&gt;|&#39;|&quot;/g,
+    tag =>
+      ({
+        '&amp;': '&',
+        '&lt;': '<',
+        '&gt;': '>',
+        '&#39;': "'",
+        '&quot;': '"'
+      }[tag] || tag)
+  );
+};
+```
+
+### 使用：
+```js
+unescapeHTML('&lt;a href=&quot;#&quot;&gt;Me &amp; you&lt;/a&gt;') // '<a href="#">Me & you</a>'
 ```
 
 ## stripHTMLTags

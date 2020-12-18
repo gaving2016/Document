@@ -179,3 +179,47 @@ const difference = (a, b) => {
 ```js
 difference([1, 2, 3], [4, 1, 2]) // [3]
 ```
+
+## initArrayFillValues
+
+初始化并填充具有指定值的数组。
+
+### 源码：
+```js
+/**
+ * @description 初始化并填充具有指定值的数组
+ * @param {number} len
+ * @param {any} val
+ * @returns {array}  返回数组
+ */
+const initArrayFillValues = (len, val = 0) => {
+  return Array(len).fill(val);
+};
+```
+
+### 使用：
+```js
+initArrayFillValues(5, 2) // [2,2,2,2,2]
+initArrayFillValues(5) // [0,0,0,0,0]
+```
+
+## sample
+
+返回数组中的随机元素。
+
+### 源码：
+```js
+/**
+ * @description 返回数组中的随机元素
+ * @param {any} arr
+ * @returns {any}  返回数组
+ */
+const sample = (arr) => {
+  return arr[Math.floor(Math.random() * arr.length)];
+};
+```
+
+### 使用：
+```js
+sample([3, 7, 9, 11]) // 9
+```
