@@ -168,6 +168,8 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: {
+    'pangu':{},
+    'reading-progress':{},
     '@vuepress/back-to-top':{},
     '@vuepress/medium-zoom': {
       selector: '.page img'
