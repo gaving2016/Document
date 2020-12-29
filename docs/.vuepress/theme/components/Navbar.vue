@@ -35,7 +35,7 @@
         <label>
           &nbsp;&nbsp;
           <input type="checkbox" hidden name="" v-model="model" id="">
-          {{model?"🌛暗色":"🌞亮色"}}
+          ⚫{{model?"亮色":"暗色"}}
         </label>
       </span>
     </div>
