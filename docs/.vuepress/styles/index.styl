@@ -31,7 +31,7 @@ html, body
   display: block;
 
 /* 深色模式 */
-#app.dark {
+html.dark {
   .navbar,.sidebar,.page,.home, img {
     transition-property: all;
     transition-duration: 0.3s;
@@ -44,5 +44,8 @@ html, body
   }
   img {
     opacity: .75;    
+  }
+  body{
+    background-color: #000
   }
 }

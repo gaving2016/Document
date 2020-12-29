@@ -80,10 +80,10 @@ export default {
     model:{
       handler(newName) {
         if(newName){
-          this.cafeUtils.addClass(document.getElementById('app'),'dark')
+          this.cafeUtils.addClass(document.getElementsByTagName('html')[0],'dark')
           this.cafeUtils.setCookie("model", true, 365);
         } else {
-          this.cafeUtils.removeClass(document.getElementById('app'),'dark')
+          this.cafeUtils.removeClass(document.getElementsByTagName('html')[0],'dark')
           this.cafeUtils.delCookie("model");
         }
       }
