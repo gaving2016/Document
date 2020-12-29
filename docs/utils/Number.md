@@ -4,6 +4,10 @@
 
 浮点数保留格式。
 
+::: warning
+请注意返回值为字符串类型！
+:::
+
 ### 源码：
 ```js
 /**
@@ -50,11 +54,11 @@ const toFixed = (num, len, type = '') => {
 
 ### 使用：
 ```js
-toFixed(123.23, 3) // 123.230
-toFixed(123.234, 2, "ceil") // 123.24
-toFixed(123.234, 2, "floor") // 123.23
-toFixed(123.234, 2, "round") // 123.23
-toFixed(123.235, 2, "round") // 123.24
+toFixed(123.23, 3) // "123.230"
+toFixed(123.234, 2, "ceil") // "123.24"
+toFixed(123.234, 2, "floor") // "123.23"
+toFixed(123.234, 2, "round") // "123.23"
+toFixed(123.235, 2, "round") // "123.24"
 ```
 
 ## randomIntegerInRange
