@@ -31,13 +31,7 @@
       />
       <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
       <NavLinks class="can-hide" />
-      <span>
-        <label>
-          &nbsp;&nbsp;
-          <input type="checkbox" hidden name="" v-model="model" id="">
-          ⚫{{model?"亮色":"暗色"}}
-        </label>
-      </span>
+      <label :title="'切换' + (model?'亮色':'暗色')" class="model"><input type="checkbox" hidden name="model" v-model="model" id="">⚫</label>
     </div>
   </header>
 </template>
@@ -121,7 +115,9 @@ function css (el, property) {
 <style lang="stylus">
 $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
-
+.model
+  margin-left 20px
+  cursor pointer
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
