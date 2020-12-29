@@ -104,7 +104,6 @@ export default {
     handleLinksWrapWidth()
     window.addEventListener('resize', handleLinksWrapWidth, false)
     import('cafe-utils').then(module => {
-      console.log(module)
       this.cafeUtils = module
       this.model = this.cafeUtils.getCookie("model")
     })
