@@ -31,12 +31,16 @@ html, body
   display: block;
 
 /* 深色模式 */
-@media (prefers-color-scheme: dark) {
+#app.dark {
   .navbar,.sidebar,.page,.home, img {
+    transition-property: all;
+    transition-duration: 0.3s;
     filter: invert(1) hue-rotate(.5turn);
   }
   #app{
     background-color: #000
+    transition-property: all;
+    transition-duration: 0.3s;
   }
   img {
     opacity: .75;    

@@ -10,18 +10,18 @@
   "repository": "/Const-Team",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "docs:pdf": "npm run build && cd docs && vuepress export ."
+    "build": "vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.5.2",
     "@vuepress/plugin-medium-zoom": "^1.5.2",
     "moment": "^2.27.0",
-    "vuepress": "^1.5.2",
+    "vuepress": "^1.5.4",
     "vuepress-plugin-copy-code": "0.0.1"
   },
   "dependencies": {
+    "cafe-utils": "^1.0.24",
     "vuepress-plugin-pangu": "^1.0.1",
     "vuepress-plugin-reading-progress": "^1.0.10"
   }
