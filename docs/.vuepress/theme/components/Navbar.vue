@@ -35,7 +35,7 @@
         <label>
           &nbsp;&nbsp;
           <input type="checkbox" hidden name="" v-model="model" id="">
-          {{model?"暗色模式":"亮色模式"}}
+          {{model?"🌛暗色":"🌞亮色"}}
         </label>
       </span>
     </div>
