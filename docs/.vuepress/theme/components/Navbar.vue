@@ -43,7 +43,6 @@
 </template>
 
 <script>
-import * as cafeUtils from 'cafe-utils';
 import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from '@SearchBox'
 import SidebarButton from '@theme/components/SidebarButton.vue'
@@ -61,8 +60,9 @@ export default {
 
   data () {
     return {
+      cafeUtils: null,
       linksWrapMaxWidth: null,
-      model: false || cafeUtils.getCookie("model")
+      model: false
     }
   },
 
@@ -80,14 +80,13 @@ export default {
     model:{
       handler(newName) {
         if(newName){
-          cafeUtils.addClass(document.getElementById('app'),'dark')
-          cafeUtils.setCookie("model", true, 365);
+          this.cafeUtils.addClass(document.getElementById('app'),'dark')
+          this.cafeUtils.setCookie("model", true, 365);
         } else {
-          cafeUtils.removeClass(document.getElementById('app'),'dark')
-          cafeUtils.delCookie("model");
+          this.cafeUtils.removeClass(document.getElementById('app'),'dark')
+          this.cafeUtils.delCookie("model");
         }
-      },
-      immediate: true,
+      }
     }
   },
 
@@ -104,6 +103,11 @@ export default {
     }
     handleLinksWrapWidth()
     window.addEventListener('resize', handleLinksWrapWidth, false)
+    import('cafe-utils').then(module => {
+      console.log(module)
+      this.cafeUtils = module
+      this.model = this.cafeUtils.getCookie("model")
+    })
   }
 }
 
