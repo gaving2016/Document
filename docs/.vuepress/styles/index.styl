@@ -12,15 +12,31 @@ div[class*="language-html"] pre .code-copy
   right:45px
 
 #app
-  min-height: 100%
+  height: 100%
 
 html, body 
-  min-height: 100%
+  height: 100%
+
+.page,.home
+  background-color: #fff
+
+.theme-container .home
+  padding: 3.6rem 2rem 0;
+  max-width: 100%
+
+.features
+  padding: 3.6rem 2rem 0;
+  max-width: 960px;
+  margin: 0px auto;
+  display: block;
 
 /* 深色模式 */
 @media (prefers-color-scheme: dark) {
-  body, img {
+  .navbar,.sidebar,.page,.home, img {
     filter: invert(1) hue-rotate(.5turn);
+  }
+  #app{
+    background-color: #000
   }
   img {
     opacity: .75;    
