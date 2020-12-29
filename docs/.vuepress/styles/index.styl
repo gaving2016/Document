@@ -30,6 +30,14 @@ html, body
   margin: 0px auto;
   display: block;
 
+.navbar,.sidebar,.page,.home, img 
+  transition-property: all;
+  transition-duration: 0.3s;
+body
+  transition-property: all;
+  transition-duration: 0.3s;
+
+
 /* 深色模式 */
 html.dark {
   .navbar,.sidebar,.page,.home, img {
@@ -37,15 +45,12 @@ html.dark {
     transition-duration: 0.3s;
     filter: invert(1) hue-rotate(.5turn);
   }
-  #app{
-    background-color: #000
-    transition-property: all;
-    transition-duration: 0.3s;
-  }
   img {
     opacity: .75;    
   }
   body{
+    transition-property: all;
+    transition-duration: 0.3s;
     background-color: #000
   }
 }
