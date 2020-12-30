@@ -44,10 +44,10 @@ var HTML_ENTITY = {};
 
 ```javascript
 var TargetState = {
-    READING: 1,
-    READED: 2,
-    APPLIED: 3,
-    READY: 4
+  READING: 1,
+  READED: 2,
+  APPLIED: 3,
+  READY: 4
 };
 ```
 
@@ -235,7 +235,7 @@ var util = {};
  * @class
  */
 function Developer() {
-    // constructor body
+  // constructor body
 }
 ```
 
@@ -251,8 +251,8 @@ function Developer() {
  * @extends Developer
  */
 function Fronteer() {
-    Developer.call(this);
-    // constructor body
+  Developer.call(this);
+  // constructor body
 }
 util.inherits(Fronteer, Developer);
 ```
@@ -274,17 +274,17 @@ util.inherits(Fronteer, Developer);
  * @extends Developer
  */
 function Fronteer() {
-    Developer.call(this);
-    // constructor body
+  Developer.call(this);
+  // constructor body
 }
 
 util.extend(
-    Fronteer.prototype,
-    /** @lends Fronteer.prototype */{
-        _getLevel: function () {
-            // TODO
-        }
+  Fronteer.prototype,
+  /** @lends Fronteer.prototype */{
+    _getLevel: function () {
+      // TODO
     }
+  }
 );
 ```
 
@@ -304,17 +304,17 @@ util.extend(
  * @extends Developer
  */
 var Fronteer = function () {
-    Developer.call(this);
+  Developer.call(this);
 
-    /**
-     * 属性描述
-     *
-     * @type {string}
-     * @private
-     */
-    this._level = 'T12';
+  /**
+   * 属性描述
+   *
+   * @type {string}
+   * @private
+   */
+  this._level = 'T12';
 
-    // constructor body
+  // constructor body
 };
 util.inherits(Fronteer, Developer);
 
@@ -351,12 +351,12 @@ Fronteer.prototype._getLevel = function () {
  * @return {Object} 返回值描述
  */
 function foo(p1, p2, p3) {
-    var p3 = p3 || 10;
-    return {
-        p1: p1,
-        p2: p2,
-        p3: p3
-    };
+  var p3 = p3 || 10;
+  return {
+    p1: p1,
+    p2: p2,
+    p3: p3
+  };
 }
 ```
 
@@ -373,7 +373,7 @@ function foo(p1, p2, p3) {
  * @param {string=} option.method option项描述，可选参数
  */
 function foo(option) {
-    // TODO
+  // TODO
 }
 ```
 
@@ -417,21 +417,21 @@ onchange: function (e) {
  * @private
  */
 Select.prototype.clickHandler = function () {
-    /**
-     * 值变更时触发
-     *
-     * @event Select#change
-     * @param {Object} e e描述
-     * @param {string} e.before before描述
-     * @param {string} e.after after描述
-     */
-    this.fire(
-        'change',
-        {
-            before: 'foo',
-            after: 'bar'
-        }
-    );
+  /**
+   * 值变更时触发
+   *
+   * @event Select#change
+   * @param {Object} e e描述
+   * @param {string} e.before before描述
+   * @param {string} e.after after描述
+   */
+  this.fire(
+    'change',
+    {
+      before: 'foo',
+      after: 'bar'
+    }
+  );
 };
 ```
 
@@ -475,14 +475,14 @@ var REQUEST_URL = 'myurl.do';
  * @type {Array.<namespaceA~Server>}
  */
 var servers = [
-    {
-        host: '1.2.3.4',
-        port: 8080
-    },
-    {
-        host: '1.2.3.5',
-        port: 8081
-    }
+  {
+    host: '1.2.3.4',
+    port: 8080
+  },
+  {
+    host: '1.2.3.5',
+    port: 8081
+  }
 ];
 ```
 
@@ -498,11 +498,11 @@ var servers = [
 
 ```javascript
 function foo(p1, p2) {
-    // 这里对具体内部逻辑进行说明
-    // 说明太长需要换行
-    for (...) {
-        ....
-    }
+  // 这里对具体内部逻辑进行说明
+  // 说明太长需要换行
+  for (...) {
+    ....
+  }
 }
 ```
 
@@ -579,38 +579,38 @@ var hangModules = [],
 ```javascript 
 // good
 function kv2List(source) {
-    var list = [];
+  var list = [];
 
-    for (var key in source) {
-        if (source.hasOwnProperty(key)) {
-            var item = {
-                k: key,
-                v: source[key]
-            };
-            list.push(item);
-        }
+  for (var key in source) {
+    if (source.hasOwnProperty(key)) {
+      var item = {
+        k: key,
+        v: source[key]
+      };
+      list.push(item);
     }
+  }
 
-    return list;
+  return list;
 }
 
 // bad
 function kv2List(source) {
-    var list = [];
-    var key;
-    var item;
+  var list = [];
+  var key;
+  var item;
 
-    for (key in source) {
-        if (source.hasOwnProperty(key)) {
-            item = {
-                k: key,
-                v: source[key]
-            };
-            list.push(item);
-        }
+  for (key in source) {
+    if (source.hasOwnProperty(key)) {
+      item = {
+        k: key,
+        v: source[key]
+      };
+      list.push(item);
     }
+  }
 
-    return list;
+  return list;
 }
 ```
 
@@ -634,12 +634,12 @@ function kv2List(source) {
 ```javascript
 // good
 if (age === 30) {
-    // ......
+  // ......
 }
 
 // bad
 if (age == 30) {
-    // ......
+  // ......
 }
 ```
 
@@ -653,12 +653,12 @@ if (age == 30) {
 
 // good
 if (!name) {
-    // ......
+  // ......
 }
 
 // bad
 if (name === '') {
-    // ......
+  // ......
 }
 ```
 
@@ -667,12 +667,12 @@ if (name === '') {
 
 // good
 if (name) {
-    // ......
+  // ......
 }
 
 // bad
 if (name !== '') {
-    // ......
+  // ......
 }
 ```
 
@@ -681,12 +681,12 @@ if (name !== '') {
 
 // good
 if (collection.length) {
-    // ......
+  // ......
 }
 
 // bad
 if (collection.length > 0) {
-    // ......
+  // ......
 }
 ```
 
@@ -695,12 +695,12 @@ if (collection.length > 0) {
 
 // good
 if (!notTrue) {
-    // ......
+  // ......
 }
 
 // bad
 if (notTrue === false) {
-    // ......
+  // ......
 }
 ```
 
@@ -736,23 +736,23 @@ if (noValue === null || typeof noValue === 'undefined') {
 ```javascript
 // good
 switch (typeof variable) {
-    case 'object':
-        // ......
-        break;
-    case 'number':
-    case 'boolean':
-    case 'string':
-        // ......
-        break;
+  case 'object':
+    // ......
+    break;
+  case 'number':
+  case 'boolean':
+  case 'string':
+    // ......
+    break;
 }
 
 // bad
 var type = typeof variable;
 if (type === 'object') {
-    // ......
+  // ......
 } 
 else if (type === 'number' || type === 'boolean' || type === 'string') {
-    // ......
+  // ......
 }
 ```
 
@@ -763,21 +763,21 @@ else if (type === 'number' || type === 'boolean' || type === 'string') {
 ```javascript
 // good
 function getName() {
-    if (name) {
-        return name;
-    }
+  if (name) {
+    return name;
+  }
 
-    return 'unnamed';
+  return 'unnamed';
 }
 
 // bad
 function getName() {
-    if (name) {
-        return name;
-    }
-    else {
-        return 'unnamed';
-    }
+  if (name) {
+    return name;
+  }
+  else {
+    return 'unnamed';
+  }
 }
 ```
 
@@ -804,15 +804,15 @@ function clicker() {
 }
 
 for (var i = 0, len = elements.length; i < len; i++) {
-    var element = elements[i];
-    addListener(element, 'click', clicker);
+  var element = elements[i];
+  addListener(element, 'click', clicker);
 }
 
 
 // bad
 for (var i = 0, len = elements.length; i < len; i++) {
-    var element = elements[i];
-    addListener(element, 'click', function () {});
+  var element = elements[i];
+  addListener(element, 'click', function () {});
 }
 ```
 
@@ -824,17 +824,17 @@ for (var i = 0, len = elements.length; i < len; i++) {
 // good
 var width = wrap.offsetWidth + 'px';
 for (var i = 0, len = elements.length; i < len; i++) {
-    var element = elements[i];
-    element.style.width = width;
-    // ......
+  var element = elements[i];
+  element.style.width = width;
+  // ......
 }
 
 
 // bad
 for (var i = 0, len = elements.length; i < len; i++) {
-    var element = elements[i];
-    element.style.width = wrap.offsetWidth + 'px';
-    // ......
+  var element = elements[i];
+  element.style.width = wrap.offsetWidth + 'px';
+  // ......
 }
 ```
 
@@ -850,8 +850,8 @@ for (var i = 0, len = elements.length; i < len; i++) {
 
 ```javascript
 for (var i = 0, len = elements.length; i < len; i++) {
-    var element = elements[i];
-    // ......
+  var element = elements[i];
+  // ......
 }
 ```
 
@@ -866,8 +866,8 @@ for (var i = 0, len = elements.length; i < len; i++) {
 ```javascript
 var len = elements.length;
 while (len--) {
-    var element = elements[len];
-    // ......
+  var element = elements[len];
+  // ......
 }
 ```
 
@@ -1024,19 +1024,19 @@ var html = '<div class="cls">拼接HTML可以省去双引号转义</div>';
 ```javascript
 // 使用数组拼接字符串
 var str = [
-    // 推荐换行开始并缩进开始第一个字符串, 对齐代码, 方便阅读.
-    '<ul>',
-        '<li>第一项</li>',
-        '<li>第二项</li>',
-    '</ul>'
+  // 推荐换行开始并缩进开始第一个字符串, 对齐代码, 方便阅读.
+  '<ul>',
+      '<li>第一项</li>',
+      '<li>第二项</li>',
+  '</ul>'
 ].join('');
 
 // 使用 + 拼接字符串
 var str2 = '' // 建议第一个为空字符串, 第二个换行开始并缩进开始, 对齐代码, 方便阅读
-    + '<ul>',
-    +    '<li>第一项</li>',
-    +    '<li>第二项</li>',
-    + '</ul>';
+  + '<ul>',
+  +    '<li>第一项</li>',
+  +    '<li>第二项</li>',
+  + '</ul>';
 ```
 
 ##### **【建议】** 复杂的数据到视图字符串的转换过程，选用一种模板引擎。
@@ -1079,8 +1079,8 @@ var obj = new Object();
 
 ```javascript
 var info = {
-    name: 'someone',
-    age: 28
+  name: 'someone',
+  age: 28
 };
 ```
 
@@ -1096,16 +1096,16 @@ var info = {
 ```javascript
 // good
 var info = {
-    'name': 'someone',
-    'age': 28,
-    'more-info': '...'
+  'name': 'someone',
+  'age': 28,
+  'more-info': '...'
 };
 
 // bad
 var info = {
-    name: 'someone',
-    age: 28,
-    'more-info': '...'
+  name: 'someone',
+  age: 28,
+  'more-info': '...'
 };
 ```
 
@@ -1142,9 +1142,9 @@ info['more-info'];
 ```javascript
 var newInfo = {};
 for (var key in info) {
-    if (info.hasOwnProperty(key)) {
-        newInfo[key] = info[key];
-    }
+  if (info.hasOwnProperty(key)) {
+    newInfo[key] = info[key];
+  }
 }
 ```
 
@@ -1180,12 +1180,12 @@ arr.other = 'other things'; // 这里仅作演示, 实际中应使用Object类�
 
 // 正确的遍历方式
 for (var i = 0, len = arr.length; i < len; i++) {
-    console.log(i);
+  console.log(i);
 }
 
 // 错误的遍历方式
 for (i in arr) {
-    console.log(i);
+  console.log(i);
 }
 ```
 
@@ -1223,48 +1223,48 @@ for (i in arr) {
 
 ```javascript
 function syncViewStateOnUserAction() {
-    if (x.checked) {
-        y.checked = true;
-        z.value = '';
-    }
-    else {
-        y.checked = false;
-    }
+  if (x.checked) {
+    y.checked = true;
+    z.value = '';
+  }
+  else {
+    y.checked = false;
+  }
 
-    if (!a.value) {
-        warning.innerText = 'Please enter it';
-        submitButton.disabled = true;
-    }
-    else {
-        warning.innerText = '';
-        submitButton.disabled = false;
-    }
+  if (!a.value) {
+    warning.innerText = 'Please enter it';
+    submitButton.disabled = true;
+  }
+  else {
+    warning.innerText = '';
+    submitButton.disabled = false;
+  }
 }
 
 // 直接阅读该函数会难以明确其主线逻辑，因此下方是一种更合理的表达方式：
 
 function syncViewStateOnUserAction() {
-    syncXStateToView();
-    checkAAvailability();
+  syncXStateToView();
+  checkAAvailability();
 }
 
 function syncXStateToView() {
-    if (x.checked) {
-        y.checked = true;
-        z.value = '';
-    }
-    else {
-        y.checked = false;
-    }
+  if (x.checked) {
+    y.checked = true;
+    z.value = '';
+  }
+  else {
+    y.checked = false;
+  }
 }
 
 function checkAAvailability() {
-    if (!a.value) {
-        displayWarningForAMissing();
-    }
-    else {
-        clearWarnignForA();
-    }
+  if (!a.value) {
+    displayWarningForAMissing();
+  }
+  else {
+    clearWarnignForA();
+  }
 }
 ```
 
@@ -1295,10 +1295,10 @@ function checkAAvailability() {
  * @param {boolean} removeEventListeners 是否同时将所有注册在元素上的事件移除
  */
 function removeElement(element, removeEventListeners) {
-    element.parent.removeChild(element);
-    if (removeEventListeners) {
-        element.clearEventListeners();
-    }
+  element.parent.removeChild(element);
+  if (removeEventListeners) {
+    element.clearEventListeners();
+  }
 }
 ```
 
@@ -1313,10 +1313,10 @@ function removeElement(element, removeEventListeners) {
  * @param {boolean} options.removeEventListeners 是否同时将所有注册在元素上的事件移除
  */
 function removeElement(element, options) {
-    element.parent.removeChild(element);
-    if (options.removeEventListeners) {
-        element.clearEventListeners();
-    }
+  element.parent.removeChild(element);
+  if (options.removeEventListeners) {
+    element.clearEventListeners();
+  }
 }
 ```
 
@@ -1374,14 +1374,14 @@ Chakra、V8 和 SpiderMonkey 将受以上因素的影响，表现出不尽相同
 ```javascript
 var tasks = [];
 for (var i = 0; i < 5; i++) {
-    tasks[tasks.length] = function () {
-        console.log('Current cursor is at ' + i);
-    };
+  tasks[tasks.length] = function () {
+    console.log('Current cursor is at ' + i);
+  };
 }
 
 var len = tasks.length;
 while (len--) {
-    tasks[len]();
+  tasks[len]();
 }
 ```
 
@@ -1392,17 +1392,17 @@ while (len--) {
 ```javascript
 var tasks = [];
 for (var i = 0; i < 5; i++) {
-    // 注意有一层额外的闭包
-    tasks[tasks.length] = (function (i) {
-        return function () {
-            console.log('Current cursor is at ' + i);
-        };
-    })(i);
+  // 注意有一层额外的闭包
+  tasks[tasks.length] = (function (i) {
+    return function () {
+      console.log('Current cursor is at ' + i);
+    };
+  })(i);
 }
 
 var len = tasks.length;
 while (len--) {
-    tasks[len]();
+  tasks[len]();
 }
 ```
 
@@ -1458,10 +1458,10 @@ MyClass.prototype.hooks.after = EMPTY_FUNCTION;
  * @param {Function} superClass 父类函数
  */
 function inherits(subClass, superClass) {
-    var F = new Function();
-    F.prototype = superClass.prototype;
-    subClass.prototype = new F();
-    subClass.prototype.constructor = subClass;
+  var F = new Function();
+  F.prototype = superClass.prototype;
+  subClass.prototype = new F();
+  subClass.prototype.constructor = subClass;
 }
 ```
 
@@ -1471,21 +1471,21 @@ function inherits(subClass, superClass) {
 
 ```javascript
 function Animal(name) {
-    this.name = name;
+  this.name = name;
 }
 
 // 直接prototype等于对象时，需要修正constructor
 Animal.prototype = {
-    constructor: Animal,
+  constructor: Animal,
 
-    jump: function () {
-        alert('animal ' + this.name + ' jump');
-    }
+  jump: function () {
+    alert('animal ' + this.name + ' jump');
+  }
 };
 
 // 这种方式扩展prototype则无需理会constructor
 Animal.prototype.jump = function () {
-    alert('animal ' + this.name + ' jump');
+  alert('animal ' + this.name + ' jump');
 };
 ```
 
@@ -1498,12 +1498,12 @@ Animal.prototype.jump = function () {
 
 ```javascript
 function TextNode(value, engine) {
-    this.value = value;
-    this.engine = engine;
+  this.value = value;
+  this.engine = engine;
 }
 
 TextNode.prototype.clone = function () {
-    return this;
+  return this;
 };
 ```
 
@@ -1606,10 +1606,10 @@ var result = handler($('#x').val(), $('#y').val());
 
 ```javascript
 try {
-    delete o.x;
+  delete o.x;
 }
 catch (deleteError) {
-    o.x = null;
+  o.x = null;
 }
 ```
 
@@ -1631,16 +1631,16 @@ JavaScript 因其脚本语言的动态特性，当一个对象未被 seal 或 fr
 
 ```javascript
 function Tree(datasource) {
-    this.datasource = datasource;
+  this.datasource = datasource;
 }
 
 Tree.prototype.selectNode = function (id) {
-    // 从datasource中找出节点对象
-    var node = this.findNode(id);
-    if (node) {
-        node.selected = true;
-        this.flushView();
-    }
+  // 从datasource中找出节点对象
+  var node = this.findNode(id);
+  if (node) {
+    node.selected = true;
+    this.flushView();
+  }
 };
 ```
 
@@ -1648,17 +1648,17 @@ Tree.prototype.selectNode = function (id) {
 
 ```javascript
 function Tree(datasource) {
-    this.datasource = datasource;
-    this.selectedNodeIndex = {};
+  this.datasource = datasource;
+  this.selectedNodeIndex = {};
 }
 
 Tree.prototype.selectNode = function (id) {
-    // 从datasource中找出节点对象
-    var node = this.findNode(id);
-    if (node) {
-        this.selectedNodeIndex[id] = true;
-        this.flushView();
-    }
+  // 从datasource中找出节点对象
+  var node = this.findNode(id);
+  if (node) {
+    this.selectedNodeIndex[id] = true;
+    this.flushView();
+  }
 };
 ```
 

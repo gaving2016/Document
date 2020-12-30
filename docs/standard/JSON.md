@@ -77,8 +77,8 @@
 
 ```json
 {
-    "code": 200,
-    "data": "hello world!"
+  "code": 200,
+  "data": "hello world!"
 }
 ```
 
@@ -96,8 +96,8 @@
 
 ```json
 {
-    "status": 401,
-    "message": "无权限"
+  "status": 401,
+  "message": "无权限"
 }
 ```
 
@@ -110,8 +110,8 @@
 
 ```json
 {
-    "status": 200,
-    "data": "Lily"
+  "status": 200,
+  "data": "Lily"
 }
 ```
 
@@ -129,8 +129,8 @@
 
 ```json
 {
-    "status": 200,
-    "data": "2010-10-10"
+  "status": 200,
+  "data": "2010-10-10"
 }
 ```
 
@@ -146,10 +146,10 @@
 
 ```json
 {
-    "id": 250,
-    "name": "erik",
-    "sex": 1,
-    "age": 18
+  "id": 250,
+  "name": "erik",
+  "sex": 1,
+  "age": 18
 }
 ```
 
@@ -164,18 +164,18 @@
 
 ```json
 [
-    {
-        "id": 250,
-        "name": "erik",
-        "sex": 1,
-        "age": 18
-    },
-    {
-        "id": 251,
-        "name": "欧阳先伟",
-        "sex": 1,
-        "age": 28
-    }
+  {
+    "id": 250,
+    "name": "erik",
+    "sex": 1,
+    "age": 18
+  },
+  {
+    "id": 251,
+    "name": "欧阳先伟",
+    "sex": 1,
+    "age": 28
+  }
 ]
 ```
 
@@ -202,23 +202,23 @@
 
 ```json
 {
-    "page": 0,
-    "pageSize": 30,
-    "keyword": "",
-    "data": [
-        {
-            "id": 250,
-            "name": "erik",
-            "sex": 1,
-            "age": 18
-        },
-        {
-            "id": 251,
-            "name": "欧阳先伟",
-            "sex": 1,
-            "age": 28
-        }
-    ]
+  "page": 0,
+  "pageSize": 30,
+  "keyword": "",
+  "data": [
+    {
+      "id": 250,
+      "name": "erik",
+      "sex": 1,
+      "age": 18
+    },
+    {
+      "id": 251,
+      "name": "欧阳先伟",
+      "sex": 1,
+      "age": 28
+    }
+  ]
 }
 ```
 
@@ -236,8 +236,8 @@
 
 ```json
 {
-    "name": "BMW",
-    "value": 1
+  "name": "BMW",
+  "value": 1
 }
 ```
 
@@ -254,15 +254,15 @@
 
 ```json
 [
-    {
-        "name": "BMW",
-        "value": 1
-    },
-    {
-        "name": "Benz",
-        "value": 2,
-        "selected": true
-    }
+  {
+    "name": "BMW",
+    "value": 1
+  },
+  {
+    "name": "Benz",
+    "value": 2,
+    "selected": true
+  }
 ]
 ```
 
@@ -286,48 +286,48 @@
 
 ```json
 {
-    "id": 1,
-    "text": "中国",
-    "children": [
+  "id": 1,
+  "text": "中国",
+  "children": [
+    {
+      "id": 10,
+      "text": "北京",
+      "children": [
         {
-            "id": 10,
-            "text": "北京",
-            "children": [
-                {
-                    "id": 100,
-                    "text": "东城区"
-                },
-                {
-                    "id": 101,
-                    "text": "西城区"
-                },
-                {
-                    "id": 102,
-                    "text": "海淀区"
-                }
-                ......
-            ]
+          "id": 100,
+          "text": "东城区"
         },
         {
-            "id": 31,
-            "text": "海南",
-            "children": [
-                {
-                    "id": 600,
-                    "text": "海口"
-                },
-                {
-                    "id": 601,
-                    "text": "三亚"
-                },
-                {
-                    "id": 602,
-                    "text": "五指山"
-                }
-                ......
-            ]
+          "id": 101,
+          "text": "西城区"
+        },
+        {
+          "id": 102,
+          "text": "海淀区"
         }
         ......
-    ]
+      ]
+    },
+    {
+      "id": 31,
+      "text": "海南",
+      "children": [
+        {
+          "id": 600,
+          "text": "海口"
+        },
+        {
+          "id": 601,
+          "text": "三亚"
+        },
+        {
+          "id": 602,
+          "text": "五指山"
+        }
+        ......
+      ]
+    }
+    ......
+  ]
 }
 ```

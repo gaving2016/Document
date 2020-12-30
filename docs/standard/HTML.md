@@ -33,7 +33,7 @@ ul {
 <script>
 // 脚本代码的第一级缩进与所属的 script 标签对齐
 require(['app'], function (app) {
-    app.init();
+  app.init();
 });
 </script>
 ```
@@ -226,18 +226,18 @@ alert(document.getElementById('foo').tagName);
 **【强制】**不允许使用过时的旧标签，请使用新标签或者CSS代替：
 
 <ul>
-    <li><del><code>acronym</code></del> → <ins><code>abbr</code></ins></li>
-    <li><del><code>applet</code></del> → <ins><code>object</code></ins></li>
-    <li><del><code>b</code></del> → <ins><code>strong</code></ins></li>
-    <li><del><code>dir</code></del> → <ins><code>ul</code></ins></li>
-    <li><del><code>strike</code></del> → <ins><code>del</code></ins></li>
-    <li><del><code>basefont</code></del></li>
-    <li><del><code>big</code></del></li>
-    <li><del><code>center</code></del></li>
-    <li><del><code>font</code></del></li>
-    <li><del><code>isindex</code></del></li>
-    <li><del><code>tt</code></del></li>
-    <li><del><code>u</code></del></li>
+  <li><del><code>acronym</code></del> → <ins><code>abbr</code></ins></li>
+  <li><del><code>applet</code></del> → <ins><code>object</code></ins></li>
+  <li><del><code>b</code></del> → <ins><code>strong</code></ins></li>
+  <li><del><code>dir</code></del> → <ins><code>ul</code></ins></li>
+  <li><del><code>strike</code></del> → <ins><code>del</code></ins></li>
+  <li><del><code>basefont</code></del></li>
+  <li><del><code>big</code></del></li>
+  <li><del><code>center</code></del></li>
+  <li><del><code>font</code></del></li>
+  <li><del><code>isindex</code></del></li>
+  <li><del><code>tt</code></del></li>
+  <li><del><code>u</code></del></li>
 </ul>
 
 请参详：http://www.w3schools.com/tags/
@@ -259,7 +259,7 @@ alert(document.getElementById('foo').tagName);
 
 <!-- bad -->
 <span class="avatar">
-    <img src="image.png">
+  <img src="image.png">
 </span>
 ```
 
@@ -373,13 +373,13 @@ alert(document.getElementById('foo').tagName);
 
 ```html
 <html>
-    <head>
-        <meta charset="UTF-8">
-        ......
-    </head>
-    <body>
-        ......
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    ......
+  </head>
+  <body>
+    ......
+  </body>
 </html>
 ```
 
@@ -435,8 +435,8 @@ alert(document.getElementById('foo').tagName);
 
 ```html
 <body>
-    <!-- a lot of elements -->
-    <script src="init-behavior.js"></script>
+  <!-- a lot of elements -->
+  <script src="init-behavior.js"></script>
 </body>
 ```
 
@@ -478,8 +478,8 @@ alert(document.getElementById('foo').tagName);
 
 ```html
 <head>
-    <meta charset="UTF-8">
-    <title>页面标题</title>
+  <meta charset="UTF-8">
+  <title>页面标题</title>
 </head>
 ```
 
@@ -618,27 +618,27 @@ viewport meta tag 可以设置可视区域的宽度和初始缩放大小，避�
 <!-- good -->
 <style>
 .buttons .button-group {
-    float: right;
+  float: right;
 }
 </style>
 
 <div class="buttons">
-    <div class="button-group">
-        <button type="submit">提交</button>
-        <button type="button">取消</button>
-    </div>
+  <div class="button-group">
+    <button type="submit">提交</button>
+    <button type="button">取消</button>
+  </div>
 </div>
 
 <!-- bad -->
 <style>
 .buttons button {
-    float: right;
+  float: right;
 }
 </style>
 
 <div class="buttons">
-    <button type="button">取消</button>
-    <button type="submit">提交</button>
+  <button type="button">取消</button>
+  <button type="submit">提交</button>
 </div>
 ```
 
@@ -653,8 +653,8 @@ viewport meta tag 可以设置可视区域的宽度和初始缩放大小，避�
 
 ```html
 <form action="/login" method="post">
-    <p><input name="username" type="text" placeholder="用户名"></p>
-    <p><input name="password" type="password" placeholder="密码"></p>
+  <p><input name="username" type="text" placeholder="用户名"></p>
+  <p><input name="password" type="password" placeholder="密码"></p>
 </form>
 ```
 
@@ -703,19 +703,19 @@ viewport meta tag 可以设置可视区域的宽度和初始缩放大小，避�
 
 ```html
 <audio controls>
-    <source src="audio.mp3" type="audio/mpeg">
-    <source src="audio.ogg" type="audio/ogg">
-    <object width="100" height="50" data="audio.mp3">
-        <embed width="100" height="50" src="audio.swf">
-    </object>
+  <source src="audio.mp3" type="audio/mpeg">
+  <source src="audio.ogg" type="audio/ogg">
+  <object width="100" height="50" data="audio.mp3">
+    <embed width="100" height="50" src="audio.swf">
+  </object>
 </audio>
 
 <video width="100" height="50" controls>
-    <source src="video.mp4" type="video/mp4">
-    <source src="video.ogg" type="video/ogg">
-    <object width="100" height="50" data="video.mp4">
-        <embed width="100" height="50" src="video.swf">
-    </object>
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.ogg" type="video/ogg">
+  <object width="100" height="50" data="video.mp4">
+    <embed width="100" height="50" src="video.swf">
+  </object>
 </video>
 ```
 

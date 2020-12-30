@@ -46,15 +46,15 @@
 
 ```css
 .ui-card__hd {
-    margin: 0;
+  margin: 0;
 }
 
 .ui-card__bd {
-    margin: 0;
+  margin: 0;
 }
 
 .ui-card__ft {
-    margin: 0;
+  margin: 0;
 }
 ```
 
@@ -73,12 +73,12 @@
 ```css
 /* Not so great */
 .selector {
-    margin: 0;
+  margin: 0;
 }
 
 /* Better */
 .selector {
-  margin: 0;
+    margin: 0;
 }
 ```
 
@@ -104,24 +104,24 @@
 ```css
 /* Not so great */
 main>nav {
-    padding: 10px;
+  padding: 10px;
 }
 label+input {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 input:checked~button {
-    background-color: #69C;
+  background-color: #69C;
 }
 
 /* Better */
 main > nav {
-    padding: 10px;
+  padding: 10px;
 }
 label + input {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 input:checked ~ button {
-    background-color: #69C;
+  background-color: #69C;
 }
 ```
 
@@ -152,21 +152,21 @@ box-shadow: 0 0 2px rgba(0, 128, 0, .3);
 ```
 
 ### 2.3 选择器
-**【强制】** 当一个 rule 包含多个 selector 时，每个选择器声明必须独占一行；
+**【建议】** 当一个 rule 包含多个 selector 时，每个选择器声明必须独占一行；
 
 示例：
 
 ```css
 /* Not so great */
 .post, .page, .comment {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 /* Better */
 .post,
 .page,
 .comment {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 ```
 
@@ -181,8 +181,8 @@ box-shadow: 0 0 2px rgba(0, 128, 0, .3);
 
 /* Better */
 .selector {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 ```
 
@@ -193,12 +193,12 @@ box-shadow: 0 0 2px rgba(0, 128, 0, .3);
 ```css
 /* Not so great */
 .selector {
-    margin: 0
+  margin: 0
 }
 
 /* Better */
 .selector {
-    margin: 0;
+  margin: 0;
 }
 ```
 
@@ -220,13 +220,13 @@ box-shadow: 0 0 2px rgba(0, 128, 0, .3);
 /* Not so great */
 dialog#error,
 p.danger-message {
-    font-color: #c00;
+  font-color: #c00;
 }
 
 /* Better */
 #error,
 .danger-message {
-    font-color: #c00;
+  font-color: #c00;
 }
 ```
 
@@ -272,12 +272,12 @@ Positioning 处在第一位，因为他可以使一个元素脱离正常文本�
 ```css
 /* Not so great */
 article[character='juliet'] {
-    voice-family: "Vivien Leigh", victoria, female
+  voice-family: "Vivien Leigh", victoria, female
 }
 
 /* Better */
 article[character="juliet"] {
-    voice-family: "Vivien Leigh", victoria, female
+  voice-family: "Vivien Leigh", victoria, female
 }
 ```
 
@@ -296,19 +296,19 @@ article[character="juliet"] {
 ```css
 /* Better */
 .selector {
-    margin-bottom: 10px;
-    background-color: red;
-    background-image: url(image.jpg);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+  margin-bottom: 10px;
+  background-color: red;
+  background-image: url(image.jpg);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 /* Not so great */
 .selector {
-    margin: 0 0 10px;
-    background: red;
-    background: url(image.jpg);
-    border-radius: 3px 3px 0 0;
+  margin: 0 0 10px;
+  background: red;
+  background: url(image.jpg);
+  border-radius: 3px 3px 0 0;
 }
 ```
 
@@ -329,14 +329,14 @@ article[character="juliet"] {
 ```css
 /* Not so great */
 html[lang|=zh] q:before {
-    font-family: 'Microsoft YaHei', sans-serif;
-    content: '“';
+  font-family: 'Microsoft YaHei', sans-serif;
+  content: '“';
 }
 
 /* Better */
 html[lang|="zh"] q:after {
-    font-family: "Microsoft YaHei", sans-serif;
-    content: "“";
+  font-family: "Microsoft YaHei", sans-serif;
+  content: "“";
 }
 ```
 
@@ -349,12 +349,12 @@ html[lang|="zh"] q:after {
 ```css
 /* Not so great */
 .selector {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* Better */
 .selector {
-    opacity: .8;
+  opacity: .8;
 }
 ```
 
@@ -367,12 +367,12 @@ html[lang|="zh"] q:after {
 ```css
 /* Not so great */
 .selector {
-    margin: 0px 10px;
+  margin: 0px 10px;
 }
 
 /* Better */
 .selector {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 ```
 
@@ -385,12 +385,12 @@ html[lang|="zh"] q:after {
 ```css
 /* Not so great */
 .selector {
-    background: url("bg.png");
+  background: url("bg.png");
 }
 
 /* Better */
 .selector {
-    background: url(bg.png);
+  background: url(bg.png);
 }
 ```
 
@@ -403,16 +403,16 @@ html[lang|="zh"] q:after {
 ```css
 /* Not so great */
 .selector {
-    box-shadow: 0 0 2px rgba(0,128,0,.3);
-    border-color: rgb(0, 128, 0);
-    color: gray;
+  box-shadow: 0 0 2px rgba(0,128,0,.3);
+  border-color: rgb(0, 128, 0);
+  color: gray;
 }
 
 /* Better */
 .selector {
-    box-shadow: 0 0 2px rgba(0, 128, 0, .3);
-    border-color: #008000;
-    color: #999;
+  box-shadow: 0 0 2px rgba(0, 128, 0, .3);
+  border-color: #008000;
+  color: #999;
 }
 ```
 
@@ -423,12 +423,12 @@ html[lang|="zh"] q:after {
 ```css
 /* Not so great */
 .selector {
-    color: #0073AA;
+  color: #0073AA;
 }
 
 /* Better */
 .selector {
-    color: #0073aa;
+  color: #0073aa;
 }
 ```
 
@@ -443,12 +443,12 @@ html[lang|="zh"] q:after {
 ```css
 /* Not so great */
 .selector {
-    background-position: top; /* 50% 0% */
+  background-position: top; /* 50% 0% */
 }
 
 /* Better */
 .selector {
-    background-position: center top; /* 50% 0% */
+  background-position: center top; /* 50% 0% */
 }
 ```
 
@@ -490,20 +490,20 @@ html[lang|="zh"] q:after {
 ```css
 /* Not so great */
 body {
-    font-family: arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 
 h1 {
-    font-family: Arial, "Microsoft YaHei", sans-serif;
+  font-family: Arial, "Microsoft YaHei", sans-serif;
 }
 
 /* Better */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
-    font-family: Arial, "Microsoft YaHei", sans-serif;
+  font-family: Arial, "Microsoft YaHei", sans-serif;
 }
 ```
 
@@ -522,12 +522,12 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 ```css
 /* Not so great */
 .selector {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Better */
 .selector {
-    font-weight: 700;
+  font-weight: 700;
 }
 ```
 
@@ -552,12 +552,12 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 ```css
 /* Not so great */
 .selector {
-    transition: color .2s 0 ease-in;
+  transition: color .2s 0 ease-in;
 }
 
 /* Better */
 .selector {
-    transition: color .2s ease-in 0;
+  transition: color .2s ease-in 0;
 }
 ```
 
@@ -590,25 +590,25 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 /* footer styles */
 
 @media (...) {
-    /* header styles */
-    /* main styles */
-    /* footer styles */
+  /* header styles */
+  /* main styles */
+  /* footer styles */
 }
 
 /* Better */
 /* header styles */
 @media (...) {
-    /* header styles */
+  /* header styles */
 }
 
 /* main styles */
 @media (...) {
-    /* main styles */
+  /* main styles */
 }
 
 /* footer styles */
 @media (...) {
-    /* footer styles */
+  /* footer styles */
 }
 ```
 
@@ -625,16 +625,16 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 ```css
 /* Not so great */
 .selector {
-    transition: color .2s ease-in 0;
-    -webkit-transition: color .2s ease-in 0;
-    -moz-transition: color .2s ease-in 0;
+  transition: color .2s ease-in 0;
+  -webkit-transition: color .2s ease-in 0;
+  -moz-transition: color .2s ease-in 0;
 }
 
 /* Better */
 .selector {
-    -webkit-transition: color .2s ease-in 0;
-       -moz-transition: color .2s ease-in 0;
-            transition: color .2s ease-in 0;
+  -webkit-transition: color .2s ease-in 0;
+      -moz-transition: color .2s ease-in 0;
+          transition: color .2s ease-in 0;
 }
 ```
 
