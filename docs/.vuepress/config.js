@@ -120,7 +120,9 @@ module.exports = {
           title: '插件',
           collapsable: false,
           children: [
-            ''
+            '',
+            'RTMP-Player',
+            'Calendar',
           ]
         }
       ],
