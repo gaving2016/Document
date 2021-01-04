@@ -21,7 +21,7 @@
 
 ## 插件
 
-* [RTMP播放器](https://docs.const.team/plugin/RTMP-Player.html)
+* [RTMP 播放器](https://docs.const.team/plugin/RTMP-Player.html)
 * [Calendar 农历面板](https://docs.const.team/plugin/Calendar.html)
 
 ## 函数库
