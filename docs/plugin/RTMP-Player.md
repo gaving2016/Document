@@ -1,4 +1,4 @@
-# RTMP播放器
+# RTMP 播放器
 
 * 😊 基于 Vue + [`Video.js 7+`](https://github.com/videojs/video.js) 开发；
 * 😂 支持现代浏览器（由于 `Videojs` 高版本，只支持 **IE11** ！）；
