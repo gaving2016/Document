@@ -2,13 +2,27 @@
 
 * 😊 基于 Vue + [`Video.js 7+`](https://github.com/videojs/video.js) 开发；
 * 😂 支持现代浏览器（由于 `Videojs` 高版本，只支持 **IE11** ！）；
+* 😂 使用时，请确保浏览器已经安装[flash播放器](https://www.flash.cn/cdm/latest/flashplayer_install_cn.exe)；
 
-## 安装
-
-### npm
+## NPM安装
 
 ```bash
 npm i rtmp-player --save
+```
+
+## CDN引用
+
+目前可以通过 [unpkg.com/rtmp-player](https://unpkg.com/rtmp-player) 或者 [www.jsdelivr.com/package/npm/rtmp-player](https://www.jsdelivr.com/package/npm/rtmp-player) 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+
+```html
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/rtmp-player/dist/rtmp-player.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/rtmp-player/dist/rtmp-player.umd.min.js"></script>
+
+<!-- 或者 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rtmp-player/dist/rtmp-player.css">
+<script src="https://cdn.jsdelivr.net/npm/rtmp-player/dist/rtmp-player.umd.min.js"></script>
 ```
 
 ## 使用
@@ -23,6 +37,52 @@ import App from './App.vue'
 import 'rtmp-player/dist/rtmp-player.css'
 import rtmpPlayer from 'rtmp-player'
 Vue.use(rtmpPlayer)
+```
+
+```vue
+<template>
+  <div id="app">
+    <rtmp-player :width="900" :height="500" :autoplay="true" :controls="true" ref="myPlayer" :source="src"/>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {
+      src:"rtmp://58.200.131.2:1935/livetv/btv4"
+    };
+  }
+};
+</script>
+```
+
+### 局部使用
+
+```vue
+<template>
+  <div id="app">
+    <rtmp-player :width="900" :height="500" :autoplay="true" :controls="true" ref="myPlayer" :source="src"/>
+  </div>
+</template>
+
+<script>
+import 'rtmp-player/dist/rtmp-player.css'
+import rtmpPlayer from 'rtmp-player'
+
+export default {
+  name: 'App',
+  components: {
+    rtmpPlayer,
+  },
+  data() {
+    return {
+      src:"rtmp://58.200.131.2:1935/livetv/btv4"
+    };
+  }
+};
+</script>
 ```
 
 ### rtmpPlayer Attributes
@@ -40,12 +100,13 @@ Vue.use(rtmpPlayer)
 
 注意：默认会调用在线的swf地址：`https://vjs.zencdn.net/swf/5.4.2/video-js.swf`，如果需要替换请配置`options.flash.swf`的地址。
 
-## 例子1
+## 例子1 
+
+[例子1](https://wangdaodao.com/rtmp/demo1.html)
 
 ```vue
 <template>
   <div>
-    <button @click="change">切换视频</button>
     <rtmp-player :options="options" :source="src" />
   </div>
 </template>
@@ -62,17 +123,14 @@ export default {
       },
       src: "rtmp://58.200.131.2:1935/livetv/btv4"
     };
-  },
-  methods: {
-    change(){
-      this.src = "rtmp://58.200.131.2:1935/livetv/btv3"
-    }
-  },
+  }
 };
 </script>
 ```
 
 ## 例子2
+
+[例子2](https://wangdaodao.com/rtmp/demo2.html)
 
 ```vue
 <template>

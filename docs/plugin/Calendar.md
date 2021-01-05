@@ -14,13 +14,16 @@
 npm i vue-lunar-calendar-pro --save
 ```
 
-### script
+### cdn
+
+目前可以通过 [unpkg.com/vue-lunar-calendar-pro](https://unpkg.com/vue-lunar-calendar-pro) 或者 [www.jsdelivr.com/package/npm/vue-lunar-calendar-pro](https://www.jsdelivr.com/package/npm/vue-lunar-calendar-pro) 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
 
 🚩 建议使用 CDN 引入组件的用户在链接地址上锁定版本，以免将来组件升级时受到非兼容性更新的影响。🚩 
 
 ```html
 <!-- 这里会始终引用最新版本 -->
 <script src='https://unpkg.com/vue-lunar-calendar-pro/dist/calendar.umd.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/vue-lunar-calendar-pro/dist/calendar.umd.js'></script>
 
 <!-- 这里会引用 1.0.15 版本 -->
 <script src='https://unpkg.com/vue-lunar-calendar-pro@1.0.15/dist/calendar.umd.js'></script>
