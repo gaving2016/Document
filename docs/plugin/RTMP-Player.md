@@ -102,6 +102,8 @@ export default {
 
 注意：默认会调用在线的swf地址：`https://vjs.zencdn.net/swf/5.4.2/video-js.swf`，如果需要替换请配置`options.flash.swf`的地址。
 
+更多配置，请看 `VideoJS` [官方文档](https://docs.videojs.com/)
+
 ## 例子1 
 
 [例子1](http://demo.const.team/rtmp/demo1.html)

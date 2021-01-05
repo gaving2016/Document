@@ -99,6 +99,8 @@ export default {
 | preload | 预加载 | string | auto/metadata/none | auto |
 | options | 高级设置会覆盖上面设置 | Object | — | — |
 
+更多配置，请看 `VideoJS` [官方文档](https://docs.videojs.com/)
+
 ## 例子1 
 
 [例子1](http://demo.const.team/hls/demo1.html)
