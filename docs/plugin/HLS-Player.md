@@ -36,8 +36,8 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import 'hls-player/dist/hls-player.css'
-import rtmpPlayer from 'hls-player'
-Vue.use(rtmpPlayer)
+import hlsPlayer from 'hls-player'
+Vue.use(hlsPlayer)
 ```
 
 ```vue
@@ -70,12 +70,12 @@ export default {
 
 <script>
 import 'hls-player/dist/hls-player.css'
-import rtmpPlayer from 'hls-player'
+import hlsPlayer from 'hls-player'
 
 export default {
   name: 'App',
   components: {
-    rtmpPlayer,
+    hlsPlayer,
   },
   data() {
     return {
@@ -86,7 +86,7 @@ export default {
 </script>
 ```
 
-### rtmpPlayer Attributes
+### hlsPlayer Attributes
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
 | source | 播放流 | string | — | — |
