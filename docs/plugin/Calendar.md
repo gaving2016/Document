@@ -1,4 +1,4 @@
-# Calendar 农历面板
+# Calendar 日历
 
 ![NPM version](https://img.shields.io/npm/v/vue-lunar-calendar-pro.svg)
 
@@ -6,7 +6,7 @@
 * 😘 支持农历，节气，假日显示；
 * 😍 原生 js 开发，无第三方库；
 * 😂 支持现代浏览器(IE >= 9)；
-* 👍 感谢[calendar.js](https://github.com/jjonline/calendar.js)
+* 👍 感谢 [calendar.js](https://github.com/jjonline/calendar.js)
 
 ## 安装
 
@@ -85,13 +85,11 @@ new Vue({
 </script>
 ```
 
-🎉 觉得好用给一个 [star](https://github.com/wangdaodao/vue-lunar-calendar-pro) 哦~~ 🎉
-
 ## 基本单选
 
 🔸 设置 `default-date` 来指定当前显示的月份。如果 `default-date` 未指定，则显示当月。
 
-demo1: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo1.html](https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo1.html)
+demo1: [demo1](https://demo.const.team/calendar/demo1.html)
 
 ```html
 <template>
@@ -117,7 +115,7 @@ demo1: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo1.html](h
 
 🔸 设置 `multiple` 开启日期多选。
 
-demo1: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo2.html](https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo2.html)
+demo1: [demo2](https://demo.const.team/calendar/demo2.html)
 
 ```html
 <template>
@@ -141,7 +139,7 @@ demo1: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo2.html](h
 
 🔸 设置 `first-day-of-week` 来指定周起始日。如果 `first-day-of-week` 未指定则按照周日为起始日。
 
-demo3: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo3.html](https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo3.html)
+demo3: [demo3](https://demo.const.team/calendar/demo3.html)
 
 ```html
 <template>
@@ -165,7 +163,7 @@ demo3: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo3.html](h
 
 🔸 设置 `highlighter-date` 高亮日期。
 
-demo4: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo4.html](https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo4.html)
+demo4: [demo4](https://demo.const.team/calendar/demo4.html)
 
 ```html
 <template>
@@ -191,7 +189,7 @@ demo4: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo4.html](h
 
 🔸 设置 `disabled-date` 来指定当哪些日期不可选。
 
-demo5: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo5.html](https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo5.html)
+demo5: [demo5](https://demo.const.team/calendar/demo5.html)
 
 ```html
 <template>
@@ -217,7 +215,7 @@ demo5: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo5.html](h
 
 🔸 设置 `max-date` 和 `min-date` 来设置日期区间。
 
-demo6: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo6.html](https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo6.html)
+demo6: [demo6](https://demo.const.team/calendar/demo6.html)
 
 ```html
 <template>
@@ -244,7 +242,7 @@ demo6: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo6.html](h
 
 🔸 内置 `render` 方法，参数为`year, month`，配合其他组件使用。另外，通过设置名为 `dateCell` 的 `scoped-slot` 来自定义日历单元格中显示的内容。在 `scoped-slot` 可以获取到 `date`（当前单元格的日期对象），详情解释参考下方的 `API` 文档。
 
-demo7: [https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo7.html](https://blog.wangdaodao.com/vue-lunar-calendar-pro/example/demo7.html)
+demo7: [demo7](https://demo.const.team/calendar/demo7.html)
 
 ```html
 <template>
