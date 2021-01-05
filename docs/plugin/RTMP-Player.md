@@ -104,7 +104,7 @@ export default {
 
 ## 例子1 
 
-[例子1](https://wangdaodao.com/rtmp/demo1.html)
+[例子1](http://demo.const.team/rtmp/demo1.html)
 
 ```vue
 <template>
@@ -132,7 +132,7 @@ export default {
 
 ## 例子2
 
-[例子2](https://wangdaodao.com/rtmp/demo2.html)
+[例子2](http://demo.const.team/rtmp/demo2.html)
 
 ```vue
 <template>

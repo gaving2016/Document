@@ -101,7 +101,7 @@ export default {
 
 ## 例子1 
 
-[例子1](https://demo.const.team/hls/demo1.html)
+[例子1](http://demo.const.team/hls/demo1.html)
 
 ```vue
 <template>
@@ -130,7 +130,7 @@ export default {
 
 ## 例子2
 
-[例子2](https://demo.const.team/hls/demo2.html)
+[例子2](http://demo.const.team/hls/demo2.html)
 
 ```vue
 <template>
