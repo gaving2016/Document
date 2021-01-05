@@ -1,4 +1,6 @@
-# 概述
+# Cafe-Utils
+
+![NPM version](https://img.shields.io/npm/v/cafe-utils.svg)
 
 `cafe-utils` 是对常用函数的封装，方便在实际项目中使用，主要内容包含：类型判断、表单验证、字符串类、数字类、金额类、日期类、浮点计算类、工具类、存储类、DOM类操作、事件处理相关函数等内容。
 

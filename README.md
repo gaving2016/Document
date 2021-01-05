@@ -21,10 +21,10 @@
 
 ## 插件
 
-* [RTMP 播放器](https://docs.const.team/plugin/RTMP-Player.html)
-* [Calendar 农历面板](https://docs.const.team/plugin/Calendar.html)
+* [RTMP 播放器](https://docs.const.team/plugin/RTMP-Player.html)  ![NPM version](https://img.shields.io/npm/v/rtmp-player.svg)
+* [Calendar 农历面板](https://docs.const.team/plugin/Calendar.html)  ![NPM version](https://img.shields.io/npm/v/vue-lunar-calendar-pro.svg)
 
-## 函数库
+## 函数库  ![NPM version](https://img.shields.io/npm/v/cafe-utils.svg)
 
 * [类型判断类](https://docs.const.team/utils/Type.html)
 * [常规验证类](https://docs.const.team/utils/Validator.html)

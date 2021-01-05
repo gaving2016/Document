@@ -1,5 +1,7 @@
 # RTMP 播放器
 
+![NPM version](https://img.shields.io/npm/v/rtmp-player.svg)
+
 * 😊 基于 Vue + [`Video.js 7+`](https://github.com/videojs/video.js) 开发；
 * 😂 支持现代浏览器（由于 `Videojs` 高版本，只支持 **IE11** ！）；
 * 😂 使用时，请确保浏览器已经安装[flash播放器](https://www.flash.cn/cdm/latest/flashplayer_install_cn.exe)；

@@ -63,6 +63,11 @@ module.exports = {
       {
         text: '插件',
         link: '/plugin/',
+        ariaLabel: 'plugin Menu',
+        items: [
+          { text: 'RTMP 播放器', link: '/plugin/RTMP-Player/' },
+          { text: 'Calendar 农历面板', link: '/plugin/Calendar/' },
+        ]
       },
       {
         text: '函数库',
