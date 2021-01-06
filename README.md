@@ -21,8 +21,7 @@
 
 ## 插件
 
-* [RTMP 播放器](https://docs.const.team/plugin/RTMP-Player.html)  ![NPM version](https://img.shields.io/npm/v/rtmp-player.svg)
-* [HLS 播放器](https://docs.const.team/plugin/HLS-Player.html)  ![NPM version](https://img.shields.io/npm/v/hls-player.svg)
+* [HRM 播放器](https://docs.const.team/plugin/HRM-Player.html)  ![NPM version](https://img.shields.io/npm/v/hrm-player.svg)
 * [Calendar 农历面板](https://docs.const.team/plugin/Calendar.html)  ![NPM version](https://img.shields.io/npm/v/vue-lunar-calendar-pro.svg)
 
 ## 函数库  ![NPM version](https://img.shields.io/npm/v/cafe-utils.svg)

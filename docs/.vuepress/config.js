@@ -65,8 +65,7 @@ module.exports = {
         link: '/plugin/',
         ariaLabel: 'plugin Menu',
         items: [
-          { text: 'RTMP 播放器', link: '/plugin/RTMP-Player/' },
-          { text: 'HLS 播放器', link: '/plugin/HLS-Player/' },
+          { text: 'HRM 播放器', link: '/plugin/HRM-Player/' },
           { text: 'Calendar 农历面板', link: '/plugin/Calendar/' },
         ]
       },
@@ -127,8 +126,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'RTMP-Player',
-            'HLS-Player',
+            'HRM-Player',
             'Calendar',
           ]
         }

@@ -1,30 +1,30 @@
-# RTMP 播放器
+# hrm-player 播放器
 
-![NPM version](https://img.shields.io/npm/v/rtmp-player.svg)
+![NPM version](https://img.shields.io/npm/v/hrm-player.svg)
 
 * 😊 基于 Vue + [`Video.js 7+`](https://github.com/videojs/video.js) 开发；
-* 😂 支持现代浏览器（由于 `Videojs` 高版本，只支持 **IE11** ！）；
-* 😂 使用时，请确保浏览器已经安装[flash播放器](https://www.flash.cn/cdm/latest/flashplayer_install_cn.exe)；
+* 😂 支持现代浏览器；
+* 😂 使用**RTMP**直播流时，请确保浏览器已经安装[flash播放器](https://www.flash.cn/cdm/latest/flashplayer_install_cn.exe)；
 
 ## NPM安装
 
 ```bash
-npm i rtmp-player --save
+npm i hrm-player --save
 ```
 
 ## CDN引用
 
-目前可以通过 [unpkg.com/rtmp-player](https://unpkg.com/rtmp-player) 或者 [www.jsdelivr.com/package/npm/rtmp-player](https://www.jsdelivr.com/package/npm/rtmp-player) 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+目前可以通过 [unpkg.com/hrm-player](https://unpkg.com/hrm-player) 或者 [www.jsdelivr.com/package/npm/hrm-player](https://www.jsdelivr.com/package/npm/hrm-player) 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
 
 ```html
 <!-- 引入样式 -->
-<link rel="stylesheet" href="https://unpkg.com/rtmp-player/dist/rtmp-player.css">
+<link rel="stylesheet" href="https://unpkg.com/hrm-player/dist/hrm-player.css">
 <!-- 引入组件库 -->
-<script src="https://unpkg.com/rtmp-player/dist/rtmp-player.umd.min.js"></script>
+<script src="https://unpkg.com/hrm-player/dist/hrm-player.umd.min.js"></script>
 
 <!-- 或者 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rtmp-player/dist/rtmp-player.css">
-<script src="https://cdn.jsdelivr.net/npm/rtmp-player/dist/rtmp-player.umd.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hrm-player/dist/hrm-player.css">
+<script src="https://cdn.jsdelivr.net/npm/hrm-player/dist/hrm-player.umd.min.js"></script>
 ```
 
 ## 使用
@@ -36,15 +36,15 @@ npm i rtmp-player --save
 import Vue from 'vue'
 import App from './App.vue'
 
-import 'rtmp-player/dist/rtmp-player.css'
-import rtmpPlayer from 'rtmp-player'
-Vue.use(rtmpPlayer)
+import 'hrm-player/dist/hrm-player.css'
+import hrmPlayer from 'hrm-player'
+Vue.use(hrmPlayer)
 ```
 
 ```vue
 <template>
   <div id="app">
-    <rtmp-player :width="900" :height="500" :autoplay="true" :controls="true" ref="myPlayer" :source="src"/>
+    <hrm-player :width="900" :height="500" :autoplay="true" :controls="true" ref="myPlayer" :source="src" type="rtmp/flv" />
   </div>
 </template>
 
@@ -65,32 +65,33 @@ export default {
 ```vue
 <template>
   <div id="app">
-    <rtmp-player :width="900" :height="500" :autoplay="true" :controls="true" ref="myPlayer" :source="src"/>
+    <hrm-player :width="900" :height="500" :autoplay="true" :controls="true" ref="myPlayer" :source="src"/>
   </div>
 </template>
 
 <script>
-import 'rtmp-player/dist/rtmp-player.css'
-import rtmpPlayer from 'rtmp-player'
+import 'hrm-player/dist/hrm-player.css'
+import hrmPlayer from 'hrm-player'
 
 export default {
   name: 'App',
   components: {
-    rtmpPlayer,
+    hrmPlayer,
   },
   data() {
     return {
-      src:"rtmp://58.200.131.2:1935/livetv/btv4"
+      src:"http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8"
     };
   }
 };
 </script>
 ```
 
-### rtmpPlayer Attributes
+### hrmPlayer Attributes
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
 | source | 播放流 | string | — | — |
+| type | 流类型 | string | `video/mp4`/`rtmp/flv`/`application/x-mpegURL` | `application/x-mpegURL` |
 | width | 宽度 | number | — | 800 |
 | height | 高度 | number | — | 600 |
 | poster | 视频封面 | string | — | — |
@@ -100,18 +101,18 @@ export default {
 | preload | 预加载 | string | auto/metadata/none | auto |
 | options | 高级设置会覆盖上面设置 | Object | — | — |
 
-注意：默认会调用在线的swf地址：`https://vjs.zencdn.net/swf/5.4.2/video-js.swf`，如果需要替换请配置`options.flash.swf`的地址。
+注意：使用`RTMP`直播流默认会调用在线的swf地址：`https://vjs.zencdn.net/swf/5.4.2/video-js.swf`，如果需要替换请配置`options.flash.swf`的地址。
 
 更多配置，请看 `VideoJS` [官方文档](https://docs.videojs.com/)
 
-## 例子1 
+## RTMP直播流
 
-[例子1](http://demo.const.team/rtmp/demo1.html)
+[RTMP直播流例子](http://demo.const.team/videojs/rtmp.html)
 
 ```vue
 <template>
   <div>
-    <rtmp-player :options="options" :source="src" />
+    <hrm-player :options="options" :source="src" type="rtmp/flv"/>
   </div>
 </template>
 <script>
@@ -125,33 +126,30 @@ export default {
         width: 800,
         height:400,
       },
-      src: "rtmp://58.200.131.2:1935/livetv/btv4"
+      src: "rtmp://58.200.131.2:1935/livetv/btv1"
     };
   }
 };
 </script>
 ```
 
-## 例子2
+## HLS直播流+切换直播源
 
-[例子2](http://demo.const.team/rtmp/demo2.html)
+[HLS直播流+切换直播源](http://demo.const.team/videojs/hls.html)
 
 ```vue
 <template>
-  <div class="home">
-    <button @click="change(1)">北京1</button>
-    <button @click="change(2)">北京2</button>
-    <button @click="change(3)">北京3</button>
-    <button @click="change(4)">北京4</button>
-    <rtmp-player :width="900" :height="500" :autoplay="true" :controls="true" :source="src"/>
+  <div>
+    <button @click="change(1)">央视1</button>
+    <button @click="change(2)">央视2</button>
+    <button @click="change(3)">央视3</button>
+    <button @click="change(4)">央视4</button>
+    <hrm-player :width="900" :height="500" :autoplay="true" :controls="true" :source="src"/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
-  components: {
-  },
   data() {
     return {
       src: "",
@@ -161,16 +159,60 @@ export default {
     change(val){
       switch (val) {
         case 1:
-          this.src = "rtmp://58.200.131.2:1935/livetv/btv1"
+          this.src = "http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8"
           break;
         case 2:
-          this.src = "rtmp://58.200.131.2:1935/livetv/btv2"
+          this.src = "http://ivi.bupt.edu.cn/hls/cctv2hd.m3u8"
           break;
         case 3:
-          this.src = "rtmp://58.200.131.2:1935/livetv/btv3"
+          this.src = "http://ivi.bupt.edu.cn/hls/cctv3hd.m3u8"
           break;
         case 4:
-          this.src = "rtmp://58.200.131.2:1935/livetv/btv4"
+          this.src = "http://ivi.bupt.edu.cn/hls/cctv4hd.m3u8"
+          break;
+      }
+    }
+  }
+};
+</script>
+```
+
+## 切换直播类型
+
+[切换直播类型](http://demo.const.team/videojs/all.html)
+
+```vue
+<template>
+  <div>
+    <button @click="change(1)">RTMP</button>
+    <button @click="change(2)">HLS</button>
+    <button @click="change(3)">MP4</button>
+    <hrm-player :width="900" :height="500" :muted="true" :autoplay="true" :controls="true" :source="src" :type="type" />
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      type: null,
+      src: '',
+    };
+  },
+  methods: {
+    change(val){
+      switch (val) {
+        case 1:
+          this.type = 'rtmp/flv';
+          this.src = 'rtmp://58.200.131.2:1935/livetv/btv1';
+          break;
+        case 2:
+          this.type = 'application/x-mpegURL';
+          this.src = 'http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8';
+          break;
+        case 3:
+          this.type = 'video/mp4';
+          this.src = 'http://resource.wangdaodao.com/402670506.mp4';
           break;
       }
     }
@@ -182,6 +224,7 @@ export default {
 ## 测试地址
 
 ```
+# RTMP
 CCTV-1综合: rtmp://58.200.131.2:1935/livetv/cctv1
 CCTV-2财经: rtmp://58.200.131.2:1935/livetv/cctv2
 CCTV-3综艺: rtmp://58.200.131.2:1935/livetv/cctv3
@@ -299,4 +342,59 @@ CHC家庭影院: rtmp://58.200.131.2:1935/livetv/chctv
 CHC动作电影: rtmp://58.200.131.2:1935/livetv/chcatv
 美国电视频道: rtmp://media3.scctv.net/live/scctv_800
 香港财经: rtmp://202.69.69.180:443/webcast/bshdlive-pc
+
+# HLS
+CCTV-1综合：http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8
+CCTV-2财经：http://ivi.bupt.edu.cn/hls/cctv2hd.m3u8
+CCTV-3综艺：http://ivi.bupt.edu.cn/hls/cctv3hd.m3u8
+CCTV-4中文国际：http://ivi.bupt.edu.cn/hls/cctv4hd.m3u8
+CCTV-5体育：http://ivi.bupt.edu.cn/hls/cctv5phd.m3u8
+CCTV-6电影：http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8
+CCTV-7国防军事：http://ivi.bupt.edu.cn/hls/cctv7hd.m3u8
+CCTV-8电视剧：http://ivi.bupt.edu.cn/hls/cctv8hd.m3u8
+CCTV-9纪录：http://ivi.bupt.edu.cn/hls/cctv9hd.m3u8
+CCTV-10科教：http://ivi.bupt.edu.cn/hls/cctv10hd.m3u8
+CCTV-11戏曲：http://ivi.bupt.edu.cn/hls/cctv11.m3u8
+CCTV-12社会与法：http://ivi.bupt.edu.cn/hls/cctv12hd.m3u8
+CCTV-13新闻：http://ivi.bupt.edu.cn/hls/cctv13.m3u8
+CCTV-14少儿：http://ivi.bupt.edu.cn/hls/cctv14hd.m3u8
+CCTV-15音乐：http://ivi.bupt.edu.cn/hls/cctv15.m3u8
+CCTV-17农业农村：http://ivi.bupt.edu.cn/hls/cctv17hd.m3u8
+CGTN：http://ivi.bupt.edu.cn/hls/cgtnhd.m3u8
+CGTN DOC：http://ivi.bupt.edu.cn/hls/cgtndochd.m3u8
+CHC：http://ivi.bupt.edu.cn/hls/chchd.m3u8
+北京卫视高清：http://ivi.bupt.edu.cn/hls/btv1hd.m3u8
+北京文艺高清：http://ivi.bupt.edu.cn/hls/btv2hd.m3u8
+北京科教：http://ivi.bupt.edu.cn/hls/btv3.m3u8
+北京影视高清：http://ivi.bupt.edu.cn/hls/btv4hd.m3u8
+北京财经：http://ivi.bupt.edu.cn/hls/btv5.m3u8
+北京生活：http://ivi.bupt.edu.cn/hls/btv7.m3u8
+北京青年：http://ivi.bupt.edu.cn/hls/btv8.m3u8
+北京新闻高清：http://ivi.bupt.edu.cn/hls/btv9hd.m3u8
+北京卡酷少儿：http://ivi.bupt.edu.cn/hls/btv10.m3u8
+湖南卫视高清：http://ivi.bupt.edu.cn/hls/hunanhd.m3u8
+浙江卫视高清：http://ivi.bupt.edu.cn/hls/zjhd.m3u8
+江苏卫视高清：http://ivi.bupt.edu.cn/hls/jshd.m3u8
+东方卫视高清：http://ivi.bupt.edu.cn/hls/dfhd.m3u8
+安徽卫视高清：http://ivi.bupt.edu.cn/hls/ahhd.m3u8
+黑龙江卫视高清：http://ivi.bupt.edu.cn/hls/hljhd.m3u8
+辽宁卫视高清：http://ivi.bupt.edu.cn/hls/lnhd.m3u8
+深圳卫视高清：http://ivi.bupt.edu.cn/hls/szhd.m3u8
+广东卫视高清：http://ivi.bupt.edu.cn/hls/gdhd.m3u8
+天津卫视高清：http://ivi.bupt.edu.cn/hls/tjhd.m3u8
+湖北卫视高清：http://ivi.bupt.edu.cn/hls/hbhd.m3u8
+山东卫视高清：http://ivi.bupt.edu.cn/hls/sdhd.m3u8
+重庆卫视高清：http://ivi.bupt.edu.cn/hls/cqhd.m3u8
+上海纪实高清：http://ivi.bupt.edu.cn/hls/docuchina.m3u8
+金鹰纪实高清：http://ivi.bupt.edu.cn/hls/gedocu.m3u8
+福建东南卫视高清：http://ivi.bupt.edu.cn/hls/dnhd.m3u8
+四川卫视高清：http://ivi.bupt.edu.cn/hls/schd.m3u8
+河北卫视高清：http://ivi.bupt.edu.cn/hls/hebhd.m3u8
+江西卫视高清：http://ivi.bupt.edu.cn/hls/jxhd.m3u8
+河南卫视高清：http://ivi.bupt.edu.cn/hls/hnhd.m3u8
+广西卫视高清：http://ivi.bupt.edu.cn/hls/gxhd.m3u8
+吉林卫视高清：http://ivi.bupt.edu.cn/hls/jlhd.m3u8
+CETV-1高清：http://ivi.bupt.edu.cn/hls/cetv1hd.m3u8
+海南卫视高清：http://ivi.bupt.edu.cn/hls/lyhd.m3u8
+贵州卫视高清：http://ivi.bupt.edu.cn/hls/gzhd.m3u8
 ```
