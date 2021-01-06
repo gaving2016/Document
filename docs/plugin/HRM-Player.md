@@ -1,4 +1,4 @@
-# hrm-player 播放器
+# HRM-Player 播放器
 
 ![NPM version](https://img.shields.io/npm/v/hrm-player.svg)
 
