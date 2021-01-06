@@ -91,6 +91,16 @@ module.exports = {
       {
         text: '工具',
         link: '/tools/',
+        ariaLabel: 'tools Menu',
+        items: [
+          { text: 'NodeJS', link: '/tools/NodeJS/' },
+          { text: 'Sourcetree', link: '/tools/Sourcetree/' },
+          { text: 'VSCode', link: '/tools/VisualStudioCode/' },
+          { text: 'XShell', link: '/tools/XShell/' },
+          { text: 'Typora', link: '/tools/Typora/' },
+          { text: 'PicGo', link: '/tools/PicGo/' },
+          { text: 'XMind', link: '/tools/XMind/' },
+        ]
       }
     ],
     sidebar: {
