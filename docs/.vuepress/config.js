@@ -67,6 +67,7 @@ module.exports = {
         items: [
           { text: 'HRM 播放器', link: '/plugin/HRM-Player/' },
           { text: 'Calendar 农历面板', link: '/plugin/Calendar/' },
+          { text: 'Very-Axios', link: '/plugin/Very-Axios/' },
         ]
       },
       {
@@ -138,6 +139,7 @@ module.exports = {
             '',
             'HRM-Player',
             'Calendar',
+            'Very-Axios',
           ]
         }
       ],
