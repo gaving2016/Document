@@ -25,7 +25,7 @@
 
 ### 安装
 
-```cmd
+```bash
 npm install -S very-axios
 ```
 
