@@ -33,7 +33,7 @@ npm install -S very-axios
 
 可以通过以下方法 `new` 一个 VeryAxios 的实例，第一个参数 `veryAxiosConfig` 为 `very-axios` 的配置，第二个参数 `axiosConfig` 为 axios 所支持的配置。
 
-```JS
+```js
 // request.js
 import VeryAxios from 'very-axios'
 // 此处 veryAxiosConfig, axiosConfig 未定义，下面会详细介绍 veryAxiosConfig
@@ -51,7 +51,7 @@ export default {
 
 `veryAxiosConfig` 支持以下配置：
 
-```JS
+```js
 {
   // 发生错误时，是否显示提示
   tip: true, // default
@@ -115,7 +115,7 @@ VeryAxios 实例支持 GET/POST/PUT/DELETE/FORMDATA实例方法，并且调用�
 
 如下，我们可以将 `tipFn` 指定为 `alert`，则错误信息会使用 `alert` 函数弹出提醒。
 
-```JS
+```js
 // request.js
 import VeryAxios from 'very-axios'
 const request = new VeryAxios({
@@ -127,7 +127,7 @@ VeryAxios 内置了常见 HTTP 错误的中英文提示，如 `401` 对应 “�
 
 有些时候，我们可能想要只针对某个接口禁用tip，这可以在调用接口时传入第三个参数，如下，可以禁用该接口发生错误时的错误提示。
 
-```JS
+```js
 // 禁用 tip
 request.GET(path, params, { veryConfig: { disableTip: true } })
 ```
@@ -141,7 +141,7 @@ request.GET(path, params, { veryConfig: { disableTip: true } })
 
 这时候，我们可以在配置中添加相应的错误处理函数`errorHandlers`，可以给不同的错误码指定不同的处理函数，并且支持自定义的 `errno`。
 
-```JS
+```js
 // request.js
 import VeryAxios from 'very-axios'
 const request = new VeryAxios({
@@ -173,7 +173,7 @@ VeryAxios 在请求前和请求后都留了钩子，以备需要在这两个时�
 
 通常我们会在实例化时进行通用的钩子函数定义。但可能存在某些特殊的请求，不需要执行 hooks，这时候我们可以在单独的请求中，指定是否禁用 hooks 以及禁用哪一个 hooks。
 
-```JS
+```js
 // 禁用全部 hooks
 request.GET(path, params, { veryConfig: { disableHooks: true } })
 
@@ -204,7 +204,7 @@ request.GET(path, params, { veryConfig: { disableHooks: { after: true } } })
 
 * 在 `new VeryAxios` 实例时，配置`cancelDuplicated: true`可开启取消重复的请求
 
-  ```javascript
+  ```js
   const veryAxiosConfig = {
     cancelDuplicated: true,
   }
@@ -213,7 +213,7 @@ request.GET(path, params, { veryConfig: { disableHooks: { after: true } } })
 
 * 在 `new VeryAxios` 实例时，`duplicatedKeyFn`函数可配置统一的重复请求的标识
 
-  ```javascript
+  ```js
   const veryAxiosConfig = {
     cancelDuplicated: true,
     duplicatedKeyFn: (config) => {
@@ -226,7 +226,7 @@ request.GET(path, params, { veryConfig: { disableHooks: { after: true } } })
 
 * 在请求时的可自定义配置单个请求的重复标识`duplicatedKey`
 
-  ```javascript
+  ```js
   request.GET(path, params, { veryConfig: { duplicatedKey: 'duplicatedKey' } })
   ```
 
@@ -234,7 +234,7 @@ request.GET(path, params, { veryConfig: { disableHooks: { after: true } } })
 
 如果你现有项目已经使用了 `axios`，需要兼容旧的逻辑，可以通过以下方式获取原始 `axios` 的引用。
 
-```
+```js
 import VeryAxios, { originalAxios as axios } from 'very-axios'
 ```
 
