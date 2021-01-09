@@ -22,6 +22,7 @@
 ## 插件
 
 * [HRM 播放器](https://docs.const.team/plugin/HRM-Player.html)  ![NPM version](https://img.shields.io/npm/v/hrm-player.svg)
+* [Vue-Flv-Player 播放器](https://docs.const.team/plugin/Vue-Flv-Player.html)  ![NPM version](https://img.shields.io/npm/v/vue-flv-player.svg)
 * [Calendar 农历面板](https://docs.const.team/plugin/Calendar.html)  ![NPM version](https://img.shields.io/npm/v/vue-lunar-calendar-pro.svg)
 * [Very-Axios](https://docs.const.team/plugin/Very-Axios.html)  ![NPM version](https://img.shields.io/npm/v/very-axios.svg)
 

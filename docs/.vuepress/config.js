@@ -66,6 +66,7 @@ module.exports = {
         ariaLabel: 'plugin Menu',
         items: [
           { text: 'HRM 播放器', link: '/plugin/HRM-Player/' },
+          { text: 'FLV 播放器', link: '/plugin/Vue-Flv-Player/' },
           { text: 'Calendar 农历面板', link: '/plugin/Calendar/' },
           { text: 'Very-Axios', link: '/plugin/Very-Axios/' },
         ]
@@ -138,6 +139,7 @@ module.exports = {
           children: [
             '',
             'HRM-Player',
+            'Vue-Flv-Player',
             'Calendar',
             'Very-Axios',
           ]
