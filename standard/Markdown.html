@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Markdown 语法说明 | 前端文档</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="description" content="前端文档">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.119f77bc.css" as="style"><link rel="preload" href="/assets/js/app.14bebd55.js" as="script"><link rel="preload" href="/assets/js/2.46a6568e.js" as="script"><link rel="preload" href="/assets/js/3.4eebc4ee.js" as="script"><link rel="preload" href="/assets/js/25.f7011cd4.js" as="script"><link rel="prefetch" href="/assets/js/10.1991ae1e.js"><link rel="prefetch" href="/assets/js/11.e6bc6b4d.js"><link rel="prefetch" href="/assets/js/12.28195a00.js"><link rel="prefetch" href="/assets/js/13.33458149.js"><link rel="prefetch" href="/assets/js/14.2fbfe174.js"><link rel="prefetch" href="/assets/js/15.54bfb07d.js"><link rel="prefetch" href="/assets/js/16.93793b7c.js"><link rel="prefetch" href="/assets/js/17.27f35893.js"><link rel="prefetch" href="/assets/js/18.8912b211.js"><link rel="prefetch" href="/assets/js/19.041fbc54.js"><link rel="prefetch" href="/assets/js/20.9bced172.js"><link rel="prefetch" href="/assets/js/21.50c4d5c4.js"><link rel="prefetch" href="/assets/js/22.32478ce2.js"><link rel="prefetch" href="/assets/js/23.a6b931ac.js"><link rel="prefetch" href="/assets/js/24.c3c717ac.js"><link rel="prefetch" href="/assets/js/26.742fb1c6.js"><link rel="prefetch" href="/assets/js/27.9696ed96.js"><link rel="prefetch" href="/assets/js/28.c02ba96b.js"><link rel="prefetch" href="/assets/js/29.d6368341.js"><link rel="prefetch" href="/assets/js/30.a1e00125.js"><link rel="prefetch" href="/assets/js/31.e9d086fc.js"><link rel="prefetch" href="/assets/js/32.52ac0564.js"><link rel="prefetch" href="/assets/js/33.e3da9847.js"><link rel="prefetch" href="/assets/js/34.ee6c7fbf.js"><link rel="prefetch" href="/assets/js/35.977fa64c.js"><link rel="prefetch" href="/assets/js/36.3d793e99.js"><link rel="prefetch" href="/assets/js/37.9324baf6.js"><link rel="prefetch" href="/assets/js/38.6c1f27d3.js"><link rel="prefetch" href="/assets/js/39.117b1101.js"><link rel="prefetch" href="/assets/js/4.33d3d64d.js"><link rel="prefetch" href="/assets/js/40.d9b8c316.js"><link rel="prefetch" href="/assets/js/41.f99335de.js"><link rel="prefetch" href="/assets/js/42.10ac551d.js"><link rel="prefetch" href="/assets/js/43.4d5730fc.js"><link rel="prefetch" href="/assets/js/44.ba6da2b9.js"><link rel="prefetch" href="/assets/js/45.b2771d22.js"><link rel="prefetch" href="/assets/js/46.9b3a68ab.js"><link rel="prefetch" href="/assets/js/47.1a09638a.js"><link rel="prefetch" href="/assets/js/48.c5a7225f.js"><link rel="prefetch" href="/assets/js/49.fb538284.js"><link rel="prefetch" href="/assets/js/5.5834837c.js"><link rel="prefetch" href="/assets/js/6.1e82e21f.js"><link rel="prefetch" href="/assets/js/7.0f284d67.js"><link rel="prefetch" href="/assets/js/8.b7f4a578.js"><link rel="prefetch" href="/assets/js/9.9a6eb311.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.119f77bc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="standard Menu" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="standard Menu" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standard/HTML/" class="nav-link">
+  HTML编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CSS/" class="nav-link">
+  CSS编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JavaScript/" class="nav-link">
+  JavaScript编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/VUE/" class="nav-link">
+  VUE编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Markdown/" class="nav-link">
+  Markdown语法说明
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Commit/" class="nav-link">
+  Git提交规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JSON/" class="nav-link">
+  JSON数据规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CopyWriter/" class="nav-link">
+  文案风格指南
+</a></li></ul></div></div><div class="nav-item"><a href="/materiel/" class="nav-link">
+  物料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="plugin Menu" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="plugin Menu" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/HRM-Player/" class="nav-link">
+  HRM 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Vue-Flv-Player/" class="nav-link">
+  FLV 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Calendar/" class="nav-link">
+  Calendar 农历面板
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Very-Axios/" class="nav-link">
+  Very-Axios
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="utils Menu" class="dropdown-title"><span class="title">函数库</span> <span class="arrow down"></span></button> <button type="button" aria-label="utils Menu" class="mobile-dropdown-title"><span class="title">函数库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/utils/Type/" class="nav-link">
+  类型判断类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Validator/" class="nav-link">
+  常规验证类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/String/" class="nav-link">
+  字符串类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Array/" class="nav-link">
+  数组类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Number/" class="nav-link">
+  数字类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Money/" class="nav-link">
+  金额类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Date/" class="nav-link">
+  日期类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Calculate/" class="nav-link">
+  浮点计算类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Tools/" class="nav-link">
+  工具类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Storage/" class="nav-link">
+  存储类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/DOM/" class="nav-link">
+  DOM类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Event/" class="nav-link">
+  事件处理类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tools Menu" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="tools Menu" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/NodeJS/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Sourcetree/" class="nav-link">
+  Sourcetree
+</a></li><li class="dropdown-item"><!----> <a href="/tools/VisualStudioCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XShell/" class="nav-link">
+  XShell
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Typora/" class="nav-link">
+  Typora
+</a></li><li class="dropdown-item"><!----> <a href="/tools/PicGo/" class="nav-link">
+  PicGo
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XMind/" class="nav-link">
+  XMind
+</a></li></ul></div></div> <!----></nav> <label title="切换暗色" class="model"><input type="checkbox" hidden="hidden" name="model" id>⚫</label></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="standard Menu" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="standard Menu" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standard/HTML/" class="nav-link">
+  HTML编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CSS/" class="nav-link">
+  CSS编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JavaScript/" class="nav-link">
+  JavaScript编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/VUE/" class="nav-link">
+  VUE编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Markdown/" class="nav-link">
+  Markdown语法说明
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Commit/" class="nav-link">
+  Git提交规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JSON/" class="nav-link">
+  JSON数据规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CopyWriter/" class="nav-link">
+  文案风格指南
+</a></li></ul></div></div><div class="nav-item"><a href="/materiel/" class="nav-link">
+  物料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="plugin Menu" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="plugin Menu" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/HRM-Player/" class="nav-link">
+  HRM 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Vue-Flv-Player/" class="nav-link">
+  FLV 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Calendar/" class="nav-link">
+  Calendar 农历面板
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Very-Axios/" class="nav-link">
+  Very-Axios
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="utils Menu" class="dropdown-title"><span class="title">函数库</span> <span class="arrow down"></span></button> <button type="button" aria-label="utils Menu" class="mobile-dropdown-title"><span class="title">函数库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/utils/Type/" class="nav-link">
+  类型判断类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Validator/" class="nav-link">
+  常规验证类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/String/" class="nav-link">
+  字符串类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Array/" class="nav-link">
+  数组类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Number/" class="nav-link">
+  数字类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Money/" class="nav-link">
+  金额类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Date/" class="nav-link">
+  日期类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Calculate/" class="nav-link">
+  浮点计算类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Tools/" class="nav-link">
+  工具类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Storage/" class="nav-link">
+  存储类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/DOM/" class="nav-link">
+  DOM类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Event/" class="nav-link">
+  事件处理类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tools Menu" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="tools Menu" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/NodeJS/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Sourcetree/" class="nav-link">
+  Sourcetree
+</a></li><li class="dropdown-item"><!----> <a href="/tools/VisualStudioCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XShell/" class="nav-link">
+  XShell
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Typora/" class="nav-link">
+  Typora
+</a></li><li class="dropdown-item"><!----> <a href="/tools/PicGo/" class="nav-link">
+  PicGo
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XMind/" class="nav-link">
+  XMind
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/" aria-current="page" class="sidebar-link">目标</a></li><li><a href="/standard/HTML.html" class="sidebar-link">HTML 编码规范</a></li><li><a href="/standard/CSS.html" class="sidebar-link">CSS 编码规范</a></li><li><a href="/standard/JavaScript.html" class="sidebar-link">JavaScript 编码规范</a></li><li><a href="/standard/VUE.html" class="sidebar-link">Vue 编码规范</a></li><li><a href="/standard/Markdown.html" aria-current="page" class="active sidebar-link">Markdown 语法说明</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/standard/Markdown.html#_1-概述" class="sidebar-link">1 概述</a></li><li class="sidebar-sub-header"><a href="/standard/Markdown.html#_2-区块元素" class="sidebar-link">2 区块元素</a></li><li class="sidebar-sub-header"><a href="/standard/Markdown.html#_3-区段元素" class="sidebar-link">3 区段元素</a></li><li class="sidebar-sub-header"><a href="/standard/Markdown.html#_4-其它" class="sidebar-link">4 其它</a></li></ul></li><li><a href="/standard/Commit.html" class="sidebar-link">Git Commit 规范指南</a></li><li><a href="/standard/JSON.html" class="sidebar-link">JSON 数据传输标准</a></li><li><a href="/standard/CopyWriter.html" class="sidebar-link">文案风格指南</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="markdown-语法说明"><a href="#markdown-语法说明" class="header-anchor">#</a> Markdown 语法说明</h1> <h2 id="_1-概述"><a href="#_1-概述" class="header-anchor">#</a> 1 概述</h2> <h3 id="宗旨"><a href="#宗旨" class="header-anchor">#</a> 宗旨</h3> <p>Markdown 的目标是实现「易读易写」。</p> <p>可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有  <code>text-to-HTML</code>  格式的影响，包括 [Setext] <a href="http://docutils.sourceforge.net/mirror/setext.html" target="_blank" rel="noopener noreferrer">1<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、[atx] <a href="http://www.aaronsw.com/2002/atx/" target="_blank" rel="noopener noreferrer">2<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、[Textile] <a href="http://textism.com/tools/textile/" target="_blank" rel="noopener noreferrer">3<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、[reStructuredText] <a href="http://docutils.sourceforge.net/rst.html" target="_blank" rel="noopener noreferrer">4<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、[Grutatext] <a href="http://www.triptico.com/software/grutatxt.html" target="_blank" rel="noopener noreferrer">5<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 和 [EtText] <a href="http://ettext.taint.org/doc/" target="_blank" rel="noopener noreferrer">6<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，而最大灵感来源其实是纯文本电子邮件的格式。</p> <p>总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像 * 强调 *。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。</p> <h3 id="为什么要用markdown"><a href="#为什么要用markdown" class="header-anchor">#</a> 为什么要用 Markdown</h3> <p>有些朋友会觉得，我用 Word 也可以实现同样的效果，为什么要使用 Markdown 呢？</p> <p>Word 等其他文本编辑工具虽然也能实现同样的效果，但是其功能太强大了。Word 还能改变字体颜色，还可以调节字体大小。这么强大的功能可以说是 Word 的优点，但也可以说是它的缺点。</p> <p>当功能多了，我们的注意力就会分散，我们就会去纠结：这个字体大小到底是 14 还是 16 好？我想强调这一句话，是要加粗还是标红？</p> <p>而 Markdown 的出现让我们不需要去纠结这些问题。Markdown 的本质是让我们回归到内容本身，注重文章本身的结构，而不是样式。</p> <h3 id="兼容-html"><a href="#兼容-html" class="header-anchor">#</a> 兼容 HTML</h3> <p>Markdown 语法的目标是：成为一种适用于网络的<em>书写</em>语言。</p> <p>Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想<em>不是</em>要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种<em>发布</em>的格式，Markdown 是一种<em>书写</em>的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。</p> <p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。</p> <p>要制约的只有一些 HTML 区块元素――比如  <code>&lt;div&gt;</code> 、 <code>&lt;table&gt;</code> 、 <code>&lt;pre&gt;</code> 、 <code>&lt;p&gt;</code>  等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的  <code>&lt;p&gt;</code>  标签。</p> <p>例子如下，在 Markdown 文件里加上一段 HTML 表格：</p> <div class="language-md extra-class"><pre class="language-md"><code>这是一个普通段落。
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+
+这是另一个普通段落。
+</code></pre></div><p>请注意，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。比如，你在 HTML 区块内使用 Markdown 样式的 <code>*强调*</code>  会没有效果。</p> <p>HTML 的区段（行内）标签如  <code>&lt;span&gt;</code> 、 <code>&lt;cite&gt;</code> 、 <code>&lt;del&gt;</code>  可以在 Markdown 的段落、列表或是标题里随意使用。依照个人习惯，甚至可以不用 Markdown 格式，而直接采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的  <code>&lt;a&gt;</code>  或  <code>&lt;img&gt;</code>  标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。</p> <p>和处在 HTML 区块标签间不同，Markdown 语法在 HTML 区段标签间是有效的。</p> <h3 id="特殊字符自动转换"><a href="#特殊字符自动转换" class="header-anchor">#</a> 特殊字符自动转换</h3> <p>在 HTML 文件中，有两个字符需要特殊处理：  <code>&lt;</code>  和  <code>&amp;</code>  。  <code>&lt;</code>  符号用于起始标签， <code>&amp;</code>  符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是  <code>&amp;lt;</code>  和  <code>&amp;amp;</code> 。</p> <p><code>&amp;</code>  字符尤其让网络文档编写者受折磨，如果你要打「 <code>AT&amp;T</code> 」 ，你必须要写成「 <code>AT&amp;amp;T</code> 」。而网址中的  <code>&amp;</code>  字符也要转换。比如你要链接到：</p> <div class="language-md extra-class"><pre class="language-md"><code>http://images.google.com/images?num=30&amp;q=larry+bird
+</code></pre></div><p>你必须要把网址转换写为：</p> <div class="language-md extra-class"><pre class="language-md"><code>http://images.google.com/images?num=30<span class="token entity named-entity" title="&amp;">&amp;amp;</span>q=larry+bird
+</code></pre></div><p>才能放到链接标签的  <code>href</code>  属性里。不用说也知道这很容易忽略，这也可能是 HTML 标准检验所检查到的错误中，数量最多的。</p> <p>Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的  <code>&amp;</code>  字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成  <code>&amp;amp</code> ;。</p> <p>所以你如果要在文档中插入一个版权符号  <code>©</code> ，你可以这样写：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token entity named-entity" title="&amp;copy;">&amp;copy;</span>
+</code></pre></div><p>Markdown 会保留它不动。而若你写：</p> <div class="language-md extra-class"><pre class="language-md"><code>AT&amp;T
+</code></pre></div><p>Markdown 就会将它转为：</p> <div class="language-md extra-class"><pre class="language-md"><code>AT<span class="token entity named-entity" title="&amp;">&amp;amp;</span>T
+</code></pre></div><p>类似的状况也会发生在  <code>&lt;</code>  符号上，因为 Markdown 允许 <a href="#html">兼容 HTML</a> ，如果你是把  <code>&lt;</code>  符号作为 HTML 标签的定界符使用，那 Markdown 也不会对它做任何转换，但是如果你写：</p> <div class="language-md extra-class"><pre class="language-md"><code>4 &lt; 5
+</code></pre></div><p>Markdown 将会把它转换为：</p> <div class="language-md extra-class"><pre class="language-md"><code>4 <span class="token entity named-entity" title="&lt;">&amp;lt;</span> 5
+</code></pre></div><p>不过需要注意的是，code 范围内，不论是行内还是区块，  <code>&lt;</code>  和  <code>&amp;</code>  两个符号都<em>一定</em>会被转换成 HTML 实体，这项特性让你可以很容易地用 Markdown 写 HTML code （和 HTML 相对而言， HTML 语法中，你要把所有的  <code>&lt;</code>  和  <code>&amp;</code>  都转换为 HTML 实体，才能在 HTML 文件里面写出 HTML code。）</p> <h2 id="_2-区块元素"><a href="#_2-区块元素" class="header-anchor">#</a> 2 区块元素</h2> <h3 id="段落和换行"><a href="#段落和换行" class="header-anchor">#</a> 段落和换行</h3> <p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。</p> <p>「由一个或多个连续的文本行组成」这句话其实暗示了 Markdown 允许段落内的强迫换行（插入换行符），这个特性和其他大部分的 text-to-HTML 格式不一样（包括 Movable Type 的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成  <code>&lt;br /&gt;</code>  标签。</p> <p>如果你<em>确实</em>想要依赖 Markdown 来插入  <code>&lt;br /&gt;</code>  标签的话，在插入处先按入两个以上的空格然后回车。</p> <p>的确，需要多费点事（多加空格）来产生  <code>&lt;br /&gt;</code>  ，但是简单地「每个换行都转换为  <code>&lt;br /&gt;</code> 」的方法在 Markdown 中并不适合， Markdown 中 email 式的 <a href="#blockquote">区块引用</a> 和多段落的 <a href="#list">列表</a> 在使用换行来排版的时候，不但更好用，还更方便阅读。</p> <h3 id="标题"><a href="#标题" class="header-anchor">#</a> 标题</h3> <p>Markdown 支持两种标题的语法，类 [Setext] <a href="http://docutils.sourceforge.net/mirror/setext.html" target="_blank" rel="noopener noreferrer">1<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 和类 [atx] <a href="http://www.aaronsw.com/2002/atx/" target="_blank" rel="noopener noreferrer">2<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 形式。</p> <p>类 Setext 形式是用底线的形式，利用  <code>=</code>  （最高阶标题）和  <code>-</code>  （第二阶标题），例如：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token title important">This is an H1
+<span class="token punctuation">=============</span></span>
+
+<span class="token title important">This is an H2
+<span class="token punctuation">-------------</span></span>
+</code></pre></div><p>任何数量的  <code>=</code>  和  <code>-</code>  都可以有效果。</p> <p>类 Atx 形式则是在行首插入 1 到 6 个  <code>#</code>  ，对应到标题 1 到 6 阶，例如：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token title important"><span class="token punctuation">#</span> 这是 H1</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 这是 H2</span>
+
+<span class="token title important"><span class="token punctuation">######</span> 这是 H6</span>
+</code></pre></div><p>你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上  <code>#</code> ，而行尾的  <code>#</code>  数量也不用和开头一样（行首的井字符数量决定标题的阶数）：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token title important"><span class="token punctuation">#</span> 这是 H1 <span class="token punctuation">#</span></span>
+
+<span class="token title important"><span class="token punctuation">##</span> 这是 H2 <span class="token punctuation">##</span></span>
+
+<span class="token title important"><span class="token punctuation">###</span> 这是 H3 <span class="token punctuation">######</span></span>
+</code></pre></div><h3 id="区块引用-blockquotes"><a href="#区块引用-blockquotes" class="header-anchor">#</a> 区块引用 Blockquotes</h3> <p>Markdown 标记区块引用是使用类似 email 中用  <code>&gt;</code>  的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上  <code>&gt;</code>  ：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token blockquote punctuation">&gt;</span> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+<span class="token blockquote punctuation">&gt;</span> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+<span class="token blockquote punctuation">&gt;</span> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+<span class="token blockquote punctuation">&gt;</span> 
+<span class="token blockquote punctuation">&gt;</span> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+<span class="token blockquote punctuation">&gt;</span> id sem consectetuer libero luctus adipiscing.
+</code></pre></div><p>Markdown 也允许你偷懒只在整个段落的第一行最前面加上  <code>&gt;</code>  ：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token blockquote punctuation">&gt;</span> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+<span class="token blockquote punctuation">&gt;</span> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+</code></pre></div><p>区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的  <code>&gt;</code>  ：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token blockquote punctuation">&gt;</span> This is the first level of quoting.
+<span class="token blockquote punctuation">&gt;</span>
+<span class="token blockquote punctuation">&gt; &gt;</span> This is nested blockquote.
+<span class="token blockquote punctuation">&gt;</span>
+<span class="token blockquote punctuation">&gt;</span> Back to the first level.
+</code></pre></div><p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token blockquote punctuation">&gt;</span> <span class="token title important"><span class="token punctuation">##</span> 这是一个标题。</span>
+<span class="token blockquote punctuation">&gt;</span> 
+<span class="token blockquote punctuation">&gt;</span> <span class="token list punctuation">1.</span>   这是第一行列表项。
+<span class="token blockquote punctuation">&gt;</span> <span class="token list punctuation">2.</span>   这是第二行列表项。
+<span class="token blockquote punctuation">&gt;</span> 
+<span class="token blockquote punctuation">&gt;</span> 给出一些例子代码：
+<span class="token blockquote punctuation">&gt;</span> 
+<span class="token blockquote punctuation">&gt;</span> <span class="token code keyword">```return shell_exec(&quot;echo $input | $markdown_script&quot;);``</span>`
+</code></pre></div><p>任何像样的文本编辑器都能轻松地建立 email 型的引用。例如在 BBEdit 中，你可以选取文字后然后从选单中选择<em>增加引用阶层</em>。</p> <h3 id="列表"><a href="#列表" class="header-anchor">#</a> 列表</h3> <p>Markdown 支持有序列表和无序列表。</p> <p>无序列表使用星号、加号或是减号作为列表标记：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">*</span>   Red
+<span class="token list punctuation">*</span>   Green
+<span class="token list punctuation">*</span>   Blue
+</code></pre></div><p>等同于：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">+</span>   Red
+<span class="token list punctuation">+</span>   Green
+<span class="token list punctuation">+</span>   Blue
+</code></pre></div><p>也等同于：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">-</span>   Red
+<span class="token list punctuation">-</span>   Green
+<span class="token list punctuation">-</span>   Blue
+</code></pre></div><p>有序列表则使用数字接着一个英文句点：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">1.</span>  Bird
+<span class="token list punctuation">2.</span>  McHale
+<span class="token list punctuation">3.</span>  Parish
+</code></pre></div><p>很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Bird<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>McHale<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Parish<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>如果你的列表标记写成：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">1.</span>  Bird
+<span class="token list punctuation">1.</span>  McHale
+<span class="token list punctuation">1.</span>  Parish
+</code></pre></div><p>或甚至是：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">3.</span> Bird
+<span class="token list punctuation">1.</span> McHale
+<span class="token list punctuation">8.</span> Parish
+</code></pre></div><p>你都会得到完全相同的 HTML 输出。重点在于，你可以让 Markdown 文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。</p> <p>如果你使用懒惰的写法，建议第一个项目最好还是从 1. 开始，因为 Markdown 未来可能会支持有序列表的 start 属性。</p> <p>列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。</p> <p>要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">*</span>   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+    viverra nec, fringilla in, laoreet vitae, risus.
+<span class="token list punctuation">*</span>   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre></div><p>但是如果你懒，那也行：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">*</span>   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.
+<span class="token list punctuation">*</span>   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre></div><p>如果列表项目间用空行分开，在输出 HTML 时 Markdown 就会将项目内容用  <code>&lt;p&gt;</code> 
+ 标签包起来，举例来说：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">*</span>   Bird
+<span class="token list punctuation">*</span>   Magic
+</code></pre></div><p>会被转换为：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Bird<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Magic<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>但是这个：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">*</span>   Bird
+
+<span class="token list punctuation">*</span>   Magic
+</code></pre></div><p>会被转换为：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Bird<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Magic<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">1.</span>  This is a list item with two paragraphs. Lorem ipsum dolor
+    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+    mi posuere lectus.
+
+<span class="token code keyword">    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+    sit amet velit.</span>
+
+<span class="token list punctuation">2.</span>  Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre></div><p>如果你每行都有缩进，看起来会看好很多，当然，再次地，如果你很懒惰，Markdown 也允许：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">*</span>   This is a list item with two paragraphs.
+
+<span class="token code keyword">    This is the second paragraph in the list item. You're</span>
+only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.
+
+<span class="token list punctuation">*</span>   Another item in the same list.
+</code></pre></div><p>如果要在列表项目内放进引用，那  <code>&gt;</code>  就需要缩进：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">*</span>   A list item with a blockquote:
+
+<span class="token code keyword">    &gt; This is a blockquote
+    &gt; inside a list item.</span>
+</code></pre></div><p>如果要放代码区块的话，该区块就需要缩进<em>两次</em>，也就是 8 个空格或是 2 个制表符：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">*</span>   一列表项包含一个列表区块：
+
+<span class="token code keyword">        &lt;代码写在这&gt;</span>
+</code></pre></div><p>当然，项目列表很可能会不小心产生，像是下面这样的写法：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token list punctuation">1986.</span> What a great season.
+</code></pre></div><p>换句话说，也就是在行首出现<em>数字 - 句点 - 空白</em>，要避免这样的状况，你可以在句点前面加上反斜杠。</p> <div class="language-md extra-class"><pre class="language-md"><code>1986\. What a great season.
+</code></pre></div><h3 id="代码区块"><a href="#代码区块" class="header-anchor">#</a> 代码区块</h3> <p>和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown 会用  <code>&lt;pre&gt;</code>  和  <code>&lt;code&gt;</code>  标签来把代码区块包起来。</p> <p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：</p> <div class="language-md extra-class"><pre class="language-md"><code>这是一个普通段落：
+
+<span class="token code keyword">    这是一个代码区块。</span>
+</code></pre></div><p>Markdown 会转换成：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>这是一个普通段落：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>这是一个代码区块。
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>这个每行一阶的缩进（4 个空格或是 1 个制表符），都会被移除，例如：</p> <div class="language-md extra-class"><pre class="language-md"><code>Here is an example of AppleScript:
+
+<span class="token code keyword">    tell application &quot;Foo&quot;
+        beep
+    end tell</span>
+</code></pre></div><p>会被转换为：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Here is an example of AppleScript:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>tell application &quot;Foo&quot;
+    beep
+end tell
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p> <p>在代码区块里面，  <code>&amp;</code>  、  <code>&lt;</code>  和  <code>&gt;</code>  会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，再加上缩进就可以了，剩下的 Markdown 都会帮你处理，例如：</p> <div class="language-md extra-class"><pre class="language-md"><code>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>footer<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token entity named-entity" title="&amp;copy;">&amp;copy;</span> 2004 Foo Corporation
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>会被转换为：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span><span class="token entity named-entity" title="&lt;">&amp;lt;</span>div class=&quot;footer&quot;<span class="token entity named-entity" title="&gt;">&amp;gt;</span>
+    <span class="token entity named-entity" title="&amp;">&amp;amp;</span>copy; 2004 Foo Corporation
+<span class="token entity named-entity" title="&lt;">&amp;lt;</span>/div<span class="token entity named-entity" title="&gt;">&amp;gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>代码区块中，一般的 Markdown 语法不会被转换，像是星号便只是星号，这表示你可以很容易地以 Markdown 语法撰写 Markdown 语法相关的文件。</p> <h3 id="分隔线"><a href="#分隔线" class="header-anchor">#</a> 分隔线</h3> <p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token hr punctuation">* * *</span>
+
+<span class="token hr punctuation">***</span>
+
+<span class="token hr punctuation">*****</span>
+
+<span class="token hr punctuation">- - -</span>
+
+<span class="token hr punctuation">---------------------------------------</span>
+</code></pre></div><h2 id="_3-区段元素"><a href="#_3-区段元素" class="header-anchor">#</a> 3 区段元素</h2> <h3 id="链接"><a href="#链接" class="header-anchor">#</a> 链接</h3> <p>Markdown 支持两种形式的链接语法： <em>行内式</em>和<em>参考式</em>两种形式。</p> <p>不管是哪一种，链接文字都是用 [方括号] 来标记。</p> <p>要建立一个<em>行内式</em>的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：</p> <div class="language-md extra-class"><pre class="language-md"><code>This is <span class="token url">[<span class="token content">an example</span>](<span class="token url">http://example.com/</span> <span class="token string">&quot;Title&quot;</span>)</span> inline link.
+
+<span class="token url">[<span class="token content">This link</span>](<span class="token url">http://example.net/</span>)</span> has no title attribute.
+</code></pre></div><p>会产生：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>This is <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://example.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+an example<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> inline link.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://example.net/<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>This link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> has no
+title attribute.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>如果你是要链接到同样主机的资源，你可以使用相对路径：</p> <div class="language-md extra-class"><pre class="language-md"><code>See my <span class="token url">[<span class="token content">About</span>](<span class="token url">/about/</span>)</span> page for details.   
+</code></pre></div><p><em>参考式</em>的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：</p> <div class="language-md extra-class"><pre class="language-md"><code>This is <span class="token url">[<span class="token content">an example</span>][<span class="token variable">id</span>]</span> reference-style link.
+</code></pre></div><p>你也可以选择性地在两个方括号中间加上一个空格：</p> <div class="language-md extra-class"><pre class="language-md"><code>This is <span class="token url">[<span class="token content">an example</span>] [<span class="token variable">id</span>]</span> reference-style link.
+</code></pre></div><p>接着，在文件的任意处，你可以把这个标记的链接内容定义出来：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">id</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://example.com/  <span class="token string">&quot;Optional Title Here&quot;</span></span>
+</code></pre></div><p>链接内容定义的形式为：</p> <ul><li>方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</li> <li>接着一个冒号</li> <li>接着一个以上的空格或制表符</li> <li>接着链接的网址</li> <li>选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</li></ul> <p>下面这三种链接的定义都是相同：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">foo</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://example.com/  <span class="token string">&quot;Optional Title Here&quot;</span></span>
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">foo</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://example.com/  <span class="token string">'Optional Title Here'</span></span>
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">foo</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://example.com/  <span class="token string">(Optional Title Here)</span></span>
+</code></pre></div><p><strong>请注意：</strong> 有一个已知的问题是 Markdown.pl 1.0.1 会忽略单引号包起来的链接 title。</p> <p>链接网址也可以用尖括号包起来：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">id</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token punctuation">&lt;</span>http://example.com/<span class="token punctuation">&gt;</span>  <span class="token string">&quot;Optional Title Here&quot;</span></span>
+</code></pre></div><p>你也可以把 title 属性放到下一行，也可以加一些缩进，若网址太长的话，这样会比较好看：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">id</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://example.com/longish/path/to/resource/here</span>
+    &quot;Optional Title Here&quot;
+</code></pre></div><p>网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。</p> <p>链接辨别标签可以有字母、数字、空白和标点符号，但是并<em>不</em>区分大小写，因此下面两个链接是一样的：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url">[<span class="token content">link text</span>][<span class="token variable">a</span>]</span>
+<span class="token url">[<span class="token content">link text</span>][<span class="token variable">A</span>]</span>
+</code></pre></div><p><em>隐式链接标记</em>功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 &quot;Google&quot; 链接到 google.com，你可以简化成：</p> <div class="language-md extra-class"><pre class="language-md"><code>[Google][]
+</code></pre></div><p>然后定义链接内容：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">Google</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://google.com/</span>
+</code></pre></div><p>由于链接文字可能包含空白，所以这种简化型的标记内也许包含多个单词：</p> <div class="language-md extra-class"><pre class="language-md"><code>Visit [Daring Fireball][] for more information.
+</code></pre></div><p>然后接着定义链接：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">Daring Fireball</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://daringfireball.net/</span>
+</code></pre></div><p>链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。</p> <p>下面是一个参考式链接的范例：</p> <div class="language-md extra-class"><pre class="language-md"><code>I get 10 times more traffic from <span class="token url">[<span class="token content">Google</span>] [<span class="token variable">1</span>]</span> than from
+<span class="token url">[<span class="token content">Yahoo</span>] [<span class="token variable">2</span>]</span> or <span class="token url">[<span class="token content">MSN</span>] [<span class="token variable">3</span>]</span>.
+
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://google.com/        <span class="token string">&quot;Google&quot;</span></span>
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://search.yahoo.com/  <span class="token string">&quot;Yahoo Search&quot;</span></span>
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">3</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://search.msn.com/    <span class="token string">&quot;MSN Search&quot;</span></span>
+</code></pre></div><p>如果改成用链接名称的方式写：</p> <div class="language-md extra-class"><pre class="language-md"><code>I get 10 times more traffic from [Google][] than from
+[Yahoo][] or [MSN][].
+
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">google</span><span class="token punctuation">]</span><span class="token punctuation">:</span> http://google.com/        <span class="token string">&quot;Google&quot;</span></span>
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">yahoo</span><span class="token punctuation">]</span><span class="token punctuation">:</span>  http://search.yahoo.com/  <span class="token string">&quot;Yahoo Search&quot;</span></span>
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">msn</span><span class="token punctuation">]</span><span class="token punctuation">:</span>    http://search.msn.com/    <span class="token string">&quot;MSN Search&quot;</span></span>
+</code></pre></div><p>上面两种写法都会产生下面的 HTML。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>I get 10 times more traffic from <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://google.com/<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Google<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Google<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> than from
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://search.yahoo.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Yahoo Search<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Yahoo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+or <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://search.msn.com/<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>MSN Search<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>MSN<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>下面是用行内式写的同样一段内容的 Markdown 文件，提供作为比较之用：</p> <div class="language-md extra-class"><pre class="language-md"><code>I get 10 times more traffic from <span class="token url">[<span class="token content">Google</span>](<span class="token url">http://google.com/</span> <span class="token string">&quot;Google&quot;</span>)</span>
+than from <span class="token url">[<span class="token content">Yahoo</span>](<span class="token url">http://search.yahoo.com/</span> <span class="token string">&quot;Yahoo Search&quot;</span>)</span> or
+<span class="token url">[<span class="token content">MSN</span>](<span class="token url">http://search.msn.com/</span> <span class="token string">&quot;MSN Search&quot;</span>)</span>.
+</code></pre></div><p>参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有 81 个字符，但是用行内形式的却会增加到 176 个字元，如果是用纯 HTML 格式来写，会有 234 个字元，在 HTML 格式中，标签比文本还要多。</p> <p>使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的元数据移到段落文字之外，你就可以增加链接而不让文章的阅读感觉被打断。</p> <h3 id="强调"><a href="#强调" class="header-anchor">#</a> 强调</h3> <p>Markdown 使用星号（ <code>*</code> ）和底线（ <code>_</code> ）作为标记强调字词的符号，被  <code>*</code>  或  <code>_</code>  包围的字词会被转成用  <code>&lt;em&gt;</code>  标签包围，用两个  <code>*</code>  或  <code>_</code>  包起来的话，则会被转成  <code>&lt;strong&gt;</code> ，例如：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token italic"><span class="token punctuation">*</span><span class="token content">single asterisks</span><span class="token punctuation">*</span></span>
+
+<span class="token italic"><span class="token punctuation">_</span><span class="token content">single underscores</span><span class="token punctuation">_</span></span>
+
+<span class="token bold"><span class="token punctuation">**</span><span class="token content">double asterisks</span><span class="token punctuation">**</span></span>
+
+<span class="token bold"><span class="token punctuation">__</span><span class="token content">double underscores</span><span class="token punctuation">__</span></span>
+</code></pre></div><p>会转成：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>single asterisks<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>single underscores<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>double asterisks<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>double underscores<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。</p> <p>强调也可以直接插在文字中间：</p> <div class="language-md extra-class"><pre class="language-md"><code>un<span class="token italic"><span class="token punctuation">*</span><span class="token content">frigging</span><span class="token punctuation">*</span></span>believable
+</code></pre></div><p>但是<strong>如果你的  <code>*</code>  和  <code>_</code>  两边都有空白的话，它们就只会被当成普通的符号</strong>。</p> <p>如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：</p> <div class="language-md extra-class"><pre class="language-md"><code>\*this text is surrounded by literal asterisks\*
+</code></pre></div><h3 id="代码"><a href="#代码" class="header-anchor">#</a> 代码</h3> <p>如果要标记一小段行内代码，你可以用反引号把它包起来（ <code>`</code> ），例如：</p> <div class="language-md extra-class"><pre class="language-md"><code>Use the <span class="token code keyword">`printf()`</span> function.
+</code></pre></div><p>会产生：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Use the <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>printf()<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span> function.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token code keyword">```There is a literal backtick (`) here.``</span>`
+</code></pre></div><p>这段语法会产生：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>There is a literal backtick (`) here.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号：</p> <div class="language-md extra-class"><pre class="language-md"><code>A single backtick in a code span: <span class="token code keyword">`` ` ``</span>
+
+A backtick-delimited string in a code span: <span class="token code keyword">`` `foo` ``</span>
+</code></pre></div><p>会产生：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>A single backtick in a code span: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>`<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>A backtick-delimited string in a code span: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>`foo`<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在代码区段内， <code>&amp;</code>  和尖括号<strong>都</strong>会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：</p> <div class="language-md extra-class"><pre class="language-md"><code>Please don't use any <span class="token code keyword">`&lt;blink&gt;`</span> tags.
+</code></pre></div><p>转为：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Please don't use any <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span><span class="token entity named-entity" title="&lt;">&amp;lt;</span>blink<span class="token entity named-entity" title="&gt;">&amp;gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span> tags.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>你也可以这样写：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token code keyword">`&amp;#8212;`</span> is the decimal-encoded equivalent of <span class="token code keyword">`&amp;mdash;`</span>.
+</code></pre></div><p>以产生：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span><span class="token entity named-entity" title="&amp;">&amp;amp;</span>#8212;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span> is the decimal-encoded
+equivalent of <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span><span class="token entity named-entity" title="&amp;">&amp;amp;</span>mdash;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="图片"><a href="#图片" class="header-anchor">#</a> 图片</h3> <p>很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。</p> <p>Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： <em>行内式</em>和<em>参考式</em>。</p> <p>行内式的图片语法看起来像是：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url"><span class="token operator">!</span>[<span class="token content">Alt text</span>](<span class="token url">/path/to/img.jpg</span>)</span>
+
+<span class="token url"><span class="token operator">!</span>[<span class="token content">Alt text</span>](<span class="token url">/path/to/img.jpg</span> <span class="token string">&quot;Optional title&quot;</span>)</span>
+</code></pre></div><p>详细叙述如下：</p> <ul><li>一个惊叹号  <code>!</code></li> <li>接着一个方括号，里面放上图片的替代文字</li> <li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上
+选择性的 'title' 文字。</li></ul> <p>参考式的图片语法则长得像这样：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url"><span class="token operator">!</span>[<span class="token content">Alt text</span>][<span class="token variable">id</span>]</span>
+</code></pre></div><p>「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">id</span><span class="token punctuation">]</span><span class="token punctuation">:</span> url/to/image  <span class="token string">&quot;Optional title attribute&quot;</span></span>
+</code></pre></div><p>到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的  <code>&lt;img&gt;</code>  标签。</p> <h2 id="_4-其它"><a href="#_4-其它" class="header-anchor">#</a> 4 其它</h2> <h3 id="自动链接"><a href="#自动链接" class="header-anchor">#</a> 自动链接</h3> <p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用尖括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p> <div class="language-md extra-class"><pre class="language-md"><code>&lt;http://example.com/&gt;
+</code></pre></div><p>Markdown 会转为：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://example.com/<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>http://example.com/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>邮址的自动链接也很类似，只是 Markdown 会先做一个编码转换的过程，把文字字符转成 16 进位码的 HTML 实体，这样的格式可以糊弄一些不好的邮址收集机器人，例如：</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>address@example.com</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>Markdown 会转成：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token entity" title="&amp;#x6D;">&amp;#x6D;</span><span class="token entity" title="&amp;#x61;">&amp;#x61;</span>i<span class="token entity" title="&amp;#x6C;">&amp;#x6C;</span><span class="token entity" title="&amp;#x74;">&amp;#x74;</span><span class="token entity" title="&amp;#x6F;">&amp;#x6F;</span>:<span class="token entity" title="&amp;#x61;">&amp;#x61;</span><span class="token entity" title="&amp;#x64;">&amp;#x64;</span><span class="token entity" title="&amp;#x64;">&amp;#x64;</span><span class="token entity" title="&amp;#x72;">&amp;#x72;</span><span class="token entity" title="&amp;#x65;">&amp;#x65;</span>
+<span class="token entity" title="&amp;#115;">&amp;#115;</span><span class="token entity" title="&amp;#115;">&amp;#115;</span><span class="token entity" title="&amp;#64;">&amp;#64;</span><span class="token entity" title="&amp;#101;">&amp;#101;</span><span class="token entity" title="&amp;#120;">&amp;#120;</span><span class="token entity" title="&amp;#x61;">&amp;#x61;</span><span class="token entity" title="&amp;#109;">&amp;#109;</span><span class="token entity" title="&amp;#x70;">&amp;#x70;</span><span class="token entity" title="&amp;#x6C;">&amp;#x6C;</span>e<span class="token entity" title="&amp;#x2E;">&amp;#x2E;</span><span class="token entity" title="&amp;#99;">&amp;#99;</span><span class="token entity" title="&amp;#111;">&amp;#111;</span>
+<span class="token entity" title="&amp;#109;">&amp;#109;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token entity" title="&amp;#x61;">&amp;#x61;</span><span class="token entity" title="&amp;#x64;">&amp;#x64;</span><span class="token entity" title="&amp;#x64;">&amp;#x64;</span><span class="token entity" title="&amp;#x72;">&amp;#x72;</span><span class="token entity" title="&amp;#x65;">&amp;#x65;</span><span class="token entity" title="&amp;#115;">&amp;#115;</span><span class="token entity" title="&amp;#115;">&amp;#115;</span><span class="token entity" title="&amp;#64;">&amp;#64;</span><span class="token entity" title="&amp;#101;">&amp;#101;</span><span class="token entity" title="&amp;#120;">&amp;#120;</span><span class="token entity" title="&amp;#x61;">&amp;#x61;</span>
+<span class="token entity" title="&amp;#109;">&amp;#109;</span><span class="token entity" title="&amp;#x70;">&amp;#x70;</span><span class="token entity" title="&amp;#x6C;">&amp;#x6C;</span>e<span class="token entity" title="&amp;#x2E;">&amp;#x2E;</span><span class="token entity" title="&amp;#99;">&amp;#99;</span><span class="token entity" title="&amp;#111;">&amp;#111;</span><span class="token entity" title="&amp;#109;">&amp;#109;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在浏览器里面，这段字串（其实是  <code>&lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;</code> ）会变成一个可以点击的「address@example.com」链接。</p> <p>（这种作法虽然可以糊弄不少的机器人，但并不能全部挡下来，不过总比什么都不做好些。不管怎样，公开你的信箱终究会引来广告信件的。）</p> <h3 id="反斜杠"><a href="#反斜杠" class="header-anchor">#</a> 反斜杠</h3> <p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用  <code>&lt;em&gt;</code>  标签），你可以在星号的前面加上反斜杠：</p> <div class="language-md extra-class"><pre class="language-md"><code>\*literal asterisks\*
+</code></pre></div><p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p> <div class="language-md extra-class"><pre class="language-md"><code>\   反斜线
+`   反引号
+<span class="token list punctuation">*</span>   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+<span class="token title important"><span class="token punctuation">#</span>   井字号</span>
+<span class="token list punctuation">+</span>   加号
+<span class="token list punctuation">-</span>   减号
+.   英文句点
+!   惊叹号
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">文档更新时间:</span> <span class="time">2021-01-10 16:21:09</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/standard/VUE.html" class="prev">
+        Vue 编码规范
+      </a></span> <span class="next"><a href="/standard/Commit.html">
+        Git Commit 规范指南
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.14bebd55.js" defer></script><script src="/assets/js/2.46a6568e.js" defer></script><script src="/assets/js/3.4eebc4ee.js" defer></script><script src="/assets/js/25.f7011cd4.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>存储类 | 前端文档</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="description" content="前端文档">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.119f77bc.css" as="style"><link rel="preload" href="/assets/js/app.14bebd55.js" as="script"><link rel="preload" href="/assets/js/2.46a6568e.js" as="script"><link rel="preload" href="/assets/js/3.4eebc4ee.js" as="script"><link rel="preload" href="/assets/js/44.ba6da2b9.js" as="script"><link rel="prefetch" href="/assets/js/10.1991ae1e.js"><link rel="prefetch" href="/assets/js/11.e6bc6b4d.js"><link rel="prefetch" href="/assets/js/12.28195a00.js"><link rel="prefetch" href="/assets/js/13.33458149.js"><link rel="prefetch" href="/assets/js/14.2fbfe174.js"><link rel="prefetch" href="/assets/js/15.54bfb07d.js"><link rel="prefetch" href="/assets/js/16.93793b7c.js"><link rel="prefetch" href="/assets/js/17.27f35893.js"><link rel="prefetch" href="/assets/js/18.8912b211.js"><link rel="prefetch" href="/assets/js/19.041fbc54.js"><link rel="prefetch" href="/assets/js/20.9bced172.js"><link rel="prefetch" href="/assets/js/21.50c4d5c4.js"><link rel="prefetch" href="/assets/js/22.32478ce2.js"><link rel="prefetch" href="/assets/js/23.a6b931ac.js"><link rel="prefetch" href="/assets/js/24.c3c717ac.js"><link rel="prefetch" href="/assets/js/25.f7011cd4.js"><link rel="prefetch" href="/assets/js/26.742fb1c6.js"><link rel="prefetch" href="/assets/js/27.9696ed96.js"><link rel="prefetch" href="/assets/js/28.c02ba96b.js"><link rel="prefetch" href="/assets/js/29.d6368341.js"><link rel="prefetch" href="/assets/js/30.a1e00125.js"><link rel="prefetch" href="/assets/js/31.e9d086fc.js"><link rel="prefetch" href="/assets/js/32.52ac0564.js"><link rel="prefetch" href="/assets/js/33.e3da9847.js"><link rel="prefetch" href="/assets/js/34.ee6c7fbf.js"><link rel="prefetch" href="/assets/js/35.977fa64c.js"><link rel="prefetch" href="/assets/js/36.3d793e99.js"><link rel="prefetch" href="/assets/js/37.9324baf6.js"><link rel="prefetch" href="/assets/js/38.6c1f27d3.js"><link rel="prefetch" href="/assets/js/39.117b1101.js"><link rel="prefetch" href="/assets/js/4.33d3d64d.js"><link rel="prefetch" href="/assets/js/40.d9b8c316.js"><link rel="prefetch" href="/assets/js/41.f99335de.js"><link rel="prefetch" href="/assets/js/42.10ac551d.js"><link rel="prefetch" href="/assets/js/43.4d5730fc.js"><link rel="prefetch" href="/assets/js/45.b2771d22.js"><link rel="prefetch" href="/assets/js/46.9b3a68ab.js"><link rel="prefetch" href="/assets/js/47.1a09638a.js"><link rel="prefetch" href="/assets/js/48.c5a7225f.js"><link rel="prefetch" href="/assets/js/49.fb538284.js"><link rel="prefetch" href="/assets/js/5.5834837c.js"><link rel="prefetch" href="/assets/js/6.1e82e21f.js"><link rel="prefetch" href="/assets/js/7.0f284d67.js"><link rel="prefetch" href="/assets/js/8.b7f4a578.js"><link rel="prefetch" href="/assets/js/9.9a6eb311.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.119f77bc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="standard Menu" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="standard Menu" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standard/HTML/" class="nav-link">
+  HTML编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CSS/" class="nav-link">
+  CSS编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JavaScript/" class="nav-link">
+  JavaScript编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/VUE/" class="nav-link">
+  VUE编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Markdown/" class="nav-link">
+  Markdown语法说明
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Commit/" class="nav-link">
+  Git提交规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JSON/" class="nav-link">
+  JSON数据规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CopyWriter/" class="nav-link">
+  文案风格指南
+</a></li></ul></div></div><div class="nav-item"><a href="/materiel/" class="nav-link">
+  物料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="plugin Menu" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="plugin Menu" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/HRM-Player/" class="nav-link">
+  HRM 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Vue-Flv-Player/" class="nav-link">
+  FLV 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Calendar/" class="nav-link">
+  Calendar 农历面板
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Very-Axios/" class="nav-link">
+  Very-Axios
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="utils Menu" class="dropdown-title"><span class="title">函数库</span> <span class="arrow down"></span></button> <button type="button" aria-label="utils Menu" class="mobile-dropdown-title"><span class="title">函数库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/utils/Type/" class="nav-link">
+  类型判断类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Validator/" class="nav-link">
+  常规验证类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/String/" class="nav-link">
+  字符串类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Array/" class="nav-link">
+  数组类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Number/" class="nav-link">
+  数字类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Money/" class="nav-link">
+  金额类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Date/" class="nav-link">
+  日期类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Calculate/" class="nav-link">
+  浮点计算类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Tools/" class="nav-link">
+  工具类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Storage/" class="nav-link">
+  存储类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/DOM/" class="nav-link">
+  DOM类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Event/" class="nav-link">
+  事件处理类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tools Menu" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="tools Menu" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/NodeJS/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Sourcetree/" class="nav-link">
+  Sourcetree
+</a></li><li class="dropdown-item"><!----> <a href="/tools/VisualStudioCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XShell/" class="nav-link">
+  XShell
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Typora/" class="nav-link">
+  Typora
+</a></li><li class="dropdown-item"><!----> <a href="/tools/PicGo/" class="nav-link">
+  PicGo
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XMind/" class="nav-link">
+  XMind
+</a></li></ul></div></div> <!----></nav> <label title="切换暗色" class="model"><input type="checkbox" hidden="hidden" name="model" id>⚫</label></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="standard Menu" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="standard Menu" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standard/HTML/" class="nav-link">
+  HTML编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CSS/" class="nav-link">
+  CSS编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JavaScript/" class="nav-link">
+  JavaScript编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/VUE/" class="nav-link">
+  VUE编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Markdown/" class="nav-link">
+  Markdown语法说明
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Commit/" class="nav-link">
+  Git提交规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JSON/" class="nav-link">
+  JSON数据规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CopyWriter/" class="nav-link">
+  文案风格指南
+</a></li></ul></div></div><div class="nav-item"><a href="/materiel/" class="nav-link">
+  物料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="plugin Menu" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="plugin Menu" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/HRM-Player/" class="nav-link">
+  HRM 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Vue-Flv-Player/" class="nav-link">
+  FLV 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Calendar/" class="nav-link">
+  Calendar 农历面板
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Very-Axios/" class="nav-link">
+  Very-Axios
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="utils Menu" class="dropdown-title"><span class="title">函数库</span> <span class="arrow down"></span></button> <button type="button" aria-label="utils Menu" class="mobile-dropdown-title"><span class="title">函数库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/utils/Type/" class="nav-link">
+  类型判断类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Validator/" class="nav-link">
+  常规验证类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/String/" class="nav-link">
+  字符串类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Array/" class="nav-link">
+  数组类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Number/" class="nav-link">
+  数字类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Money/" class="nav-link">
+  金额类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Date/" class="nav-link">
+  日期类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Calculate/" class="nav-link">
+  浮点计算类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Tools/" class="nav-link">
+  工具类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Storage/" class="nav-link">
+  存储类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/DOM/" class="nav-link">
+  DOM类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Event/" class="nav-link">
+  事件处理类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tools Menu" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="tools Menu" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/NodeJS/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Sourcetree/" class="nav-link">
+  Sourcetree
+</a></li><li class="dropdown-item"><!----> <a href="/tools/VisualStudioCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XShell/" class="nav-link">
+  XShell
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Typora/" class="nav-link">
+  Typora
+</a></li><li class="dropdown-item"><!----> <a href="/tools/PicGo/" class="nav-link">
+  PicGo
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XMind/" class="nav-link">
+  XMind
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>函数库</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/utils/" aria-current="page" class="sidebar-link">Cafe-Utils</a></li><li><a href="/utils/Type.html" class="sidebar-link">类型判断类</a></li><li><a href="/utils/Validator.html" class="sidebar-link">常规验证类</a></li><li><a href="/utils/String.html" class="sidebar-link">字符串类</a></li><li><a href="/utils/Array.html" class="sidebar-link">数组类</a></li><li><a href="/utils/Number.html" class="sidebar-link">数字类</a></li><li><a href="/utils/Money.html" class="sidebar-link">金额类</a></li><li><a href="/utils/Date.html" class="sidebar-link">日期类</a></li><li><a href="/utils/Calculate.html" class="sidebar-link">浮点计算类</a></li><li><a href="/utils/Tools.html" class="sidebar-link">工具类</a></li><li><a href="/utils/Storage.html" aria-current="page" class="active sidebar-link">存储类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/utils/Storage.html#cookie" class="sidebar-link">cookie</a></li><li class="sidebar-sub-header"><a href="/utils/Storage.html#localstorage" class="sidebar-link">localStorage</a></li><li class="sidebar-sub-header"><a href="/utils/Storage.html#sessionstorage" class="sidebar-link">sessionStorage</a></li></ul></li><li><a href="/utils/DOM.html" class="sidebar-link">DOM类</a></li><li><a href="/utils/Event.html" class="sidebar-link">事件处理类</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="存储类"><a href="#存储类" class="header-anchor">#</a> 存储类</h1> <h2 id="cookie"><a href="#cookie" class="header-anchor">#</a> cookie</h2> <h3 id="setcookie"><a href="#setcookie" class="header-anchor">#</a> setCookie</h3> <p>设置 cookie。</p> <h4 id="源码"><a href="#源码" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 设置cookie
+ * @param {string} key - cookie名称
+ * @param {string} value - cookie值
+ * @param {number} expires - 过期时间（天）
+ * @returns {undefined}
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">setCookie</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> value<span class="token punctuation">,</span> expires</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>key <span class="token operator">||</span> <span class="token operator">!</span>value<span class="token punctuation">)</span> <span class="token keyword">return</span>
+  <span class="token keyword">let</span> expiresDate <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  expiresDate<span class="token punctuation">.</span><span class="token function">setDate</span><span class="token punctuation">(</span>expiresDate<span class="token punctuation">.</span><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> expires<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span>cookie <span class="token operator">=</span> key <span class="token operator">+</span> <span class="token string">'='</span> <span class="token operator">+</span> value <span class="token operator">+</span> <span class="token string">';expires='</span> <span class="token operator">+</span> expiresDate<span class="token punctuation">.</span><span class="token function">toUTCString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用"><a href="#使用" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">setCookie</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;wangdaodao&quot;</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="getcookie"><a href="#getcookie" class="header-anchor">#</a> getCookie</h3> <p>获取 cookie。</p> <h4 id="源码-2"><a href="#源码-2" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 获取cookie
+ * @param {string} key - 要获取的某个cookie键值
+ * @returns {string} cookie值
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">getCookie</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> reg <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span><span class="token string">'(^| )'</span> <span class="token operator">+</span> key <span class="token operator">+</span> <span class="token string">'=([^;]*)(;|$)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> cookies <span class="token operator">=</span> document<span class="token punctuation">.</span>cookie<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>cookies<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">decodeURIComponent</span><span class="token punctuation">(</span>cookies<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-2"><a href="#使用-2" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">getCookie</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span> <span class="token comment">// &quot;wangdaodao&quot;</span>
+</code></pre></div><h3 id="delcookie"><a href="#delcookie" class="header-anchor">#</a> delCookie</h3> <p>删除 cookie。</p> <h4 id="源码-3"><a href="#源码-3" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 删除cookie
+ * @param {string} key - 要删除的cookie键值
+ * @returns {undefined}
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">delCookie</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> expires <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  expires<span class="token punctuation">.</span><span class="token function">setTime</span><span class="token punctuation">(</span>expires<span class="token punctuation">.</span><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> val <span class="token operator">=</span> <span class="token function">getCookie</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>val <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    document<span class="token punctuation">.</span>cookie <span class="token operator">=</span> key <span class="token operator">+</span> <span class="token string">&quot;=&quot;</span> <span class="token operator">+</span> val <span class="token operator">+</span> <span class="token string">&quot;;expires=&quot;</span> <span class="token operator">+</span> expires<span class="token punctuation">.</span><span class="token function">toUTCString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-3"><a href="#使用-3" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">delCookie</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="clearcookie"><a href="#clearcookie" class="header-anchor">#</a> clearCookie</h3> <p>清空 cookie。</p> <h4 id="源码-4"><a href="#源码-4" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 清空cookie
+ * @returns {undefined}
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">clearCookie</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> keys <span class="token operator">=</span> document<span class="token punctuation">.</span>cookie<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[^ =;]+(?=\=)</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>keys<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> keys<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">delCookie</span><span class="token punctuation">(</span>keys<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-4"><a href="#使用-4" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">clearCookie</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="localstorage"><a href="#localstorage" class="header-anchor">#</a> localStorage</h2> <h3 id="setlstorage"><a href="#setlstorage" class="header-anchor">#</a> setLStorage</h3> <p>存储 localStorage</p> <h4 id="源码-5"><a href="#源码-5" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 存储localStorage
+ * @param {string} key 
+ * @param {any} value 
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">setLStorage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> value <span class="token operator">==</span> <span class="token string">'object'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    value <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-5"><a href="#使用-5" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">setLStorage</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;wangdaodao&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="getlstorage"><a href="#getlstorage" class="header-anchor">#</a> getLStorage</h3> <p>取出 localStorage</p> <h4 id="源码-6"><a href="#源码-6" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 取出localStorage
+ * @param {string} key 
+ * @returns {any}
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">getLStorage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-6"><a href="#使用-6" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">getLStorage</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span> <span class="token comment">// &quot;wangdaodao&quot;</span>
+</code></pre></div><h3 id="dellstorage"><a href="#dellstorage" class="header-anchor">#</a> delLStorage</h3> <p>删除 localStorage</p> <h4 id="源码-7"><a href="#源码-7" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 删除localStorage
+ * @param {string} key 
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">delLStorage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>key<span class="token punctuation">)</span> <span class="token keyword">return</span>
+  localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-7"><a href="#使用-7" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">delLStorage</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="clearlstorage"><a href="#clearlstorage" class="header-anchor">#</a> clearLStorage</h3> <p>清空 localStorage</p> <h4 id="源码-8"><a href="#源码-8" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 清空localStorage
+ * @param {string} key 
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">clearLStorage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  localStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-8"><a href="#使用-8" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">clearLStorage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="sessionstorage"><a href="#sessionstorage" class="header-anchor">#</a> sessionStorage</h2> <h3 id="setsstorage"><a href="#setsstorage" class="header-anchor">#</a> setSStorage</h3> <p>存储 sessionStorage</p> <h4 id="源码-9"><a href="#源码-9" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 存储sessionStorage
+ * @param {string} key 
+ * @param {any} value 
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">setSStorage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> value <span class="token operator">==</span> <span class="token string">'object'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    value <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  sessionStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-9"><a href="#使用-9" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">setSStorage</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;wangdaodao&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="getsstorage"><a href="#getsstorage" class="header-anchor">#</a> getSStorage</h3> <p>取出 sessionStorage</p> <h4 id="源码-10"><a href="#源码-10" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 取出sessionStorage
+ * @param {string} key 
+ * @returns {any}
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">getSStorage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> sessionStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-10"><a href="#使用-10" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">getSStorage</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span> <span class="token comment">// &quot;wangdaodao&quot;</span>
+</code></pre></div><h3 id="delsstorage"><a href="#delsstorage" class="header-anchor">#</a> delSStorage</h3> <p>删除 sessionStorage</p> <h4 id="源码-11"><a href="#源码-11" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 删除sessionStorage
+ * @param {string} key 
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">delSStorage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>key<span class="token punctuation">)</span> <span class="token keyword">return</span>
+  sessionStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-11"><a href="#使用-11" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">delSStorage</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="clearsstorage"><a href="#clearsstorage" class="header-anchor">#</a> clearSStorage</h3> <p>清空 sessionStorage</p> <h4 id="源码-12"><a href="#源码-12" class="header-anchor">#</a> 源码：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 清空sessionStorage
+ * @param {string} key 
+ */</span>
+<span class="token keyword">const</span> <span class="token function-variable function">clearSStorage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  sessionStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-12"><a href="#使用-12" class="header-anchor">#</a> 使用：</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">clearSStorage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">文档更新时间:</span> <span class="time">2021-01-10 16:21:09</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/utils/Tools.html" class="prev">
+        工具类
+      </a></span> <span class="next"><a href="/utils/DOM.html">
+        DOM类
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.14bebd55.js" defer></script><script src="/assets/js/2.46a6568e.js" defer></script><script src="/assets/js/3.4eebc4ee.js" defer></script><script src="/assets/js/44.ba6da2b9.js" defer></script>
+  </body>
+</html>

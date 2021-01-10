@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue-Flv-Player 播放器 | 前端文档</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="description" content="前端文档">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.119f77bc.css" as="style"><link rel="preload" href="/assets/js/app.14bebd55.js" as="script"><link rel="preload" href="/assets/js/2.46a6568e.js" as="script"><link rel="preload" href="/assets/js/3.4eebc4ee.js" as="script"><link rel="preload" href="/assets/js/17.27f35893.js" as="script"><link rel="prefetch" href="/assets/js/10.1991ae1e.js"><link rel="prefetch" href="/assets/js/11.e6bc6b4d.js"><link rel="prefetch" href="/assets/js/12.28195a00.js"><link rel="prefetch" href="/assets/js/13.33458149.js"><link rel="prefetch" href="/assets/js/14.2fbfe174.js"><link rel="prefetch" href="/assets/js/15.54bfb07d.js"><link rel="prefetch" href="/assets/js/16.93793b7c.js"><link rel="prefetch" href="/assets/js/18.8912b211.js"><link rel="prefetch" href="/assets/js/19.041fbc54.js"><link rel="prefetch" href="/assets/js/20.9bced172.js"><link rel="prefetch" href="/assets/js/21.50c4d5c4.js"><link rel="prefetch" href="/assets/js/22.32478ce2.js"><link rel="prefetch" href="/assets/js/23.a6b931ac.js"><link rel="prefetch" href="/assets/js/24.c3c717ac.js"><link rel="prefetch" href="/assets/js/25.f7011cd4.js"><link rel="prefetch" href="/assets/js/26.742fb1c6.js"><link rel="prefetch" href="/assets/js/27.9696ed96.js"><link rel="prefetch" href="/assets/js/28.c02ba96b.js"><link rel="prefetch" href="/assets/js/29.d6368341.js"><link rel="prefetch" href="/assets/js/30.a1e00125.js"><link rel="prefetch" href="/assets/js/31.e9d086fc.js"><link rel="prefetch" href="/assets/js/32.52ac0564.js"><link rel="prefetch" href="/assets/js/33.e3da9847.js"><link rel="prefetch" href="/assets/js/34.ee6c7fbf.js"><link rel="prefetch" href="/assets/js/35.977fa64c.js"><link rel="prefetch" href="/assets/js/36.3d793e99.js"><link rel="prefetch" href="/assets/js/37.9324baf6.js"><link rel="prefetch" href="/assets/js/38.6c1f27d3.js"><link rel="prefetch" href="/assets/js/39.117b1101.js"><link rel="prefetch" href="/assets/js/4.33d3d64d.js"><link rel="prefetch" href="/assets/js/40.d9b8c316.js"><link rel="prefetch" href="/assets/js/41.f99335de.js"><link rel="prefetch" href="/assets/js/42.10ac551d.js"><link rel="prefetch" href="/assets/js/43.4d5730fc.js"><link rel="prefetch" href="/assets/js/44.ba6da2b9.js"><link rel="prefetch" href="/assets/js/45.b2771d22.js"><link rel="prefetch" href="/assets/js/46.9b3a68ab.js"><link rel="prefetch" href="/assets/js/47.1a09638a.js"><link rel="prefetch" href="/assets/js/48.c5a7225f.js"><link rel="prefetch" href="/assets/js/49.fb538284.js"><link rel="prefetch" href="/assets/js/5.5834837c.js"><link rel="prefetch" href="/assets/js/6.1e82e21f.js"><link rel="prefetch" href="/assets/js/7.0f284d67.js"><link rel="prefetch" href="/assets/js/8.b7f4a578.js"><link rel="prefetch" href="/assets/js/9.9a6eb311.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.119f77bc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="standard Menu" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="standard Menu" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standard/HTML/" class="nav-link">
+  HTML编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CSS/" class="nav-link">
+  CSS编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JavaScript/" class="nav-link">
+  JavaScript编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/VUE/" class="nav-link">
+  VUE编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Markdown/" class="nav-link">
+  Markdown语法说明
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Commit/" class="nav-link">
+  Git提交规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JSON/" class="nav-link">
+  JSON数据规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CopyWriter/" class="nav-link">
+  文案风格指南
+</a></li></ul></div></div><div class="nav-item"><a href="/materiel/" class="nav-link">
+  物料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="plugin Menu" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="plugin Menu" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/HRM-Player/" class="nav-link">
+  HRM 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Vue-Flv-Player/" class="nav-link">
+  FLV 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Calendar/" class="nav-link">
+  Calendar 农历面板
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Very-Axios/" class="nav-link">
+  Very-Axios
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="utils Menu" class="dropdown-title"><span class="title">函数库</span> <span class="arrow down"></span></button> <button type="button" aria-label="utils Menu" class="mobile-dropdown-title"><span class="title">函数库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/utils/Type/" class="nav-link">
+  类型判断类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Validator/" class="nav-link">
+  常规验证类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/String/" class="nav-link">
+  字符串类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Array/" class="nav-link">
+  数组类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Number/" class="nav-link">
+  数字类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Money/" class="nav-link">
+  金额类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Date/" class="nav-link">
+  日期类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Calculate/" class="nav-link">
+  浮点计算类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Tools/" class="nav-link">
+  工具类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Storage/" class="nav-link">
+  存储类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/DOM/" class="nav-link">
+  DOM类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Event/" class="nav-link">
+  事件处理类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tools Menu" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="tools Menu" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/NodeJS/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Sourcetree/" class="nav-link">
+  Sourcetree
+</a></li><li class="dropdown-item"><!----> <a href="/tools/VisualStudioCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XShell/" class="nav-link">
+  XShell
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Typora/" class="nav-link">
+  Typora
+</a></li><li class="dropdown-item"><!----> <a href="/tools/PicGo/" class="nav-link">
+  PicGo
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XMind/" class="nav-link">
+  XMind
+</a></li></ul></div></div> <!----></nav> <label title="切换暗色" class="model"><input type="checkbox" hidden="hidden" name="model" id>⚫</label></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="standard Menu" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="standard Menu" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standard/HTML/" class="nav-link">
+  HTML编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CSS/" class="nav-link">
+  CSS编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JavaScript/" class="nav-link">
+  JavaScript编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/VUE/" class="nav-link">
+  VUE编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Markdown/" class="nav-link">
+  Markdown语法说明
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Commit/" class="nav-link">
+  Git提交规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JSON/" class="nav-link">
+  JSON数据规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CopyWriter/" class="nav-link">
+  文案风格指南
+</a></li></ul></div></div><div class="nav-item"><a href="/materiel/" class="nav-link">
+  物料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="plugin Menu" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="plugin Menu" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/HRM-Player/" class="nav-link">
+  HRM 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Vue-Flv-Player/" class="nav-link">
+  FLV 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Calendar/" class="nav-link">
+  Calendar 农历面板
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Very-Axios/" class="nav-link">
+  Very-Axios
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="utils Menu" class="dropdown-title"><span class="title">函数库</span> <span class="arrow down"></span></button> <button type="button" aria-label="utils Menu" class="mobile-dropdown-title"><span class="title">函数库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/utils/Type/" class="nav-link">
+  类型判断类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Validator/" class="nav-link">
+  常规验证类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/String/" class="nav-link">
+  字符串类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Array/" class="nav-link">
+  数组类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Number/" class="nav-link">
+  数字类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Money/" class="nav-link">
+  金额类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Date/" class="nav-link">
+  日期类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Calculate/" class="nav-link">
+  浮点计算类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Tools/" class="nav-link">
+  工具类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Storage/" class="nav-link">
+  存储类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/DOM/" class="nav-link">
+  DOM类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Event/" class="nav-link">
+  事件处理类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tools Menu" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="tools Menu" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/NodeJS/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Sourcetree/" class="nav-link">
+  Sourcetree
+</a></li><li class="dropdown-item"><!----> <a href="/tools/VisualStudioCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XShell/" class="nav-link">
+  XShell
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Typora/" class="nav-link">
+  Typora
+</a></li><li class="dropdown-item"><!----> <a href="/tools/PicGo/" class="nav-link">
+  PicGo
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XMind/" class="nav-link">
+  XMind
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>插件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/plugin/" aria-current="page" class="sidebar-link">概述</a></li><li><a href="/plugin/HRM-Player.html" class="sidebar-link">HRM-Player 播放器</a></li><li><a href="/plugin/Vue-Flv-Player.html" aria-current="page" class="active sidebar-link">Vue-Flv-Player 播放器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/plugin/Vue-Flv-Player.html#npm安装" class="sidebar-link">NPM安装</a></li><li class="sidebar-sub-header"><a href="/plugin/Vue-Flv-Player.html#cdn引用" class="sidebar-link">CDN引用</a></li><li class="sidebar-sub-header"><a href="/plugin/Vue-Flv-Player.html#使用" class="sidebar-link">使用</a></li><li class="sidebar-sub-header"><a href="/plugin/Vue-Flv-Player.html#flv" class="sidebar-link">FLV</a></li><li class="sidebar-sub-header"><a href="/plugin/Vue-Flv-Player.html#mp4" class="sidebar-link">MP4</a></li><li class="sidebar-sub-header"><a href="/plugin/Vue-Flv-Player.html#切换类型" class="sidebar-link">切换类型</a></li></ul></li><li><a href="/plugin/Calendar.html" class="sidebar-link">Calendar 日历</a></li><li><a href="/plugin/Very-Axios.html" class="sidebar-link">Very-Axios</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-flv-player-播放器"><a href="#vue-flv-player-播放器" class="header-anchor">#</a> Vue-Flv-Player 播放器</h1> <p><img src="https://img.shields.io/npm/v/vue-flv-player.svg" alt="NPM version"> <img src="https://img.shields.io/github/stars/wangdaodao/vue-flv-player.svg" alt="GitHub stars"> <img src="https://img.shields.io/github/issues/wangdaodao/vue-flv-player.svg" alt="GitHub issues"> <img src="https://img.shields.io/github/forks/wangdaodao/vue-flv-player.svg" alt="GitHub forks"></p> <ul><li>😊 基于 Vue + <a href="https://github.com/Bilibili/flv.js" target="_blank" rel="noopener noreferrer"><code>flv.js</code> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 开发；</li> <li>😂 支持现代浏览器；</li></ul> <h2 id="npm安装"><a href="#npm安装" class="header-anchor">#</a> NPM 安装</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i vue-flv-player --save
+</code></pre></div><h2 id="cdn引用"><a href="#cdn引用" class="header-anchor">#</a> CDN 引用</h2> <p>目前可以通过 <a href="https://unpkg.com/vue-flv-player" target="_blank" rel="noopener noreferrer">unpkg.com/vue-flv-player<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 或者 <a href="https://www.jsdelivr.com/package/npm/vue-flv-player" target="_blank" rel="noopener noreferrer">www.jsdelivr.com/package/npm/vue-flv-player<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 引入组件库 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/vue-flv-player/dist/vue-flv-player.umd.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 或者 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdn.jsdelivr.net/npm/vue-flv-player/dist/vue-flv-player.umd.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <h3 id="全局使用"><a href="#全局使用" class="header-anchor">#</a> 全局使用</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// main.js</span>
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span>
+
+<span class="token keyword">import</span> vueFlvPlayer <span class="token keyword">from</span> <span class="token string">'vue-flv-player'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>vueFlvPlayer<span class="token punctuation">)</span>
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>vue-flv-player</span> <span class="token attr-name">:autoplay</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:controls</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:muted</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>myPlayer<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:source</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>src<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'App'</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      src<span class="token operator">:</span><span class="token string">&quot;http://resource.wangdaodao.com/test.flv&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="局部使用"><a href="#局部使用" class="header-anchor">#</a> 局部使用</h3> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>vue-flv-player</span> <span class="token attr-name">:autoplay</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:controls</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:muted</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>myPlayer<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:source</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>src<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> vueFlvPlayer <span class="token keyword">from</span> <span class="token string">'vue-flv-player'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'App'</span><span class="token punctuation">,</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    vueFlvPlayer<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      src<span class="token operator">:</span><span class="token string">&quot;http://resource.wangdaodao.com/test.flv&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="flv"><a href="#flv" class="header-anchor">#</a> FLV</h2> <p><a href="http://demo.const.team/flv/flv.html" target="_blank" rel="noopener noreferrer">FLV 例子<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>vue-flv-player</span> <span class="token attr-name">:autoplay</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:controls</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:muted</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>myPlayer<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:source</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>src<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      src<span class="token operator">:</span><span class="token string">&quot;http://resource.wangdaodao.com/test.flv&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="mp4"><a href="#mp4" class="header-anchor">#</a> MP4</h2> <p><a href="http://demo.const.team/flv/mp4.html" target="_blank" rel="noopener noreferrer">MP4<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>vue-flv-player</span> <span class="token attr-name">controls</span> <span class="token attr-name">autoplay</span> <span class="token attr-name">:muted</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:source</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>src<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mp4<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      src<span class="token operator">:</span> <span class="token string">&quot;http://vjs.zencdn.net/v/oceans.mp4&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="切换类型"><a href="#切换类型" class="header-anchor">#</a> 切换类型</h2> <p><a href="http://demo.const.team/flv/all.html" target="_blank" rel="noopener noreferrer">切换类型<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>change(1)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>FLV<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>change(2)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>MP4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>vue-flv-player</span> <span class="token attr-name">controls</span> <span class="token attr-name">autoplay</span> <span class="token attr-name">:muted</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:source</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>src<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>type<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      src<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">change</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">switch</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">'flv'</span><span class="token punctuation">;</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">'http://resource.wangdaodao.com/test.flv'</span><span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">'mp4'</span><span class="token punctuation">;</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">'http://vjs.zencdn.net/v/oceans.mp4'</span><span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="attributes"><a href="#attributes" class="header-anchor">#</a> Attributes</h3> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th></tr></thead> <tbody><tr><td>source</td> <td>播放流</td> <td>string</td> <td>—</td> <td>—</td></tr> <tr><td>type</td> <td>流类型</td> <td>string</td> <td><code>mp4</code> / <code>flv</code></td> <td><code>flv</code></td></tr> <tr><td>width</td> <td>宽度</td> <td>number</td> <td>—</td> <td>800</td></tr> <tr><td>height</td> <td>高度</td> <td>number</td> <td>—</td> <td>600</td></tr> <tr><td>poster</td> <td>视频封面</td> <td>string</td> <td>—</td> <td>—</td></tr> <tr><td>muted</td> <td>是否静音</td> <td>boolean</td> <td>—</td> <td>false</td></tr> <tr><td>autoplay</td> <td>是否自动播放</td> <td>boolean</td> <td>—</td> <td>false</td></tr> <tr><td>controls</td> <td>是否显示控件</td> <td>boolean</td> <td>—</td> <td>false</td></tr> <tr><td>preload</td> <td>预加载</td> <td>string</td> <td>auto/metadata/none</td> <td>auto</td></tr> <tr><td>mediaDataSource</td> <td>高级媒体数据源设置</td> <td>Object</td> <td>—</td> <td>—</td></tr> <tr><td>config</td> <td>高级设置</td> <td>Object</td> <td>—</td> <td>—</td></tr></tbody></table> <h3 id="mediadatasource"><a href="#mediadatasource" class="header-anchor">#</a> mediaDataSource</h3> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th></tr></thead> <tbody><tr><td>type</td> <td>流类型</td> <td>string</td> <td><code>mp4</code> / <code>flv</code></td> <td><code>flv</code></td></tr> <tr><td>isLive</td> <td>指示数据源是否为<strong>实时流</strong></td> <td>boolean</td> <td>—</td> <td>—</td></tr> <tr><td>cors</td> <td>是否为 http 获取启用 <code>CORS</code></td> <td>boolean</td> <td>—</td> <td>—</td></tr> <tr><td>withCredentials</td> <td>发送跨域请求凭据</td> <td>boolean</td> <td>—</td> <td>—</td></tr> <tr><td>hasAudio</td> <td>指示流是否有音频曲目</td> <td>boolean</td> <td>—</td> <td>—</td></tr> <tr><td>hasVideo</td> <td>指示流是否有视频曲目</td> <td>boolean</td> <td>—</td> <td>—</td></tr> <tr><td>duration</td> <td>总媒体持续时间，单位为<strong>毫秒</strong></td> <td>number</td> <td>—</td> <td>—</td></tr> <tr><td>filesize</td> <td>表示媒体文件的总文件大小</td> <td>number</td> <td>—</td> <td>—</td></tr> <tr><td>url</td> <td>媒体 URL，设置后覆盖  <code>source</code></td> <td>string</td> <td><code>https(s)</code>  /  <code>ws(s)</code></td> <td>—</td></tr> <tr><td>segments</td> <td>多部分播放，请参见<strong> MediaSegment</strong></td> <td>Array</td> <td>—</td> <td>—</td></tr></tbody></table> <h3 id="mediasegment"><a href="#mediasegment" class="header-anchor">#</a> MediaSegment</h3> <table><thead><tr><th>参数</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>duration</td> <td>number</td> <td>必填字段，表示以<strong>毫秒为单位的段持续时间</strong></td></tr> <tr><td>filesize</td> <td>number</td> <td>可选字段，表示段文件大小</td></tr> <tr><td>url</td> <td>string</td> <td>必填字段，表示段文件 URL</td></tr></tbody></table> <h3 id="config"><a href="#config" class="header-anchor">#</a> Config</h3> <table><thead><tr><th>参数</th> <th>类型</th> <th>默认值</th> <th>说明</th></tr></thead> <tbody><tr><td><code>enableWorker?</code></td> <td><code>boolean</code></td> <td><code>false</code></td> <td>Enable separated thread for transmuxing (unstable for now)</td></tr> <tr><td><code>enableStashBuffer?</code></td> <td><code>boolean</code></td> <td><code>true</code></td> <td>Enable IO stash buffer. Set to false if you need realtime (minimal latency) for live stream playback, but may stalled if there's network jittering.</td></tr> <tr><td><code>stashInitialSize?</code></td> <td><code>number</code></td> <td><code>384KB</code></td> <td>Indicates IO stash buffer initial size. Default is  <code>384KB</code> . Indicate a suitable size can improve video load/seek time.</td></tr> <tr><td><code>isLive?</code></td> <td><code>boolean</code></td> <td><code>false</code></td> <td>Same to  <code>isLive</code>  in <strong>MediaDataSource</strong>, ignored if has been set in MediaDataSource structure.</td></tr> <tr><td><code>lazyLoad?</code></td> <td><code>boolean</code></td> <td><code>true</code></td> <td>Abort the http connection if there's enough data for playback.</td></tr> <tr><td><code>lazyLoadMaxDuration?</code></td> <td><code>number</code></td> <td><code>3 * 60</code></td> <td>Indicates how many seconds of data to be kept for  <code>lazyLoad</code> .</td></tr> <tr><td><code>lazyLoadRecoverDuration?</code></td> <td><code>number</code></td> <td><code>30</code></td> <td>Indicates the  <code>lazyLoad</code>  recover time boundary in seconds.</td></tr> <tr><td><code>deferLoadAfterSourceOpen?</code></td> <td><code>boolean</code></td> <td><code>true</code></td> <td>Do load after MediaSource  <code>sourceopen</code>  event triggered. On Chrome, tabs which be opened in background may not trigger  <code>sourceopen</code>  event until switched to that tab.</td></tr> <tr><td><code>autoCleanupSourceBuffer</code></td> <td><code>boolean</code></td> <td><code>false</code></td> <td>Do auto cleanup for SourceBuffer</td></tr> <tr><td><code>autoCleanupMaxBackwardDuration</code></td> <td><code>number</code></td> <td><code>3 * 60</code></td> <td>When backward buffer duration exceeded this value (in seconds), do auto cleanup for SourceBuffer</td></tr> <tr><td><code>autoCleanupMinBackwardDuration</code></td> <td><code>number</code></td> <td><code>2 * 60</code></td> <td>Indicates the duration in seconds to reserve for backward buffer when doing auto cleanup.</td></tr> <tr><td><code>fixAudioTimestampGap</code></td> <td><code>boolean</code></td> <td><code>true</code></td> <td>Fill silent audio frames to avoid a/v unsync when detect large audio timestamp gap.</td></tr> <tr><td><code>accurateSeek?</code></td> <td><code>boolean</code></td> <td><code>false</code></td> <td>Accurate seek to any frame, not limited to video IDR frame, but may a bit slower. Available on  <code>Chrome &gt; 50</code> ,  <code>FireFox</code>  and  <code>Safari</code> .</td></tr> <tr><td><code>seekType?</code></td> <td><code>string</code></td> <td><code>'range'</code></td> <td><code>'range'</code>  use range request to seek, or  <code>'param'</code>  add params into url to indicate request range.</td></tr> <tr><td><code>seekParamStart?</code></td> <td><code>string</code></td> <td><code>'bstart'</code></td> <td>Indicates seek start parameter name for  <code>seekType = 'param'</code></td></tr> <tr><td><code>seekParamEnd?</code></td> <td><code>string</code></td> <td><code>'bend'</code></td> <td>Indicates seek end parameter name for  <code>seekType = 'param'</code></td></tr> <tr><td><code>rangeLoadZeroStart?</code></td> <td><code>boolean</code></td> <td><code>false</code></td> <td>Send  <code>Range: bytes=0-</code>  for first time load if use Range seek</td></tr> <tr><td><code>customSeekHandler?</code></td> <td><code>object</code></td> <td><code>undefined</code></td> <td>Indicates a custom seek handler</td></tr> <tr><td><code>reuseRedirectedURL?</code></td> <td><code>boolean</code></td> <td><code>false</code></td> <td>Reuse 301/302 redirected url for subsequence request like seek, reconnect, etc.</td></tr> <tr><td><code>referrerPolicy?</code></td> <td><code>string</code></td> <td><code>no-referrer-when-downgrade</code></td> <td>Indicates the [Referrer Policy][] when using FetchStreamLoader</td></tr> <tr><td><code>headers?</code></td> <td><code>object</code></td> <td><code>undefined</code></td> <td>Indicates additional headers that will be added to request</td></tr></tbody></table> <p>更多配置，请看  <code>flv.js</code> <a href="https://github.com/bilibili/flv.js/blob/master/docs/api.md" target="_blank" rel="noopener noreferrer">官方文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="methods"><a href="#methods" class="header-anchor">#</a> Methods</h3> <table><thead><tr><th>方法名</th> <th>说明</th> <th>参数</th></tr></thead> <tbody><tr><td>play</td> <td>播放</td> <td></td></tr> <tr><td>pause</td> <td>暂停</td> <td></td></tr> <tr><td>dispose</td> <td>销毁</td> <td></td></tr></tbody></table></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">文档更新时间:</span> <span class="time">2021-01-10 16:21:09</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/plugin/HRM-Player.html" class="prev">
+        HRM-Player 播放器
+      </a></span> <span class="next"><a href="/plugin/Calendar.html">
+        Calendar 日历
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.14bebd55.js" defer></script><script src="/assets/js/2.46a6568e.js" defer></script><script src="/assets/js/3.4eebc4ee.js" defer></script><script src="/assets/js/17.27f35893.js" defer></script>
+  </body>
+</html>

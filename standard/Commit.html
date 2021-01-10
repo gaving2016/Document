@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git Commit 规范指南 | 前端文档</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="description" content="前端文档">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.119f77bc.css" as="style"><link rel="preload" href="/assets/js/app.14bebd55.js" as="script"><link rel="preload" href="/assets/js/2.46a6568e.js" as="script"><link rel="preload" href="/assets/js/3.4eebc4ee.js" as="script"><link rel="preload" href="/assets/js/19.041fbc54.js" as="script"><link rel="prefetch" href="/assets/js/10.1991ae1e.js"><link rel="prefetch" href="/assets/js/11.e6bc6b4d.js"><link rel="prefetch" href="/assets/js/12.28195a00.js"><link rel="prefetch" href="/assets/js/13.33458149.js"><link rel="prefetch" href="/assets/js/14.2fbfe174.js"><link rel="prefetch" href="/assets/js/15.54bfb07d.js"><link rel="prefetch" href="/assets/js/16.93793b7c.js"><link rel="prefetch" href="/assets/js/17.27f35893.js"><link rel="prefetch" href="/assets/js/18.8912b211.js"><link rel="prefetch" href="/assets/js/20.9bced172.js"><link rel="prefetch" href="/assets/js/21.50c4d5c4.js"><link rel="prefetch" href="/assets/js/22.32478ce2.js"><link rel="prefetch" href="/assets/js/23.a6b931ac.js"><link rel="prefetch" href="/assets/js/24.c3c717ac.js"><link rel="prefetch" href="/assets/js/25.f7011cd4.js"><link rel="prefetch" href="/assets/js/26.742fb1c6.js"><link rel="prefetch" href="/assets/js/27.9696ed96.js"><link rel="prefetch" href="/assets/js/28.c02ba96b.js"><link rel="prefetch" href="/assets/js/29.d6368341.js"><link rel="prefetch" href="/assets/js/30.a1e00125.js"><link rel="prefetch" href="/assets/js/31.e9d086fc.js"><link rel="prefetch" href="/assets/js/32.52ac0564.js"><link rel="prefetch" href="/assets/js/33.e3da9847.js"><link rel="prefetch" href="/assets/js/34.ee6c7fbf.js"><link rel="prefetch" href="/assets/js/35.977fa64c.js"><link rel="prefetch" href="/assets/js/36.3d793e99.js"><link rel="prefetch" href="/assets/js/37.9324baf6.js"><link rel="prefetch" href="/assets/js/38.6c1f27d3.js"><link rel="prefetch" href="/assets/js/39.117b1101.js"><link rel="prefetch" href="/assets/js/4.33d3d64d.js"><link rel="prefetch" href="/assets/js/40.d9b8c316.js"><link rel="prefetch" href="/assets/js/41.f99335de.js"><link rel="prefetch" href="/assets/js/42.10ac551d.js"><link rel="prefetch" href="/assets/js/43.4d5730fc.js"><link rel="prefetch" href="/assets/js/44.ba6da2b9.js"><link rel="prefetch" href="/assets/js/45.b2771d22.js"><link rel="prefetch" href="/assets/js/46.9b3a68ab.js"><link rel="prefetch" href="/assets/js/47.1a09638a.js"><link rel="prefetch" href="/assets/js/48.c5a7225f.js"><link rel="prefetch" href="/assets/js/49.fb538284.js"><link rel="prefetch" href="/assets/js/5.5834837c.js"><link rel="prefetch" href="/assets/js/6.1e82e21f.js"><link rel="prefetch" href="/assets/js/7.0f284d67.js"><link rel="prefetch" href="/assets/js/8.b7f4a578.js"><link rel="prefetch" href="/assets/js/9.9a6eb311.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.119f77bc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="standard Menu" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="standard Menu" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standard/HTML/" class="nav-link">
+  HTML编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CSS/" class="nav-link">
+  CSS编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JavaScript/" class="nav-link">
+  JavaScript编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/VUE/" class="nav-link">
+  VUE编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Markdown/" class="nav-link">
+  Markdown语法说明
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Commit/" class="nav-link">
+  Git提交规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JSON/" class="nav-link">
+  JSON数据规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CopyWriter/" class="nav-link">
+  文案风格指南
+</a></li></ul></div></div><div class="nav-item"><a href="/materiel/" class="nav-link">
+  物料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="plugin Menu" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="plugin Menu" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/HRM-Player/" class="nav-link">
+  HRM 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Vue-Flv-Player/" class="nav-link">
+  FLV 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Calendar/" class="nav-link">
+  Calendar 农历面板
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Very-Axios/" class="nav-link">
+  Very-Axios
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="utils Menu" class="dropdown-title"><span class="title">函数库</span> <span class="arrow down"></span></button> <button type="button" aria-label="utils Menu" class="mobile-dropdown-title"><span class="title">函数库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/utils/Type/" class="nav-link">
+  类型判断类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Validator/" class="nav-link">
+  常规验证类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/String/" class="nav-link">
+  字符串类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Array/" class="nav-link">
+  数组类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Number/" class="nav-link">
+  数字类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Money/" class="nav-link">
+  金额类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Date/" class="nav-link">
+  日期类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Calculate/" class="nav-link">
+  浮点计算类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Tools/" class="nav-link">
+  工具类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Storage/" class="nav-link">
+  存储类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/DOM/" class="nav-link">
+  DOM类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Event/" class="nav-link">
+  事件处理类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tools Menu" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="tools Menu" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/NodeJS/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Sourcetree/" class="nav-link">
+  Sourcetree
+</a></li><li class="dropdown-item"><!----> <a href="/tools/VisualStudioCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XShell/" class="nav-link">
+  XShell
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Typora/" class="nav-link">
+  Typora
+</a></li><li class="dropdown-item"><!----> <a href="/tools/PicGo/" class="nav-link">
+  PicGo
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XMind/" class="nav-link">
+  XMind
+</a></li></ul></div></div> <!----></nav> <label title="切换暗色" class="model"><input type="checkbox" hidden="hidden" name="model" id>⚫</label></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="standard Menu" class="dropdown-title"><span class="title">规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="standard Menu" class="mobile-dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/standard/HTML/" class="nav-link">
+  HTML编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CSS/" class="nav-link">
+  CSS编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JavaScript/" class="nav-link">
+  JavaScript编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/VUE/" class="nav-link">
+  VUE编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Markdown/" class="nav-link">
+  Markdown语法说明
+</a></li><li class="dropdown-item"><!----> <a href="/standard/Commit/" class="nav-link">
+  Git提交规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/JSON/" class="nav-link">
+  JSON数据规范
+</a></li><li class="dropdown-item"><!----> <a href="/standard/CopyWriter/" class="nav-link">
+  文案风格指南
+</a></li></ul></div></div><div class="nav-item"><a href="/materiel/" class="nav-link">
+  物料
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="plugin Menu" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="plugin Menu" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plugin/HRM-Player/" class="nav-link">
+  HRM 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Vue-Flv-Player/" class="nav-link">
+  FLV 播放器
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Calendar/" class="nav-link">
+  Calendar 农历面板
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/Very-Axios/" class="nav-link">
+  Very-Axios
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="utils Menu" class="dropdown-title"><span class="title">函数库</span> <span class="arrow down"></span></button> <button type="button" aria-label="utils Menu" class="mobile-dropdown-title"><span class="title">函数库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/utils/Type/" class="nav-link">
+  类型判断类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Validator/" class="nav-link">
+  常规验证类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/String/" class="nav-link">
+  字符串类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Array/" class="nav-link">
+  数组类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Number/" class="nav-link">
+  数字类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Money/" class="nav-link">
+  金额类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Date/" class="nav-link">
+  日期类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Calculate/" class="nav-link">
+  浮点计算类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Tools/" class="nav-link">
+  工具类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Storage/" class="nav-link">
+  存储类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/DOM/" class="nav-link">
+  DOM类
+</a></li><li class="dropdown-item"><!----> <a href="/utils/Event/" class="nav-link">
+  事件处理类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="tools Menu" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="tools Menu" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/NodeJS/" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Sourcetree/" class="nav-link">
+  Sourcetree
+</a></li><li class="dropdown-item"><!----> <a href="/tools/VisualStudioCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XShell/" class="nav-link">
+  XShell
+</a></li><li class="dropdown-item"><!----> <a href="/tools/Typora/" class="nav-link">
+  Typora
+</a></li><li class="dropdown-item"><!----> <a href="/tools/PicGo/" class="nav-link">
+  PicGo
+</a></li><li class="dropdown-item"><!----> <a href="/tools/XMind/" class="nav-link">
+  XMind
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/" aria-current="page" class="sidebar-link">目标</a></li><li><a href="/standard/HTML.html" class="sidebar-link">HTML 编码规范</a></li><li><a href="/standard/CSS.html" class="sidebar-link">CSS 编码规范</a></li><li><a href="/standard/JavaScript.html" class="sidebar-link">JavaScript 编码规范</a></li><li><a href="/standard/VUE.html" class="sidebar-link">Vue 编码规范</a></li><li><a href="/standard/Markdown.html" class="sidebar-link">Markdown 语法说明</a></li><li><a href="/standard/Commit.html" aria-current="page" class="active sidebar-link">Git Commit 规范指南</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/standard/Commit.html#_1-commit-作用" class="sidebar-link">1 Commit 作用</a></li><li class="sidebar-sub-header"><a href="/standard/Commit.html#_2-commit-格式" class="sidebar-link">2 Commit 格式</a></li><li class="sidebar-sub-header"><a href="/standard/Commit.html#_3-header" class="sidebar-link">3 Header</a></li><li class="sidebar-sub-header"><a href="/standard/Commit.html#_4-body" class="sidebar-link">4 Body</a></li><li class="sidebar-sub-header"><a href="/standard/Commit.html#_5-footer" class="sidebar-link">5 Footer</a></li><li class="sidebar-sub-header"><a href="/standard/Commit.html#_6-revert" class="sidebar-link">6 Revert</a></li></ul></li><li><a href="/standard/JSON.html" class="sidebar-link">JSON 数据传输标准</a></li><li><a href="/standard/CopyWriter.html" class="sidebar-link">文案风格指南</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-commit-规范指南"><a href="#git-commit-规范指南" class="header-anchor">#</a> Git Commit 规范指南</h1> <p>Git 每次提交代码，都要写 Commit message（提交说明），否则就不允许提交。但是，一般来说，commit message 应该清晰明了，说明本次提交的目的。</p> <h2 id="_1-commit-作用"><a href="#_1-commit-作用" class="header-anchor">#</a> 1 Commit 作用</h2> <ul><li>提供更多的历史信息，方便快速浏览。</li> <li>可读性好，清晰，不必深入看代码即可了解当前 commit 的作用。</li> <li>为 Code Reviewing 做准备。</li> <li>方便跟踪工程历史。</li></ul> <h2 id="_2-commit-格式"><a href="#_2-commit-格式" class="header-anchor">#</a> 2 Commit 格式</h2> <p>每次提交，Commit message 都包括三个部分： <code>header</code> ， <code>body</code>  和  <code>footer</code> 。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token operator">&lt;</span>type<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>scope<span class="token operator">&gt;</span><span class="token punctuation">)</span>: <span class="token operator">&lt;</span>subject<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>BLANK LINE<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>BLANK LINE<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>footer<span class="token operator">&gt;</span>
+</code></pre></div><p>其中， <code>header</code>  是必需的， <code>body</code>  和  <code>footer</code>  可以省略。
+不管是哪一个部分，任何一行都不得超过 100 个字符。这是为了避免自动换行影响美观。</p> <h2 id="_3-header"><a href="#_3-header" class="header-anchor">#</a> 3 Header</h2> <p><code>Header</code>  部分只有一行，包括三个字段： <code>type</code> （必需）、 <code>scope</code> （可选）和 <code>subject</code> （必需）。</p> <h3 id="_3-1-type"><a href="#_3-1-type" class="header-anchor">#</a> 3.1 type</h3> <p>用于说明  <code>commit</code>  的类别，只允许使用下面 7 个标识。</p> <ul><li>feat：新功能（feature）</li> <li>fix：修补 bug</li> <li>docs：文档（documentation）</li> <li>style： 格式（不影响代码运行的变动）</li> <li>refactor：重构（即不是新增功能，也不是修改 bug 的代码变动）</li> <li>test：增加测试</li> <li>chore：构建过程或辅助工具的变动</li></ul> <h3 id="_3-2-scope"><a href="#_3-2-scope" class="header-anchor">#</a> 3.2 scope</h3> <p><code>scope</code>  用于说明  <code>commit</code>  影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同。</p> <p>如果你的修改影响了不止一个 <code>scope</code> ，你可以使用 * 代替。</p> <h3 id="_3-3-subject"><a href="#_3-3-subject" class="header-anchor">#</a> 3.3 subject</h3> <p><code>subject</code>  是  <code>commit</code>  目的的简短描述，不超过 50 个字符。</p> <h2 id="_4-body"><a href="#_4-body" class="header-anchor">#</a> 4 Body</h2> <p><code>Body</code>  部分是对本次  <code>commit</code>  的详细描述，可以分成多行。下面是一个范例：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>More detailed explanatory text, <span class="token keyword">if</span> necessary.  Wrap it to 
+about <span class="token number">72</span> characters or so. 
+
+Further paragraphs come after blank lines.
+
+- Bullet points are okay, too
+- Use a hanging indent
+</code></pre></div><h2 id="_5-footer"><a href="#_5-footer" class="header-anchor">#</a> 5 Footer</h2> <p>Footer 部分只用于以下两种情况：</p> <h3 id="_5-1-不兼容变动"><a href="#_5-1-不兼容变动" class="header-anchor">#</a> 5.1 不兼容变动</h3> <p>如果当前代码与上一个版本不兼容，则  <code>Footer</code>  部分以 <code>BREAKING CHANGE</code>  开头，后面是对变动的描述、以及变动理由和迁移方法。</p> <h3 id="_5-2-关闭-issue"><a href="#_5-2-关闭-issue" class="header-anchor">#</a> 5.2 关闭 Issue</h3> <p>如果当前  <code>commit</code>  针对某个 <code>issue</code> ，那么可以在  <code>Footer</code>  部分关闭这个  <code>issue</code>  。</p> <h2 id="_6-revert"><a href="#_6-revert" class="header-anchor">#</a> 6 Revert</h2> <p>还有一种特殊情况，如果当前  <code>commit</code>  用于撤销以前的  <code>commit</code> ，则必须以 <code>revert:</code>  开头，后面跟着被撤销  <code>Commit</code>  的  <code>Header</code> 。</p> <div class="language-shell extra-class"><pre class="language-shell"><code>revert: feat<span class="token punctuation">(</span>pencil<span class="token punctuation">)</span>: <span class="token function">add</span> <span class="token string">'graphiteWidth'</span> option
+
+This reverts commit 667ecc1654a317a13331b17617d973392f415f02.
+</code></pre></div><p><code>Body</code>  部分的格式是固定的，必须写成 <code>This reverts commit &lt;hash&gt;</code> ，其中的 <code>hash</code>  是被撤销  <code>commit</code>  的  <code>SHA</code>  标识符。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">文档更新时间:</span> <span class="time">2021-01-10 16:21:09</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/standard/Markdown.html" class="prev">
+        Markdown 语法说明
+      </a></span> <span class="next"><a href="/standard/JSON.html">
+        JSON 数据传输标准
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.14bebd55.js" defer></script><script src="/assets/js/2.46a6568e.js" defer></script><script src="/assets/js/3.4eebc4ee.js" defer></script><script src="/assets/js/19.041fbc54.js" defer></script>
+  </body>
+</html>
